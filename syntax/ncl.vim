@@ -2776,7 +2776,8 @@ syntax match nclNumber display "\.\d\+\([deq][-+]\=\d\+\)\=\(_\a\w*\)\=\>"
 syntax match nclNumber display "\<\d\+\.\([deq][-+]\=\d\+\)\=\(_\a\w*\)\=\>"
 syntax match nclNumber display "\<\d\+\.\d\+\([dq][-+]\=\d\+\)\=\(_\a\w*\)\=\>"
 syntax match nclNumber display "\<\d\+\.\d\+\(e[-+]\=\d\+\)\=\(_\a\w*\)\=\>"
-syntax match nclBoolean True False
+syntax keyword nclBoolean True
+syntax keyword nclBoolean False
 syntax match nclComment "^\ *;.*$"
 syntax match nclComment ";.*"
 syntax region nclString start=+"+ end=+"+
@@ -2787,7 +2788,7 @@ highlight link nclFunctionsESMF Special
 highlight link nclFunctionsPop_remap Special
 highlight link nclFunctionsSkewt_func Special
 highlight link nclFunctionsUser_contributed Special
-highlight link nclFunctionsWRF_arw
+highlight link nclFunctionsWRF_arw Special
 highlight link nclFunctionsWRF_contributed Special
 highlight link nclFunctionsWind_rose Special
 highlight link nclGraphicsInterfaces Special

@@ -72,7 +72,8 @@ end
   syntax_file << "syntax match nclNumber display \"#{num}\"\n"
 end
 
-syntax_file << "syntax match nclBoolean True False\n"
+syntax_file << "syntax keyword nclBoolean True\n"
+syntax_file << "syntax keyword nclBoolean False\n"
 syntax_file << "syntax match nclComment \"^\\ *;.*$\"\n"
 syntax_file << "syntax match nclComment \";.*\"\n"
 syntax_file << "syntax region nclString start=+\"+ end=+\"+\n"
@@ -84,7 +85,7 @@ syntax_file << "highlight link nclFunctionsESMF Special\n"
 syntax_file << "highlight link nclFunctionsPop_remap Special\n"
 syntax_file << "highlight link nclFunctionsSkewt_func Special\n"
 syntax_file << "highlight link nclFunctionsUser_contributed Special\n"
-syntax_file << "highlight link nclFunctionsWRF_arw\n"
+syntax_file << "highlight link nclFunctionsWRF_arw Special\n"
 syntax_file << "highlight link nclFunctionsWRF_contributed Special\n"
 syntax_file << "highlight link nclFunctionsWind_rose Special\n"
 syntax_file << "highlight link nclGraphicsInterfaces Special\n"
