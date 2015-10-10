@@ -384,6 +384,7 @@ syntax keyword nclFunctionsBuiltin isnan_ieee
 syntax keyword nclFunctionsBuiltin isnumeric
 syntax keyword nclFunctionsBuiltin ispan
 syntax keyword nclFunctionsBuiltin isproc
+syntax keyword nclFunctionsBuiltin isscalar
 syntax keyword nclFunctionsBuiltin isshort
 syntax keyword nclFunctionsBuiltin issnumeric
 syntax keyword nclFunctionsBuiltin isstring
@@ -572,6 +573,8 @@ syntax keyword nclFunctionsBuiltin regcoef
 syntax keyword nclFunctionsBuiltin regCoef_n
 syntax keyword nclFunctionsBuiltin regline
 syntax keyword nclFunctionsBuiltin relhum
+syntax keyword nclFunctionsBuiltin relhum_ice
+syntax keyword nclFunctionsBuiltin relhum_water
 syntax keyword nclFunctionsBuiltin replace_ieeenan
 syntax keyword nclFunctionsBuiltin reshape
 syntax keyword nclFunctionsBuiltin reshape_ind
@@ -623,7 +626,7 @@ syntax keyword nclFunctionsBuiltin spcorr
 syntax keyword nclFunctionsBuiltin spcorr_n
 syntax keyword nclFunctionsBuiltin specx_anal
 syntax keyword nclFunctionsBuiltin specxy_anal
-syntax keyword nclFunctionsBuiltin spei
+syntax keyword nclFunctionsBuiltin speidx
 syntax keyword nclFunctionsBuiltin sprintf
 syntax keyword nclFunctionsBuiltin sprinti
 syntax keyword nclFunctionsBuiltin sqrt
@@ -852,6 +855,7 @@ syntax keyword nclFunctionsBuiltin z2geouv
 syntax keyword nclFunctionsBuiltin zonal_mpsi
 syntax keyword nclFunctionsContributed addfiles_GetVar
 syntax keyword nclFunctionsContributed advect_variable
+syntax keyword nclFunctionsContributed albedo_ccm
 syntax keyword nclFunctionsContributed area_conserve_remap_Wrap
 syntax keyword nclFunctionsContributed area_hi2lores_Wrap
 syntax keyword nclFunctionsContributed array_append_record
@@ -887,6 +891,7 @@ syntax keyword nclFunctionsContributed cssgrid_Wrap
 syntax keyword nclFunctionsContributed dble2flt
 syntax keyword nclFunctionsContributed decimalPlaces
 syntax keyword nclFunctionsContributed delete_VarAtts
+syntax keyword nclFunctionsContributed demod_cmplx
 syntax keyword nclFunctionsContributed dim_avg_n_Wrap
 syntax keyword nclFunctionsContributed dim_avg_wgt_n_Wrap
 syntax keyword nclFunctionsContributed dim_avg_wgt_Wrap
@@ -923,8 +928,9 @@ syntax keyword nclFunctionsContributed eofunc_ts_Wrap
 syntax keyword nclFunctionsContributed eofunc_varimax_reorder
 syntax keyword nclFunctionsContributed eofunc_varimax_Wrap
 syntax keyword nclFunctionsContributed eofunc_Wrap
+syntax keyword nclFunctionsContributed epflux
 syntax keyword nclFunctionsContributed epsZero
-syntax keyword nclFunctionsContributed extract_globalatts_hdf5
+syntax keyword nclFunctionsContributed extract_filevaratts_hdf5
 syntax keyword nclFunctionsContributed f2fosh_Wrap
 syntax keyword nclFunctionsContributed f2foshv_Wrap
 syntax keyword nclFunctionsContributed f2fsh_Wrap
@@ -934,6 +940,7 @@ syntax keyword nclFunctionsContributed f2gshv_Wrap
 syntax keyword nclFunctionsContributed fbindirSwap
 syntax keyword nclFunctionsContributed fbinseqSwap1
 syntax keyword nclFunctionsContributed fbinseqSwap2
+syntax keyword nclFunctionsContributed fire_index_haines
 syntax keyword nclFunctionsContributed flt2dble
 syntax keyword nclFunctionsContributed flt2string
 syntax keyword nclFunctionsContributed fo2fsh_Wrap
@@ -1004,7 +1011,7 @@ syntax keyword nclFunctionsContributed omega_ccm_driver
 syntax keyword nclFunctionsContributed omega_to_w
 syntax keyword nclFunctionsContributed oneDtostring
 syntax keyword nclFunctionsContributed pack_values
-syntax keyword nclFunctionsContributed parse_globalatts_hdf5
+syntax keyword nclFunctionsContributed getfilevaratts_hdf5
 syntax keyword nclFunctionsContributed pattern_cor
 syntax keyword nclFunctionsContributed pdfx
 syntax keyword nclFunctionsContributed pdfxy
@@ -1055,6 +1062,8 @@ syntax keyword nclFunctionsContributed stdMonTLLL
 syntax keyword nclFunctionsContributed symMinMaxPlt
 syntax keyword nclFunctionsContributed table_attach_columns
 syntax keyword nclFunctionsContributed table_attach_rows
+syntax keyword nclFunctionsContributed time_reassign
+syntax keyword nclFunctionsContributed time_reassign_cv2var
 syntax keyword nclFunctionsContributed time_to_newtime
 syntax keyword nclFunctionsContributed transpose
 syntax keyword nclFunctionsContributed triple2grid_Wrap
@@ -1075,6 +1084,7 @@ syntax keyword nclFunctionsContributed wgt_runave_Wrap
 syntax keyword nclFunctionsContributed wgt_vertical_n
 syntax keyword nclFunctionsContributed wind_component
 syntax keyword nclFunctionsContributed wind_direction
+syntax keyword nclFunctionsContributed wind_speed
 syntax keyword nclFunctionsContributed yyyyddd_to_yyyymmdd
 syntax keyword nclFunctionsContributed yyyymm_time
 syntax keyword nclFunctionsContributed yyyymm_to_yyyyfrac
@@ -1091,7 +1101,7 @@ syntax keyword nclFunctionsDiagnostics band_pass_hovmueller
 syntax keyword nclFunctionsDiagnostics band_pass_hovmueller_plot
 syntax keyword nclFunctionsDiagnostics band_pass_latlon_time
 syntax keyword nclFunctionsDiagnostics band_pass_latlon_time_plot
-syntax keyword nclFunctionsDiagnostics decomposeSymAsym
+syntax keyword nclFunctionsDiagnostics decompose2SymAsym
 syntax keyword nclFunctionsDiagnostics mjo_cross
 syntax keyword nclFunctionsDiagnostics mjo_cross_plot
 syntax keyword nclFunctionsDiagnostics mjo_phase_background

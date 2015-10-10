@@ -1156,6 +1156,9 @@ snippet ispan
 snippet isproc
   isproc(${1:proc_names})
 
+snippet isscalar
+  isscalar(${1:x})
+
 snippet isshort
   isshort(${1:arg})
 
@@ -1720,6 +1723,12 @@ snippet regline
 snippet relhum
   relhum(${1:t}, ${2:w}, ${3:p})
 
+snippet relhum_ice
+  relhum_ice(${1:t}, ${2:w}, ${3:p})
+
+snippet relhum_water
+  relhum_water(${1:t}, ${2:w}, ${3:p})
+
 snippet replace_ieeenan
   replace_ieeenan(${1:x}, ${2:value}, ${3:option})
 
@@ -1873,8 +1882,8 @@ snippet specx_anal
 snippet specxy_anal
   specxy_anal(${1:x}, ${2:y}, ${3:iopt}, ${4:jave}, ${5:pct})
 
-snippet spei
-  spei(${1:p}, ${2:t}, ${3:lat}, ${4:lrun}, ${5:optspei}, ${6:dims})
+snippet speidx
+  speidx(${1:p}, ${2:t}, ${3:lat}, ${4:lrun}, ${5:optspei}, ${6:dims})
 
 snippet sprintf
   sprintf(${1:format}, ${2:array})
@@ -2560,6 +2569,9 @@ snippet addfiles_GetVar
 snippet advect_variable
   advect_variable(${1:u}, ${2:v}, ${3:x}, ${4:gridType}, ${5:longName}, ${6:units}, ${7:opt})
 
+snippet albedo_ccm
+  albedo_ccm(${1:flux1}, ${2:flux2}, ${3:formula})
+
 snippet area_conserve_remap_Wrap
   area_conserve_remap_Wrap(${1:loni}, ${2:lati}, ${3:fi}, ${4:lono}, ${5:lato}, ${6:opt})
 
@@ -2664,6 +2676,9 @@ snippet decimalPlaces
 
 snippet delete_VarAtts
   delete_VarAtts(${1:var}, ${2:atts})
+
+snippet demod_cmplx
+  demod_cmplx(${1:x}, ${2:frqdem}, ${3:frqcut}, ${4:nwt}, ${5:ndim}, ${6:opt})
 
 snippet dim_avg_n_Wrap
   dim_avg_n_Wrap(${1:x}, ${2:dims})
@@ -2773,11 +2788,14 @@ snippet eofunc_varimax_Wrap
 snippet eofunc_Wrap
   eofunc_Wrap(${1:data}, ${2:neval}, ${3:optEOF})
 
+snippet epflux
+  epflux(${1:u}, ${2:v}, ${3:t}, ${4:plvl}, ${5:lat}, ${6:opt})
+
 snippet epsZero
   epsZero(${1:x}, ${2:eps})
 
-snippet extract_globalatts_hdf5
-  extract_globalatts_hdf5(${1:info}, ${2:key_word})
+snippet extract_filevaratts_hdf5
+  extract_filevaratts_hdf5(${1:info}, ${2:key_word})
 
 snippet f2fosh_Wrap
   f2fosh_Wrap(${1:grid})
@@ -2805,6 +2823,9 @@ snippet fbinseqSwap1
 
 snippet fbinseqSwap2
   fbinseqSwap2(${1:in_file}, ${2:out_file}, ${3:type}, ${4:dims})
+
+snippet fire_index_haines
+  fire_index_haines(${1:p}, ${2:t}, ${3:td}, ${4:opt})
 
 snippet flt2dble
   flt2dble(${1:x})
@@ -3016,8 +3037,8 @@ snippet oneDtostring
 snippet pack_values
   pack_values(${1:x}, ${2:packType}, ${3:opt})
 
-snippet parse_globalatts_hdf5
-  parse_globalatts_hdf5(${1:f}, ${2:attName})
+snippet getfilevaratts_hdf5
+  getfilevaratts_hdf5(${1:f}, ${2:attName})
 
 snippet pattern_cor
   pattern_cor(${1:x}, ${2:y}, ${3:w}, ${4:opt})
@@ -3169,6 +3190,12 @@ snippet table_attach_columns
 snippet table_attach_rows
   table_attach_rows(${1:t1}, ${2:t2}, ${3:opt})
 
+snippet time_reassign
+  time_reassign(${1:f}, ${2:timeName})
+
+snippet time_reassign_cv2var
+  time_reassign_cv2var(${1:f}, ${2:timeName}, ${3:varName})
+
 snippet time_to_newtime
   time_to_newtime(${1:time}, ${2:new_time_unit})
 
@@ -3229,6 +3256,9 @@ snippet wind_component
 snippet wind_direction
   wind_direction(${1:u}, ${2:v}, ${3:opt})
 
+snippet wind_speed
+  wind_speed(${1:u}, ${2:v})
+
 snippet yyyyddd_to_yyyymmdd
   yyyyddd_to_yyyymmdd(${1:yyyyddd})
 
@@ -3277,8 +3307,8 @@ snippet band_pass_latlon_time
 snippet band_pass_latlon_time_plot
   band_pass_latlon_time_plot(${1:x})
 
-snippet decomposeSymAsym
-  decomposeSymAsym(${1:x}, ${2:iret})
+snippet decompose2SymAsym
+  decompose2SymAsym(${1:x}, ${2:iret})
 
 snippet mjo_cross
   mjo_cross(${1:x}, ${2:y}, ${3:segLength}, ${4:segOverLap}, ${5:opt})
