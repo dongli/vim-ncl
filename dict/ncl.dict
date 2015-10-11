@@ -384,6 +384,7 @@ isnan_ieee
 isnumeric
 ispan
 isproc
+isscalar
 isshort
 issnumeric
 isstring
@@ -572,6 +573,8 @@ regcoef
 regCoef_n
 regline
 relhum
+relhum_ice
+relhum_water
 replace_ieeenan
 reshape
 reshape_ind
@@ -623,7 +626,7 @@ spcorr
 spcorr_n
 specx_anal
 specxy_anal
-spei
+speidx
 sprintf
 sprinti
 sqrt
@@ -852,6 +855,7 @@ z2geouv
 zonal_mpsi
 addfiles_GetVar
 advect_variable
+albedo_ccm
 area_conserve_remap_Wrap
 area_hi2lores_Wrap
 array_append_record
@@ -887,6 +891,7 @@ cssgrid_Wrap
 dble2flt
 decimalPlaces
 delete_VarAtts
+demod_cmplx
 dim_avg_n_Wrap
 dim_avg_wgt_n_Wrap
 dim_avg_wgt_Wrap
@@ -923,8 +928,9 @@ eofunc_ts_Wrap
 eofunc_varimax_reorder
 eofunc_varimax_Wrap
 eofunc_Wrap
+epflux
 epsZero
-extract_globalatts_hdf5
+extract_filevaratts_hdf5
 f2fosh_Wrap
 f2foshv_Wrap
 f2fsh_Wrap
@@ -934,6 +940,7 @@ f2gshv_Wrap
 fbindirSwap
 fbinseqSwap1
 fbinseqSwap2
+fire_index_haines
 flt2dble
 flt2string
 fo2fsh_Wrap
@@ -1004,7 +1011,7 @@ omega_ccm_driver
 omega_to_w
 oneDtostring
 pack_values
-parse_globalatts_hdf5
+getfilevaratts_hdf5
 pattern_cor
 pdfx
 pdfxy
@@ -1055,6 +1062,8 @@ stdMonTLLL
 symMinMaxPlt
 table_attach_columns
 table_attach_rows
+time_reassign
+time_reassign_cv2var
 time_to_newtime
 transpose
 triple2grid_Wrap
@@ -1075,6 +1084,7 @@ wgt_runave_Wrap
 wgt_vertical_n
 wind_component
 wind_direction
+wind_speed
 yyyyddd_to_yyyymmdd
 yyyymm_time
 yyyymm_to_yyyyfrac
@@ -1091,7 +1101,7 @@ band_pass_hovmueller
 band_pass_hovmueller_plot
 band_pass_latlon_time
 band_pass_latlon_time_plot
-decomposeSymAsym
+decompose2SymAsym
 mjo_cross
 mjo_cross_plot
 mjo_phase_background
@@ -3023,6 +3033,7 @@ GMT_gebco
 MPL_BuGn
 MPL_GnBu
 MPL_PuBuGn
+MPL_viridis
 MPL_winter
 MPL_YlGnBu
 GMT_hot
