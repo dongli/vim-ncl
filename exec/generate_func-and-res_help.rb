@@ -23,7 +23,7 @@ def del_text(file_path,line_num=113)
   `sed -i "" "3,#{end_line_del}  d" #{file_path}`
    sed_flag=$?.to_i
    if sed_flag ==0 then
-     print "[Notice]: Generating #{file_path}-help.ncl for #{file_path}"
+     print "[Notice]: Generating plain text document for #{file_path}\n"
    end
 end
 
@@ -51,13 +51,13 @@ end
 
 url_prefix = 'https://www.ncl.ucar.edu'
 
-print "[Notice]: Grabing function simple list from NCL website.\n"
-url_dl_func_list="#{url_prefix}/Document/Functions/list_alpha.shtml"
-
-func_path = "../doc/ncl_list_alpha.ncl"
-
-recreat_file(func_path)
-shtml2text(url_dl_func_list,func_path)
+#print "[Notice]: Grabing function simple list from NCL website.\n"
+#url_dl_func_list="#{url_prefix}/Document/Functions/list_alpha.shtml"
+#
+#func_path = "../doc/ncl_list_alpha.ncl"
+#
+#recreat_file(func_path)
+#shtml2text(url_dl_func_list,func_path)
 #--------------------------------------------------------------------
 print "[Notice]: Grabing function definitions from NCL website.\n"
 page1 = `curl -s #{url_prefix}/Document/Functions/list_alpha.shtml`

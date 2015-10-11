@@ -160,15 +160,15 @@ do
             name_before="$func_path"/"$Filename"-help.ncl
             name_after="$func_path"/"$Funcname"-help.ncl
 
-            if [[ ! -e "$name_after" ]] ;then
-                echo "[Warring] : $name_after dosen't exsit!"
+            #if [[ ! -e "$name_after" ]] ;then
+            #   echo "[Warring] : $name_after dosen't exsit!"
 
                 if [[ -e "$name_before" ]];then
                     /bin/mv $name_before $name_after
                 else
                     echo "[Warring] : $name_before dosen't exsit!"
                 fi
-            fi
+            #fi
 
             LC_CTYPE=C sed -i "" "s#$Filename#$Funcname#g" $name_after
             if [[  !  $? -eq 0 ]];then
