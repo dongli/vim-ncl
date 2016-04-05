@@ -1,3759 +1,4407 @@
-snippet abs
-  abs(${1:value})
+snippet amDataXF
+  amDataXF
 
-snippet acos
-  acos(${1:value})
+snippet amDataYF
+  amDataYF
 
-snippet addfile
-  addfile(${1:file_path}, ${2:status})
+snippet amJust
+  amJust
 
-snippet addfiles
-  addfiles(${1:file_path}, ${2:status})
+snippet amOn
+  amOn
 
-snippet all
-  all(${1:logical_array})
+snippet amOrthogonalPosF
+  amOrthogonalPosF
 
-snippet angmom_atm
-  angmom_atm(${1:u}, ${2:dp}, ${3:lat}, ${4:wgt})
+snippet amParallelPosF
+  amParallelPosF
 
-snippet any
-  any(${1:logical_array})
+snippet amResizeNotify
+  amResizeNotify
 
-snippet area_conserve_remap
-  area_conserve_remap(${1:loni}, ${2:lati}, ${3:fi}, ${4:lono}, ${5:lato}, ${6:opt})
+snippet amSide
+  amSide
 
-snippet area_hi2lores
-  area_hi2lores(${1:xi}, ${2:yi}, ${3:fi}, ${4:fiCyclicX}, ${5:wy}, ${6:xo}, ${7:yo}, ${8:foOption})
+snippet amTrackData
+  amTrackData
 
-snippet area_poly_sphere
-  area_poly_sphere(${1:lat}, ${2:lon}, ${3:rsph})
+snippet amViewId
+  amViewId
 
-snippet asciiread
-  asciiread(${1:filepath}, ${2:dimensions}, ${3:datatype})
+snippet amZone
+  amZone
 
-snippet asciiwrite
-  asciiwrite(${1:filepath}, ${2:var})
+snippet appDefaultParent
+  appDefaultParent
 
-snippet asin
-  asin(${1:value})
+snippet appFileSuffix
+  appFileSuffix
 
-snippet atan
-  atan(${1:value})
+snippet appResources
+  appResources
 
-snippet atan2
-  atan2(${1:y}, ${2:x})
+snippet appSysDir
+  appSysDir
 
-snippet attsetvalues
-  attsetvalues(${1:objects}, ${2:resources})
+snippet appUsrDir
+  appUsrDir
 
-snippet avg
-  avg(${1:x})
+snippet caCopyArrays
+  caCopyArrays
 
-snippet betainc
-  betainc(${1:x}, ${2:a}, ${3:b})
+snippet caXArray
+  caXArray
 
-snippet bin_avg
-  bin_avg(${1:zlon}, ${2:zlat}, ${3:z}, ${4:glon}, ${5:glat}, ${6:opt})
+snippet caXCast
+  caXCast
 
-snippet bin_sum
-  bin_sum(${1:gbin}, ${2:gknt}, ${3:glon}, ${4:glat}, ${5:zlon}, ${6:zlat}, ${7:z})
+snippet caXMaxV
+  caXMaxV
 
-snippet bw_bandpass_filter
-  bw_bandpass_filter(${1:x}, ${2:fca}, ${3:fcb}, ${4:opt}, ${5:dims})
+snippet caXMinV
+  caXMinV
 
-snippet cancor
-  cancor(${1:x}, ${2:y}, ${3:option})
+snippet caXMissingV
+  caXMissingV
 
-snippet cbinread
-  cbinread(${1:filename}, ${2:dsizes}, ${3:datatype})
+snippet caYArray
+  caYArray
 
-snippet cbinwrite
-  cbinwrite(${1:filename}, ${2:var})
+snippet caYCast
+  caYCast
 
-snippet cd_calendar
-  cd_calendar(${1:time}, ${2:option})
+snippet caYMaxV
+  caYMaxV
 
-snippet cd_inv_calendar
-  cd_inv_calendar(${1:year}, ${2:month}, ${3:day}, ${4:hour}, ${5:minute}, ${6:second}, ${7:units}, ${8:option})
+snippet caYMinV
+  caYMinV
 
-snippet cdfbin_p
-  cdfbin_p(${1:s}, ${2:xn}, ${3:pr})
+snippet caYMissingV
+  caYMissingV
 
-snippet cdfbin_pr
-  cdfbin_pr(${1:p}, ${2:s}, ${3:xn})
+snippet cnCellFillEdgeColor
+  cnCellFillEdgeColor
 
-snippet cdfbin_s
-  cdfbin_s(${1:p}, ${2:xn}, ${3:pr})
+snippet cnCellFillMissingValEdgeColor
+  cnCellFillMissingValEdgeColor
 
-snippet cdfbin_xn
-  cdfbin_xn(${1:p}, ${2:s}, ${3:pr})
+snippet cnConpackParams
+  cnConpackParams
 
-snippet cdfchi_p
-  cdfchi_p(${1:x}, ${2:df})
+snippet cnConstFEnableFill
+  cnConstFEnableFill
 
-snippet cdfchi_x
-  cdfchi_x(${1:p}, ${2:df})
+snippet cnConstFLabelAngleF
+  cnConstFLabelAngleF
 
-snippet cdfgam_p
-  cdfgam_p(${1:x}, ${2:shape}, ${3:scale})
+snippet cnConstFLabelBackgroundColor
+  cnConstFLabelBackgroundColor
 
-snippet cdfgam_x
-  cdfgam_x(${1:p}, ${2:shape}, ${3:scale})
+snippet cnConstFLabelConstantSpacingF
+  cnConstFLabelConstantSpacingF
 
-snippet cdfnor_p
-  cdfnor_p(${1:x}, ${2:mean}, ${3:sd})
+snippet cnConstFLabelFont
+  cnConstFLabelFont
 
-snippet cdfnor_x
-  cdfnor_x(${1:p}, ${2:mean}, ${3:sd})
+snippet cnConstFLabelFontAspectF
+  cnConstFLabelFontAspectF
 
-snippet cdft_p
-  cdft_p(${1:t}, ${2:df})
+snippet cnConstFLabelFontColor
+  cnConstFLabelFontColor
 
-snippet cdft_t
-  cdft_t(${1:p}, ${2:df})
+snippet cnConstFLabelFontHeightF
+  cnConstFLabelFontHeightF
 
-snippet ceil
-  ceil(${1:value})
+snippet cnConstFLabelFontQuality
+  cnConstFLabelFontQuality
 
-snippet center_finite_diff
-  center_finite_diff(${1:q}, ${2:r}, ${3:rCyclic}, ${4:opt})
+snippet cnConstFLabelFontThicknessF
+  cnConstFLabelFontThicknessF
 
-snippet center_finite_diff_n
-  center_finite_diff_n(${1:q}, ${2:r}, ${3:rCyclic}, ${4:opt}, ${5:dim})
+snippet cnConstFLabelFormat
+  cnConstFLabelFormat
 
-snippet cfftb
-  cfftb(${1:cf}, ${2:cfopt})
+snippet cnConstFLabelFuncCode
+  cnConstFLabelFuncCode
 
-snippet cfftf
-  cfftf(${1:xr}, ${2:xi}, ${3:opt})
+snippet cnConstFLabelJust
+  cnConstFLabelJust
 
-snippet cfftf_frq_reorder
-  cfftf_frq_reorder(${1:cf})
+snippet cnConstFLabelOn
+  cnConstFLabelOn
 
-snippet charactertodouble
-  charactertodouble(${1:char_val})
+snippet cnConstFLabelOrthogonalPosF
+  cnConstFLabelOrthogonalPosF
 
-snippet charactertofloat
-  charactertofloat(${1:char_val})
+snippet cnConstFLabelParallelPosF
+  cnConstFLabelParallelPosF
 
-snippet charactertointeger
-  charactertointeger(${1:char_val})
+snippet cnConstFLabelPerimColor
+  cnConstFLabelPerimColor
 
-snippet charactertolong
-  charactertolong(${1:char_val})
+snippet cnConstFLabelPerimOn
+  cnConstFLabelPerimOn
 
-snippet charactertoshort
-  charactertoshort(${1:char_val})
+snippet cnConstFLabelPerimSpaceF
+  cnConstFLabelPerimSpaceF
 
-snippet charactertostring
-  charactertostring(${1:char_val})
+snippet cnConstFLabelPerimThicknessF
+  cnConstFLabelPerimThicknessF
 
-snippet chartodouble
-  chartodouble(${1:char_val})
+snippet cnConstFLabelSide
+  cnConstFLabelSide
 
-snippet chartofloat
-  chartofloat(${1:char_val})
+snippet cnConstFLabelString
+  cnConstFLabelString
 
-snippet chartoint
-  chartoint(${1:char_val})
+snippet cnConstFLabelTextDirection
+  cnConstFLabelTextDirection
 
-snippet chartointeger
-  chartointeger(${1:char_val})
+snippet cnConstFLabelZone
+  cnConstFLabelZone
 
-snippet chartolong
-  chartolong(${1:char_val})
+snippet cnConstFUseInfoLabelRes
+  cnConstFUseInfoLabelRes
 
-snippet chartoshort
-  chartoshort(${1:char_val})
+snippet cnExplicitLabelBarLabelsOn
+  cnExplicitLabelBarLabelsOn
 
-snippet chartostring
-  chartostring(${1:char_val})
+snippet cnExplicitLegendLabelsOn
+  cnExplicitLegendLabelsOn
 
-snippet chiinv
-  chiinv(${1:p}, ${2:df})
+snippet cnExplicitLineLabelsOn
+  cnExplicitLineLabelsOn
 
-snippet clear
-  clear(${1:wks})
+snippet cnFillBackgroundColor
+  cnFillBackgroundColor
 
-snippet color_index_to_rgba
-  color_index_to_rgba(${1:color_indexes})
+snippet cnFillColor
+  cnFillColor
 
-snippet conform
-  conform(${1:x}, ${2:r}, ${3:ndim})
+snippet cnFillColors
+  cnFillColors
 
-snippet conform_dims
-  conform_dims(${1:dims}, ${2:r}, ${3:ndim})
+snippet cnFillDotSizeF
+  cnFillDotSizeF
 
-snippet cos
-  cos(${1:value})
+snippet cnFillDrawOrder
+  cnFillDrawOrder
 
-snippet cosh
-  cosh(${1:value})
+snippet cnFillMode
+  cnFillMode
 
-snippet count_unique_values
-  count_unique_values(${1:x})
+snippet cnFillOn
+  cnFillOn
 
-snippet covcorm
-  covcorm(${1:x}, ${2:iopt})
+snippet cnFillOpacityF
+  cnFillOpacityF
 
-snippet covcorm_xy
-  covcorm_xy(${1:x}, ${2:y}, ${3:iopt})
+snippet cnFillPalette
+  cnFillPalette
 
-snippet craybinnumrec
-  craybinnumrec(${1:path})
+snippet cnFillPattern
+  cnFillPattern
 
-snippet craybinrecread
-  craybinrecread(${1:path}, ${2:rec_num}, ${3:rec_dims}, ${4:rec_type})
+snippet cnFillPatterns
+  cnFillPatterns
 
-snippet create_graphic
-  create_graphic(${1:name}, ${2:class}, ${3:parent}, ${4:resources})
+snippet cnFillScaleF
+  cnFillScaleF
 
-snippet csa1
-  csa1(${1:xi}, ${2:yi}, ${3:knots}, ${4:xo})
+snippet cnFillScales
+  cnFillScales
 
-snippet csa1d
-  csa1d(${1:xi}, ${2:yi}, ${3:knots}, ${4:xo})
+snippet cnFixFillBleed
+  cnFixFillBleed
 
-snippet csa1s
-  csa1s(${1:xi}, ${2:yi}, ${3:knots}, ${4:xo})
+snippet cnGridBoundFillColor
+  cnGridBoundFillColor
 
-snippet csa1x
-  csa1x(${1:xi}, ${2:yi}, ${3:wts}, ${4:knots}, ${5:smth}, ${6:nderiv}, ${7:xo})
+snippet cnGridBoundFillPattern
+  cnGridBoundFillPattern
 
-snippet csa1xd
-  csa1xd(${1:xi}, ${2:yi}, ${3:wts}, ${4:knots}, ${5:smth}, ${6:nderiv}, ${7:xo})
+snippet cnGridBoundFillScaleF
+  cnGridBoundFillScaleF
 
-snippet csa1xs
-  csa1xs(${1:xi}, ${2:yi}, ${3:wts}, ${4:knots}, ${5:smth}, ${6:nderiv}, ${7:xo})
+snippet cnGridBoundPerimColor
+  cnGridBoundPerimColor
 
-snippet csa2
-  csa2(${1:xi}, ${2:yi}, ${3:zi}, ${4:knots}, ${5:xo}, ${6:yo})
+snippet cnGridBoundPerimDashPattern
+  cnGridBoundPerimDashPattern
 
-snippet csa2d
-  csa2d(${1:xi}, ${2:yi}, ${3:zi}, ${4:knots}, ${5:xo}, ${6:yo})
+snippet cnGridBoundPerimOn
+  cnGridBoundPerimOn
 
-snippet csa2l
-  csa2l(${1:xi}, ${2:yi}, ${3:zi}, ${4:knots}, ${5:xo}, ${6:yo})
+snippet cnGridBoundPerimThicknessF
+  cnGridBoundPerimThicknessF
 
-snippet csa2ld
-  csa2ld(${1:xi}, ${2:yi}, ${3:zi}, ${4:knots}, ${5:xo}, ${6:yo})
+snippet cnHighLabelAngleF
+  cnHighLabelAngleF
 
-snippet csa2ls
-  csa2ls(${1:xi}, ${2:yi}, ${3:zi}, ${4:knots}, ${5:xo}, ${6:yo})
+snippet cnHighLabelBackgroundColor
+  cnHighLabelBackgroundColor
 
-snippet csa2lx
-  csa2lx(${1:xi}, ${2:yi}, ${3:zi}, ${4:wts}, ${5:knots}, ${6:smth}, ${7:nderiv}, ${8:xo}, ${9:yo})
+snippet cnHighLabelConstantSpacingF
+  cnHighLabelConstantSpacingF
 
-snippet csa2lxd
-  csa2lxd(${1:xi}, ${2:yi}, ${3:zi}, ${4:wts}, ${5:knots}, ${6:smth}, ${7:nderiv}, ${8:xo}, ${9:yo})
+snippet cnHighLabelCount
+  cnHighLabelCount
 
-snippet csa2lxs
-  csa2lxs(${1:xi}, ${2:yi}, ${3:zi}, ${4:wts}, ${5:knots}, ${6:smth}, ${7:nderiv}, ${8:xo}, ${9:yo})
+snippet cnHighLabelFont
+  cnHighLabelFont
 
-snippet csa2s
-  csa2s(${1:xi}, ${2:yi}, ${3:zi}, ${4:knots}, ${5:xo}, ${6:yo})
+snippet cnHighLabelFontAspectF
+  cnHighLabelFontAspectF
 
-snippet csa2x
-  csa2x(${1:xi}, ${2:yi}, ${3:zi}, ${4:wts}, ${5:knots}, ${6:smth}, ${7:nderiv}, ${8:xo}, ${9:yo})
+snippet cnHighLabelFontColor
+  cnHighLabelFontColor
 
-snippet csa2xd
-  csa2xd(${1:xi}, ${2:yi}, ${3:zi}, ${4:wts}, ${5:knots}, ${6:smth}, ${7:nderiv}, ${8:xo}, ${9:yo})
+snippet cnHighLabelFontHeightF
+  cnHighLabelFontHeightF
 
-snippet csa2xs
-  csa2xs(${1:xi}, ${2:yi}, ${3:zi}, ${4:wts}, ${5:knots}, ${6:smth}, ${7:nderiv}, ${8:xo}, ${9:yo})
+snippet cnHighLabelFontQuality
+  cnHighLabelFontQuality
 
-snippet csa3
-  csa3(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:knots}, ${6:xo}, ${7:yo}, ${8:zo})
+snippet cnHighLabelFontThicknessF
+  cnHighLabelFontThicknessF
 
-snippet csa3d
-  csa3d(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:knots}, ${6:xo}, ${7:yo}, ${8:zo})
+snippet cnHighLabelFormat
+  cnHighLabelFormat
 
-snippet csa3l
-  csa3l(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:knots}, ${6:xo}, ${7:yo}, ${8:zo})
+snippet cnHighLabelFuncCode
+  cnHighLabelFuncCode
 
-snippet csa3ld
-  csa3ld(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:knots}, ${6:xo}, ${7:yo}, ${8:zo})
+snippet cnHighLabelPerimColor
+  cnHighLabelPerimColor
 
-snippet csa3ls
-  csa3ls(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:knots}, ${6:xo}, ${7:yo}, ${8:zo})
+snippet cnHighLabelPerimOn
+  cnHighLabelPerimOn
 
-snippet csa3lx
-  csa3lx(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:wts}, ${6:knots}, ${7:smth}, ${8:nderiv}, ${9:xo}, ${10:yo}, ${11:zo})
+snippet cnHighLabelPerimSpaceF
+  cnHighLabelPerimSpaceF
 
-snippet csa3lxd
-  csa3lxd(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:wts}, ${6:knots}, ${7:smth}, ${8:nderiv}, ${9:xo}, ${10:yo}, ${11:zo})
+snippet cnHighLabelPerimThicknessF
+  cnHighLabelPerimThicknessF
 
-snippet csa3lxs
-  csa3lxs(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:wts}, ${6:knots}, ${7:smth}, ${8:nderiv}, ${9:xo}, ${10:yo}, ${11:zo})
+snippet cnHighLabelString
+  cnHighLabelString
 
-snippet csa3s
-  csa3s(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:knots}, ${6:xo}, ${7:yo}, ${8:zo})
+snippet cnHighLabelsOn
+  cnHighLabelsOn
 
-snippet csa3x
-  csa3x(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:wts}, ${6:knots}, ${7:smth}, ${8:nderiv}, ${9:xo}, ${10:yo}, ${11:zo})
+snippet cnHighLowLabelOverlapMode
+  cnHighLowLabelOverlapMode
 
-snippet csa3xd
-  csa3xd(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:wts}, ${6:knots}, ${7:smth}, ${8:nderiv}, ${9:xo}, ${10:yo}, ${11:zo})
+snippet cnHighUseLineLabelRes
+  cnHighUseLineLabelRes
 
-snippet csa3xs
-  csa3xs(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:wts}, ${6:knots}, ${7:smth}, ${8:nderiv}, ${9:xo}, ${10:yo}, ${11:zo})
+snippet cnInfoLabelAngleF
+  cnInfoLabelAngleF
 
-snippet csc2s
-  csc2s(${1:x}, ${2:y}, ${3:z})
+snippet cnInfoLabelBackgroundColor
+  cnInfoLabelBackgroundColor
 
-snippet csgetp
-  csgetp(${1:pnam})
+snippet cnInfoLabelConstantSpacingF
+  cnInfoLabelConstantSpacingF
 
-snippet css2c
-  css2c(${1:lat}, ${2:lon})
+snippet cnInfoLabelFont
+  cnInfoLabelFont
 
-snippet cssetp
-  cssetp(${1:pnam}, ${2:pval})
+snippet cnInfoLabelFontAspectF
+  cnInfoLabelFontAspectF
 
-snippet cssgrid
-  cssgrid(${1:rlat}, ${2:rlon}, ${3:fval}, ${4:plat}, ${5:plon})
+snippet cnInfoLabelFontColor
+  cnInfoLabelFontColor
 
-snippet csstri
-  csstri(${1:rlat}, ${2:rlon})
+snippet cnInfoLabelFontHeightF
+  cnInfoLabelFontHeightF
 
-snippet csvoro
-  csvoro(${1:rlati}, ${2:rloni}, ${3:index}, ${4:cflag}, ${5:rlato}, ${6:rlono}, ${7:alen}, ${8:nca}, ${9:numv}, ${10:nv})
+snippet cnInfoLabelFontQuality
+  cnInfoLabelFontQuality
 
-snippet cumsum
-  cumsum(${1:x}, ${2:opt})
+snippet cnInfoLabelFontThicknessF
+  cnInfoLabelFontThicknessF
 
-snippet cz2ccm
-  cz2ccm(${1:ps}, ${2:phis}, ${3:tv}, ${4:p0}, ${5:hyam}, ${6:hybm}, ${7:hyai}, ${8:hybi})
+snippet cnInfoLabelFormat
+  cnInfoLabelFormat
 
-snippet datatondc
-  datatondc(${1:plot}, ${2:x_in}, ${3:y_in}, ${4:x_out}, ${5:y_out})
+snippet cnInfoLabelFuncCode
+  cnInfoLabelFuncCode
 
-snippet day_of_week
-  day_of_week(${1:year}, ${2:month}, ${3:day})
+snippet cnInfoLabelJust
+  cnInfoLabelJust
 
-snippet day_of_year
-  day_of_year(${1:year}, ${2:month}, ${3:day})
+snippet cnInfoLabelOn
+  cnInfoLabelOn
 
-snippet days_in_month
-  days_in_month(${1:year}, ${2:month})
+snippet cnInfoLabelOrthogonalPosF
+  cnInfoLabelOrthogonalPosF
 
-snippet default_fillvalue
-  default_fillvalue(${1:var_type})
+snippet cnInfoLabelParallelPosF
+  cnInfoLabelParallelPosF
 
-snippet delete
-  delete(${1:data})
+snippet cnInfoLabelPerimColor
+  cnInfoLabelPerimColor
 
-snippet depth_to_pres
-  depth_to_pres(${1:z}, ${2:opt})
+snippet cnInfoLabelPerimOn
+  cnInfoLabelPerimOn
 
-snippet destroy
-  destroy(${1:objects})
+snippet cnInfoLabelPerimSpaceF
+  cnInfoLabelPerimSpaceF
 
-snippet determinant
-  determinant(${1:x})
+snippet cnInfoLabelPerimThicknessF
+  cnInfoLabelPerimThicknessF
 
-snippet dewtemp_trh
-  dewtemp_trh(${1:tk}, ${2:rh})
+snippet cnInfoLabelSide
+  cnInfoLabelSide
 
-snippet dgeevx_lapack
-  dgeevx_lapack(${1:Q}, ${2:balanc}, ${3:jobvl}, ${4:jobvr}, ${5:sense}, ${6:opt})
+snippet cnInfoLabelString
+  cnInfoLabelString
 
-snippet dim_acumrun_n
-  dim_acumrun_n(${1:x}, ${2:lrun}, ${3:opt}, ${4:dims})
+snippet cnInfoLabelTextDirection
+  cnInfoLabelTextDirection
 
-snippet dim_avg
-  dim_avg(${1:x})
+snippet cnInfoLabelZone
+  cnInfoLabelZone
 
-snippet dim_avg_n
-  dim_avg_n(${1:x}, ${2:dims})
+snippet cnLabelBarEndLabelsOn
+  cnLabelBarEndLabelsOn
 
-snippet dim_avg_wgt
-  dim_avg_wgt(${1:x}, ${2:w}, ${3:opt})
+snippet cnLabelBarEndStyle
+  cnLabelBarEndStyle
 
-snippet dim_avg_wgt_n
-  dim_avg_wgt_n(${1:x}, ${2:w}, ${3:opt}, ${4:dim})
+snippet cnLabelDrawOrder
+  cnLabelDrawOrder
 
-snippet dim_cumsum
-  dim_cumsum(${1:x}, ${2:opt})
+snippet cnLabelMasking
+  cnLabelMasking
 
-snippet dim_cumsum_n
-  dim_cumsum_n(${1:x}, ${2:opt}, ${3:dims})
+snippet cnLabelScaleFactorF
+  cnLabelScaleFactorF
 
-snippet dim_gamfit_n
-  dim_gamfit_n(${1:x}, ${2:optgam}, ${3:dims})
+snippet cnLabelScaleValueF
+  cnLabelScaleValueF
 
-snippet dim_gbits
-  dim_gbits(${1:npack}, ${2:ibit}, ${3:nbits}, ${4:nskip}, ${5:iter})
+snippet cnLabelScalingMode
+  cnLabelScalingMode
 
-snippet dim_max
-  dim_max(${1:x})
+snippet cnLegendLevelFlags
+  cnLegendLevelFlags
 
-snippet dim_max_n
-  dim_max_n(${1:x}, ${2:dims})
+snippet cnLevelCount
+  cnLevelCount
 
-snippet dim_median
-  dim_median(${1:x})
+snippet cnLevelFlag
+  cnLevelFlag
 
-snippet dim_median_n
-  dim_median_n(${1:x}, ${2:dims})
+snippet cnLevelFlags
+  cnLevelFlags
 
-snippet dim_min
-  dim_min(${1:x})
+snippet cnLevelSelectionMode
+  cnLevelSelectionMode
 
-snippet dim_min_n
-  dim_min_n(${1:x}, ${2:dims})
+snippet cnLevelSpacingF
+  cnLevelSpacingF
 
-snippet dim_num
-  dim_num(${1:x})
+snippet cnLevels
+  cnLevels
 
-snippet dim_num_n
-  dim_num_n(${1:x}, ${2:dims})
+snippet cnLineColor
+  cnLineColor
 
-snippet dim_numrun_n
-  dim_numrun_n(${1:x}, ${2:opt}, ${3:dim})
+snippet cnLineColors
+  cnLineColors
 
-snippet dim_pqsort
-  dim_pqsort(${1:x}, ${2:kflag})
+snippet cnLineDashPattern
+  cnLineDashPattern
 
-snippet dim_pqsort_n
-  dim_pqsort_n(${1:x}, ${2:kflag}, ${3:dim})
+snippet cnLineDashPatterns
+  cnLineDashPatterns
 
-snippet dim_product
-  dim_product(${1:x})
+snippet cnLineDashSegLenF
+  cnLineDashSegLenF
 
-snippet dim_product_n
-  dim_product_n(${1:x}, ${2:dims})
+snippet cnLineDrawOrder
+  cnLineDrawOrder
 
-snippet dim_rmsd
-  dim_rmsd(${1:x}, ${2:y})
+snippet cnLineLabelAngleF
+  cnLineLabelAngleF
 
-snippet dim_rmsd_n
-  dim_rmsd_n(${1:x}, ${2:y}, ${3:dims})
+snippet cnLineLabelBackgroundColor
+  cnLineLabelBackgroundColor
 
-snippet dim_rmvmean
-  dim_rmvmean(${1:x})
+snippet cnLineLabelConstantSpacingF
+  cnLineLabelConstantSpacingF
 
-snippet dim_rmvmean_n
-  dim_rmvmean_n(${1:x}, ${2:dims})
+snippet cnLineLabelCount
+  cnLineLabelCount
 
-snippet dim_rmvmed
-  dim_rmvmed(${1:x})
+snippet cnLineLabelDensityF
+  cnLineLabelDensityF
 
-snippet dim_rmvmed_n
-  dim_rmvmed_n(${1:x}, ${2:dims})
+snippet cnLineLabelFont
+  cnLineLabelFont
 
-snippet dim_spi_n
-  dim_spi_n(${1:x}, ${2:nrun}, ${3:opt}, ${4:dims})
+snippet cnLineLabelFontAspectF
+  cnLineLabelFontAspectF
 
-snippet dim_standardize
-  dim_standardize(${1:x}, ${2:opt})
+snippet cnLineLabelFontColor
+  cnLineLabelFontColor
 
-snippet dim_standardize_n
-  dim_standardize_n(${1:x}, ${2:opt}, ${3:dims})
+snippet cnLineLabelFontColors
+  cnLineLabelFontColors
 
-snippet dim_stat4
-  dim_stat4(${1:x})
+snippet cnLineLabelFontHeightF
+  cnLineLabelFontHeightF
 
-snippet dim_stat4_n
-  dim_stat4_n(${1:x}, ${2:dims})
+snippet cnLineLabelFontQuality
+  cnLineLabelFontQuality
 
-snippet dim_stddev
-  dim_stddev(${1:x})
+snippet cnLineLabelFontThicknessF
+  cnLineLabelFontThicknessF
 
-snippet dim_stddev_n
-  dim_stddev_n(${1:x}, ${2:dims})
+snippet cnLineLabelFormat
+  cnLineLabelFormat
 
-snippet dim_sum
-  dim_sum(${1:x})
+snippet cnLineLabelFuncCode
+  cnLineLabelFuncCode
 
-snippet dim_sum_n
-  dim_sum_n(${1:x}, ${2:dims})
+snippet cnLineLabelInterval
+  cnLineLabelInterval
 
-snippet dim_sum_wgt
-  dim_sum_wgt(${1:x}, ${2:w}, ${3:opt})
+snippet cnLineLabelPerimColor
+  cnLineLabelPerimColor
 
-snippet dim_sum_wgt_n
-  dim_sum_wgt_n(${1:x}, ${2:w}, ${3:opt}, ${4:dim})
+snippet cnLineLabelPerimOn
+  cnLineLabelPerimOn
 
-snippet dim_variance
-  dim_variance(${1:x})
+snippet cnLineLabelPerimSpaceF
+  cnLineLabelPerimSpaceF
 
-snippet dim_variance_n
-  dim_variance_n(${1:x}, ${2:dims})
+snippet cnLineLabelPerimThicknessF
+  cnLineLabelPerimThicknessF
 
-snippet dimsizes
-  dimsizes(${1:data})
+snippet cnLineLabelPlacementMode
+  cnLineLabelPlacementMode
 
-snippet doubletobyte
-  doubletobyte(${1:double_val})
+snippet cnLineLabelStrings
+  cnLineLabelStrings
 
-snippet doubletochar
-  doubletochar(${1:double_val})
+snippet cnLineLabelsOn
+  cnLineLabelsOn
 
-snippet doubletocharacter
-  doubletocharacter(${1:double_val})
+snippet cnLinePalette
+  cnLinePalette
 
-snippet doubletofloat
-  doubletofloat(${1:double_val})
+snippet cnLineThicknessF
+  cnLineThicknessF
 
-snippet doubletoint
-  doubletoint(${1:double_val})
+snippet cnLineThicknesses
+  cnLineThicknesses
 
-snippet doubletointeger
-  doubletointeger(${1:double_val})
+snippet cnLinesOn
+  cnLinesOn
 
-snippet doubletolong
-  doubletolong(${1:double_val})
+snippet cnLowLabelAngleF
+  cnLowLabelAngleF
 
-snippet doubletoshort
-  doubletoshort(${1:double_val})
+snippet cnLowLabelBackgroundColor
+  cnLowLabelBackgroundColor
 
-snippet dpres_hybrid_ccm
-  dpres_hybrid_ccm(${1:ps}, ${2:p0}, ${3:hya}, ${4:hyb})
+snippet cnLowLabelConstantSpacingF
+  cnLowLabelConstantSpacingF
 
-snippet dpres_plevel
-  dpres_plevel(${1:plev}, ${2:psfc}, ${3:ptop}, ${4:iopt})
+snippet cnLowLabelCount
+  cnLowLabelCount
 
-snippet draw
-  draw(${1:objects})
+snippet cnLowLabelFont
+  cnLowLabelFont
 
-snippet draw_color_palette
-  draw_color_palette(${1:wks}, ${2:colors}, ${3:opt})
+snippet cnLowLabelFontAspectF
+  cnLowLabelFontAspectF
 
-snippet dsgetp
-  dsgetp(${1:pnam})
+snippet cnLowLabelFontColor
+  cnLowLabelFontColor
 
-snippet dsgrid2
-  dsgrid2(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet cnLowLabelFontHeightF
+  cnLowLabelFontHeightF
 
-snippet dsgrid2d
-  dsgrid2d(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet cnLowLabelFontQuality
+  cnLowLabelFontQuality
 
-snippet dsgrid2s
-  dsgrid2s(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet cnLowLabelFontThicknessF
+  cnLowLabelFontThicknessF
 
-snippet dsgrid3
-  dsgrid3(${1:x}, ${2:y}, ${3:z}, ${4:u}, ${5:xo}, ${6:yo}, ${7:zo})
+snippet cnLowLabelFormat
+  cnLowLabelFormat
 
-snippet dsgrid3d
-  dsgrid3d(${1:x}, ${2:y}, ${3:z}, ${4:u}, ${5:xo}, ${6:yo}, ${7:zo})
+snippet cnLowLabelFuncCode
+  cnLowLabelFuncCode
 
-snippet dsgrid3s
-  dsgrid3s(${1:x}, ${2:y}, ${3:z}, ${4:u}, ${5:xo}, ${6:yo}, ${7:zo})
+snippet cnLowLabelPerimColor
+  cnLowLabelPerimColor
 
-snippet dspnt2
-  dspnt2(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet cnLowLabelPerimOn
+  cnLowLabelPerimOn
 
-snippet dspnt2d
-  dspnt2d(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet cnLowLabelPerimSpaceF
+  cnLowLabelPerimSpaceF
 
-snippet dspnt2s
-  dspnt2s(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet cnLowLabelPerimThicknessF
+  cnLowLabelPerimThicknessF
 
-snippet dspnt3
-  dspnt3(${1:x}, ${2:y}, ${3:z}, ${4:u}, ${5:xo}, ${6:yo}, ${7:zo})
+snippet cnLowLabelString
+  cnLowLabelString
 
-snippet dspnt3d
-  dspnt3d(${1:x}, ${2:y}, ${3:z}, ${4:u}, ${5:xo}, ${6:yo}, ${7:zo})
+snippet cnLowLabelsOn
+  cnLowLabelsOn
 
-snippet dspnt3s
-  dspnt3s(${1:x}, ${2:y}, ${3:z}, ${4:u}, ${5:xo}, ${6:yo}, ${7:zo})
+snippet cnLowUseHighLabelRes
+  cnLowUseHighLabelRes
 
-snippet dssetp
-  dssetp(${1:pnam}, ${2:pval})
+snippet cnMaxDataValueFormat
+  cnMaxDataValueFormat
 
-snippet dtrend
-  dtrend(${1:y}, ${2:return_info})
+snippet cnMaxLevelCount
+  cnMaxLevelCount
 
-snippet dtrend_msg
-  dtrend_msg(${1:x}, ${2:y}, ${3:remove_mean}, ${4:return_info})
+snippet cnMaxLevelValF
+  cnMaxLevelValF
 
-snippet dtrend_msg_n
-  dtrend_msg_n(${1:x}, ${2:y}, ${3:remove_mean}, ${4:return_info}, ${5:dim})
+snippet cnMaxPointDistanceF
+  cnMaxPointDistanceF
 
-snippet dtrend_n
-  dtrend_n(${1:y}, ${2:return_info}, ${3:dim})
+snippet cnMinLevelValF
+  cnMinLevelValF
 
-snippet dtrend_quadratic
-  dtrend_quadratic(${1:y}, ${2:option})
+snippet cnMissingValFillColor
+  cnMissingValFillColor
 
-snippet dtrend_quadratic_msg_n
-  dtrend_quadratic_msg_n(${1:y}, ${2:remove_mean}, ${3:return_info}, ${4:dim})
+snippet cnMissingValFillPattern
+  cnMissingValFillPattern
 
-snippet dv2uvf
-  dv2uvf(${1:dv}, ${2:ud}, ${3:vd})
+snippet cnMissingValFillScaleF
+  cnMissingValFillScaleF
 
-snippet dv2uvg
-  dv2uvg(${1:dv}, ${2:ud}, ${3:vd})
+snippet cnMissingValPerimColor
+  cnMissingValPerimColor
 
-snippet dz_height
-  dz_height(${1:z}, ${2:zsfc}, ${3:ztop}, ${4:iopt})
+snippet cnMissingValPerimDashPattern
+  cnMissingValPerimDashPattern
 
-snippet echo_off
-  echo_off()
+snippet cnMissingValPerimGridBoundOn
+  cnMissingValPerimGridBoundOn
 
-snippet echo_on
-  echo_on()
+snippet cnMissingValPerimOn
+  cnMissingValPerimOn
 
-snippet eof2data
-  eof2data(${1:ev}, ${2:ev_ts})
+snippet cnMissingValPerimThicknessF
+  cnMissingValPerimThicknessF
 
-snippet eof_varimax
-  eof_varimax(${1:evec})
+snippet cnMonoFillColor
+  cnMonoFillColor
 
-snippet eofcor
-  eofcor(${1:data}, ${2:neval})
+snippet cnMonoFillPattern
+  cnMonoFillPattern
 
-snippet eofcor_pcmsg
-  eofcor_pcmsg(${1:data}, ${2:neval}, ${3:pcrit})
+snippet cnMonoFillScale
+  cnMonoFillScale
 
-snippet eofcor_ts
-  eofcor_ts(${1:data}, ${2:evec})
+snippet cnMonoLevelFlag
+  cnMonoLevelFlag
 
-snippet eofcov
-  eofcov(${1:data}, ${2:neval})
+snippet cnMonoLineColor
+  cnMonoLineColor
 
-snippet eofcov_pcmsg
-  eofcov_pcmsg(${1:data}, ${2:neval}, ${3:pcrit})
+snippet cnMonoLineDashPattern
+  cnMonoLineDashPattern
 
-snippet eofcov_ts
-  eofcov_ts(${1:data}, ${2:evec})
+snippet cnMonoLineLabelFontColor
+  cnMonoLineLabelFontColor
 
-snippet eofunc
-  eofunc(${1:data}, ${2:neval}, ${3:optEOF})
+snippet cnMonoLineThickness
+  cnMonoLineThickness
 
-snippet eofunc_ts
-  eofunc_ts(${1:data}, ${2:evec}, ${3:optETS})
+snippet cnNoDataLabelOn
+  cnNoDataLabelOn
 
-snippet eofunc_varimax
-  eofunc_varimax(${1:evec}, ${2:optEVX})
+snippet cnNoDataLabelString
+  cnNoDataLabelString
 
-snippet equiv_sample_size
-  equiv_sample_size(${1:x}, ${2:siglvl}, ${3:opt})
+snippet cnOutOfRangeFillColor
+  cnOutOfRangeFillColor
 
-snippet erf
-  erf(${1:x})
+snippet cnOutOfRangeFillPattern
+  cnOutOfRangeFillPattern
 
-snippet erfc
-  erfc(${1:x})
+snippet cnOutOfRangeFillScaleF
+  cnOutOfRangeFillScaleF
 
-snippet esacr
-  esacr(${1:x}, ${2:mxlag})
+snippet cnOutOfRangePerimColor
+  cnOutOfRangePerimColor
 
-snippet esacv
-  esacv(${1:x}, ${2:mxlag})
+snippet cnOutOfRangePerimDashPattern
+  cnOutOfRangePerimDashPattern
 
-snippet esccr
-  esccr(${1:x}, ${2:y}, ${3:mxlag})
+snippet cnOutOfRangePerimOn
+  cnOutOfRangePerimOn
 
-snippet esccv
-  esccv(${1:x}, ${2:y}, ${3:mxlag})
+snippet cnOutOfRangePerimThicknessF
+  cnOutOfRangePerimThicknessF
 
-snippet escorc
-  escorc(${1:x}, ${2:y})
+snippet cnRasterCellSizeF
+  cnRasterCellSizeF
 
-snippet escorc_n
-  escorc_n(${1:x}, ${2:y}, ${3:dims_x}, ${4:dims_y})
+snippet cnRasterMinCellSizeF
+  cnRasterMinCellSizeF
 
-snippet escovc
-  escovc(${1:x}, ${2:y})
+snippet cnRasterModeOn
+  cnRasterModeOn
 
-snippet exit
-  exit()
+snippet cnRasterSampleFactorF
+  cnRasterSampleFactorF
 
-snippet exp
-  exp(${1:value})
+snippet cnRasterSmoothingOn
+  cnRasterSmoothingOn
 
-snippet exp_tapersh
-  exp_tapersh(${1:a}, ${2:b}, ${3:N}, ${4:r})
+snippet cnScalarFieldData
+  cnScalarFieldData
 
-snippet exp_tapersh_wgts
-  exp_tapersh_wgts(${1:M}, ${2:N}, ${3:r})
+snippet cnSmoothingDistanceF
+  cnSmoothingDistanceF
 
-snippet exp_tapershC
-  exp_tapershC(${1:ab}, ${2:N}, ${3:r})
+snippet cnSmoothingOn
+  cnSmoothingOn
 
-snippet ezfftb
-  ezfftb(${1:cf}, ${2:xbar})
+snippet cnSmoothingTensionF
+  cnSmoothingTensionF
 
-snippet ezfftb_n
-  ezfftb_n(${1:cf}, ${2:xbar}, ${3:dim})
+snippet cnSpanFillPalette
+  cnSpanFillPalette
 
-snippet ezfftf
-  ezfftf(${1:x})
+snippet cnSpanLinePalette
+  cnSpanLinePalette
 
-snippet ezfftf_n
-  ezfftf_n(${1:x}, ${2:dim})
+snippet ctCopyTables
+  ctCopyTables
 
-snippet f2fosh
-  f2fosh(${1:grid})
+snippet ctXElementSize
+  ctXElementSize
 
-snippet f2foshv
-  f2foshv(${1:ureg}, ${2:vreg}, ${3:uoff}, ${4:voff})
+snippet ctXMaxV
+  ctXMaxV
 
-snippet f2fsh
-  f2fsh(${1:grid}, ${2:outdims})
+snippet ctXMinV
+  ctXMinV
 
-snippet f2fshv
-  f2fshv(${1:ua}, ${2:va}, ${3:ub}, ${4:vb})
+snippet ctXMissingV
+  ctXMissingV
 
-snippet f2gsh
-  f2gsh(${1:grid}, ${2:outdims}, ${3:twave})
+snippet ctXTable
+  ctXTable
 
-snippet f2gshv
-  f2gshv(${1:ua}, ${2:va}, ${3:ub}, ${4:vb}, ${5:twave})
+snippet ctXTableLengths
+  ctXTableLengths
 
-snippet fabs
-  fabs(${1:value})
+snippet ctXTableType
+  ctXTableType
 
-snippet fbindirread
-  fbindirread(${1:path}, ${2:rec_num}, ${3:rec_dims}, ${4:rec_type})
+snippet ctYElementSize
+  ctYElementSize
 
-snippet fbindirwrite
-  fbindirwrite(${1:path}, ${2:var})
+snippet ctYMaxV
+  ctYMaxV
 
-snippet fbinnumrec
-  fbinnumrec(${1:path})
+snippet ctYMinV
+  ctYMinV
 
-snippet fbinread
-  fbinread(${1:filepath}, ${2:rec_dims}, ${3:rec_type})
+snippet ctYMissingV
+  ctYMissingV
 
-snippet fbinrecread
-  fbinrecread(${1:path}, ${2:rec_num}, ${3:rec_dims}, ${4:rec_type})
+snippet ctYTable
+  ctYTable
 
-snippet fbinrecwrite
-  fbinrecwrite(${1:path}, ${2:rec_num}, ${3:var})
+snippet ctYTableLengths
+  ctYTableLengths
 
-snippet fbinwrite
-  fbinwrite(${1:filepath}, ${2:value})
+snippet ctYTableType
+  ctYTableType
 
-snippet fft2db
-  fft2db(${1:coef})
+snippet dcDelayCompute
+  dcDelayCompute
 
-snippet fft2df
-  fft2df(${1:x})
+snippet errBuffer
+  errBuffer
 
-snippet fftshift
-  fftshift(${1:x}, ${2:mode})
+snippet errFileName
+  errFileName
 
-snippet fileattdef
-  fileattdef(${1:thefile}, ${2:variable})
+snippet errFilePtr
+  errFilePtr
 
-snippet filechunkdimdef
-  filechunkdimdef(${1:thefile}, ${2:dim_names}, ${3:dim_sizes}, ${4:dim_unlimited})
+snippet errLevel
+  errLevel
 
-snippet filedimdef
-  filedimdef(${1:thefile}, ${2:dim_names}, ${3:dim_sizes}, ${4:dim_unlimited})
+snippet errPrint
+  errPrint
 
-snippet fileexists
-  fileexists(${1:file_path})
+snippet errUnitNumber
+  errUnitNumber
 
-snippet filegrpdef
-  filegrpdef(${1:thefile}, ${2:grp_names})
+snippet gsClipOn
+  gsClipOn
 
-snippet filevarattdef
-  filevarattdef(${1:thefile}, ${2:varnames}, ${3:variable})
+snippet gsColors
+  gsColors
 
-snippet filevarchunkdef
-  filevarchunkdef(${1:thefile}, ${2:var_name}, ${3:chunk_dim_sizes})
+snippet gsEdgeColor
+  gsEdgeColor
 
-snippet filevarcompressleveldef
-  filevarcompressleveldef(${1:thefile}, ${2:var_name}, ${3:compressLevel})
+snippet gsEdgeDashPattern
+  gsEdgeDashPattern
 
-snippet filevardef
-  filevardef(${1:thefile}, ${2:var_names}, ${3:var_types}, ${4:dim_names})
+snippet gsEdgeDashSegLenF
+  gsEdgeDashSegLenF
 
-snippet filevardimsizes
-  filevardimsizes(${1:thefile}, ${2:varname})
+snippet gsEdgeThicknessF
+  gsEdgeThicknessF
 
-snippet filwgts_lancos
-  filwgts_lancos(${1:nwt}, ${2:ihp}, ${3:fca}, ${4:fcb}, ${5:nsigma})
+snippet gsEdgesOn
+  gsEdgesOn
 
-snippet filwgts_lanczos
-  filwgts_lanczos(${1:nwt}, ${2:ihp}, ${3:fca}, ${4:fcb}, ${5:nsigma})
+snippet gsFillBackgroundColor
+  gsFillBackgroundColor
 
-snippet filwgts_normal
-  filwgts_normal(${1:nwt}, ${2:sigma}, ${3:option})
+snippet gsFillColor
+  gsFillColor
 
-snippet floattobyte
-  floattobyte(${1:float_val})
+snippet gsFillDotSizeF
+  gsFillDotSizeF
 
-snippet floattochar
-  floattochar(${1:float_val})
+snippet gsFillIndex
+  gsFillIndex
 
-snippet floattocharacter
-  floattocharacter(${1:float_val})
+snippet gsFillLineThicknessF
+  gsFillLineThicknessF
 
-snippet floattoint
-  floattoint(${1:float_val})
+snippet gsFillOpacityF
+  gsFillOpacityF
 
-snippet floattointeger
-  floattointeger(${1:float_val})
+snippet gsFillScaleF
+  gsFillScaleF
 
-snippet floattolong
-  floattolong(${1:float_val})
+snippet gsFont
+  gsFont
 
-snippet floattoshort
-  floattoshort(${1:float_val})
+snippet gsFontAspectF
+  gsFontAspectF
 
-snippet floor
-  floor(${1:value})
+snippet gsFontColor
+  gsFontColor
 
-snippet fluxEddy
-  fluxEddy(${1:x}, ${2:y})
+snippet gsFontHeightF
+  gsFontHeightF
 
-snippet fo2fsh
-  fo2fsh(${1:grid})
+snippet gsFontOpacityF
+  gsFontOpacityF
 
-snippet fo2fshv
-  fo2fshv(${1:uoff}, ${2:voff}, ${3:ureg}, ${4:vreg})
+snippet gsFontQuality
+  gsFontQuality
 
-snippet fourier_info
-  fourier_info(${1:x}, ${2:nhx}, ${3:sclPhase})
+snippet gsFontThicknessF
+  gsFontThicknessF
 
-snippet frame
-  frame(${1:wks})
+snippet gsLineColor
+  gsLineColor
 
-snippet fspan
-  fspan(${1:start}, ${2:finish}, ${3:npts})
+snippet gsLineDashPattern
+  gsLineDashPattern
 
-snippet ftcurv
-  ftcurv(${1:xi}, ${2:yi}, ${3:xo})
+snippet gsLineDashSegLenF
+  gsLineDashSegLenF
 
-snippet ftcurvd
-  ftcurvd(${1:xi}, ${2:yi}, ${3:xo})
+snippet gsLineLabelConstantSpacingF
+  gsLineLabelConstantSpacingF
 
-snippet ftcurvi
-  ftcurvi(${1:xl}, ${2:xr}, ${3:xi}, ${4:yi})
+snippet gsLineLabelFont
+  gsLineLabelFont
 
-snippet ftcurvp
-  ftcurvp(${1:xi}, ${2:yi}, ${3:p}, ${4:xo})
+snippet gsLineLabelFontAspectF
+  gsLineLabelFontAspectF
 
-snippet ftcurvpi
-  ftcurvpi(${1:xl}, ${2:xr}, ${3:p}, ${4:xi}, ${5:yi})
+snippet gsLineLabelFontColor
+  gsLineLabelFontColor
 
-snippet ftcurvps
-  ftcurvps(${1:xi}, ${2:yi}, ${3:p}, ${4:d}, ${5:xo})
+snippet gsLineLabelFontHeightF
+  gsLineLabelFontHeightF
 
-snippet ftcurvs
-  ftcurvs(${1:xi}, ${2:yi}, ${3:d}, ${4:xo})
+snippet gsLineLabelFontQuality
+  gsLineLabelFontQuality
 
-snippet ftest
-  ftest(${1:var1}, ${2:s1}, ${3:var2}, ${4:s2}, ${5:opt})
+snippet gsLineLabelFontThicknessF
+  gsLineLabelFontThicknessF
 
-snippet ftgetp
-  ftgetp(${1:pnam})
+snippet gsLineLabelFuncCode
+  gsLineLabelFuncCode
 
-snippet ftkurv
-  ftkurv(${1:xi}, ${2:yi}, ${3:t}, ${4:xo}, ${5:yo})
+snippet gsLineLabelString
+  gsLineLabelString
 
-snippet ftkurvd
-  ftkurvd(${1:xi}, ${2:yi}, ${3:t}, ${4:xo}, ${5:yo}, ${6:xd}, ${7:yd}, ${8:xdd}, ${9:ydd})
+snippet gsLineOpacityF
+  gsLineOpacityF
 
-snippet ftkurvp
-  ftkurvp(${1:xi}, ${2:yi}, ${3:t}, ${4:xo}, ${5:yo})
+snippet gsLineThicknessF
+  gsLineThicknessF
 
-snippet ftkurvpd
-  ftkurvpd(${1:xi}, ${2:yi}, ${3:t}, ${4:xo}, ${5:yo}, ${6:xd}, ${7:yd}, ${8:xdd}, ${9:ydd})
+snippet gsMarkerColor
+  gsMarkerColor
 
-snippet ftsetp
-  ftsetp(${1:pnam}, ${2:pval})
+snippet gsMarkerIndex
+  gsMarkerIndex
 
-snippet ftsurf
-  ftsurf(${1:xi}, ${2:yi}, ${3:zi}, ${4:xo}, ${5:yo})
+snippet gsMarkerOpacityF
+  gsMarkerOpacityF
 
-snippet g2fsh
-  g2fsh(${1:grid}, ${2:outdims})
+snippet gsMarkerSizeF
+  gsMarkerSizeF
 
-snippet g2fshv
-  g2fshv(${1:ua}, ${2:va}, ${3:ub}, ${4:vb})
+snippet gsMarkerThicknessF
+  gsMarkerThicknessF
 
-snippet g2gsh
-  g2gsh(${1:grid}, ${2:outdims}, ${3:twave})
+snippet gsSegments
+  gsSegments
 
-snippet g2gshv
-  g2gshv(${1:ua}, ${2:va}, ${3:ub}, ${4:vb}, ${5:twave})
+snippet gsTextAngleF
+  gsTextAngleF
 
-snippet gamma
-  gamma(${1:x})
+snippet gsTextConstantSpacingF
+  gsTextConstantSpacingF
 
-snippet gammainc
-  gammainc(${1:x}, ${2:a})
+snippet gsTextDirection
+  gsTextDirection
 
-snippet gaus
-  gaus(${1:nlat})
+snippet gsTextFuncCode
+  gsTextFuncCode
 
-snippet gaus_lobat
-  gaus_lobat(${1:nlat})
+snippet gsTextJustification
+  gsTextJustification
 
-snippet gaus_lobat_wgt
-  gaus_lobat_wgt(${1:lat})
+snippet gsnAboveYRefLineBarColors
+  gsnAboveYRefLineBarColors
 
-snippet gc_aangle
-  gc_aangle(${1:lat}, ${2:lon})
+snippet gsnAboveYRefLineBarFillScales
+  gsnAboveYRefLineBarFillScales
 
-snippet gc_clkwise
-  gc_clkwise(${1:lat}, ${2:lon})
+snippet gsnAboveYRefLineBarPatterns
+  gsnAboveYRefLineBarPatterns
 
-snippet gc_dangle
-  gc_dangle(${1:lat}, ${2:lon})
+snippet gsnAboveYRefLineColor
+  gsnAboveYRefLineColor
 
-snippet gc_inout
-  gc_inout(${1:plat}, ${2:plon}, ${3:lat}, ${4:lon})
+snippet gsnAddCyclic
+  gsnAddCyclic
 
-snippet gc_latlon
-  gc_latlon(${1:lat1}, ${2:lon1}, ${3:lat2}, ${4:lon2}, ${5:npts}, ${6:iu})
+snippet gsnAttachBorderOn
+  gsnAttachBorderOn
 
-snippet gc_onarc
-  gc_onarc(${1:p_lat}, ${2:p_lon}, ${3:lat}, ${4:lon})
+snippet gsnAttachPlotsXAxis
+  gsnAttachPlotsXAxis
 
-snippet gc_pnt2gc
-  gc_pnt2gc(${1:p_lat}, ${2:p_lon}, ${3:lat}, ${4:lon})
+snippet gsnBelowYRefLineBarColors
+  gsnBelowYRefLineBarColors
 
-snippet gc_qarea
-  gc_qarea(${1:lat}, ${2:lon})
+snippet gsnBelowYRefLineBarFillScales
+  gsnBelowYRefLineBarFillScales
 
-snippet gc_tarea
-  gc_tarea(${1:lat}, ${2:lon})
+snippet gsnBelowYRefLineBarPatterns
+  gsnBelowYRefLineBarPatterns
 
-snippet generate_2d_array
-  generate_2d_array(${1:mlow}, ${2:mhigh}, ${3:dlow}, ${4:dhigh}, ${5:iseed}, ${6:dsizes})
+snippet gsnBelowYRefLineColor
+  gsnBelowYRefLineColor
 
-snippet get_color_index
-  get_color_index(${1:color_map}, ${2:levels}, ${3:value})
+snippet gsnBoxMargin
+  gsnBoxMargin
 
-snippet get_color_rgba
-  get_color_rgba(${1:color_map}, ${2:levels}, ${3:value})
+snippet gsnCenterString
+  gsnCenterString
 
-snippet get_cpu_time
-  get_cpu_time()
+snippet gsnCenterStringFontColor
+  gsnCenterStringFontColor
 
-snippet get_isolines
-  get_isolines(${1:contour_plot_id}, ${2:levels})
+snippet gsnCenterStringFontHeightF
+  gsnCenterStringFontHeightF
 
-snippet get_ncl_version
-  get_ncl_version()
+snippet gsnCenterStringFuncCode
+  gsnCenterStringFuncCode
 
-snippet get_script_name
-  get_script_name()
+snippet gsnCenterStringOrthogonalPosF
+  gsnCenterStringOrthogonalPosF
 
-snippet get_script_prefix_name
-  get_script_prefix_name()
+snippet gsnCenterStringParallelPosF
+  gsnCenterStringParallelPosF
 
-snippet get_sphere_radius
-  get_sphere_radius()
+snippet gsnContourLineThicknessesScale
+  gsnContourLineThicknessesScale
 
-snippet get_unique_values
-  get_unique_values(${1:x})
+snippet gsnContourNegLineDashPattern
+  gsnContourNegLineDashPattern
 
-snippet getbitsone
-  getbitsone(${1:npack})
+snippet gsnContourPosLineDashPattern
+  gsnContourPosLineDashPattern
 
-snippet getenv
-  getenv(${1:env_name})
+snippet gsnContourZeroLineThicknessF
+  gsnContourZeroLineThicknessF
 
-snippet getfiledimsizes
-  getfiledimsizes(${1:thefile})
+snippet gsnDebugWriteFileName
+  gsnDebugWriteFileName
 
-snippet getfilegrpnames
-  getfilegrpnames(${1:the_file})
+snippet gsnDraw
+  gsnDraw
 
-snippet getfilepath
-  getfilepath(${1:the_file})
+snippet gsnFrame
+  gsnFrame
 
-snippet getfilevaratts
-  getfilevaratts(${1:thefile}, ${2:varname})
+snippet gsnHistogramBarWidthPercent
+  gsnHistogramBarWidthPercent
 
-snippet getfilevarchunkdimsizes
-  getfilevarchunkdimsizes(${1:thefile}, ${2:varname})
+snippet gsnHistogramBinIntervals
+  gsnHistogramBinIntervals
 
-snippet getfilevardims
-  getfilevardims(${1:thefile}, ${2:varname})
+snippet gsnHistogramBinMissing
+  gsnHistogramBinMissing
 
-snippet getfilevardimsizes
-  getfilevardimsizes(${1:thefile}, ${2:varname})
+snippet gsnHistogramBinWidth
+  gsnHistogramBinWidth
 
-snippet getfilevarnames
-  getfilevarnames(${1:the_file})
+snippet gsnHistogramClassIntervals
+  gsnHistogramClassIntervals
 
-snippet getfilevartypes
-  getfilevartypes(${1:thefile}, ${2:var})
+snippet gsnHistogramCompare
+  gsnHistogramCompare
 
-snippet getvaratts
-  getvaratts(${1:var})
+snippet gsnHistogramComputePercentages
+  gsnHistogramComputePercentages
 
-snippet getvardims
-  getvardims(${1:var})
+snippet gsnHistogramComputePercentagesNoMissing
+  gsnHistogramComputePercentagesNoMissing
 
-snippet gradsf
-  gradsf(${1:z}, ${2:gzx}, ${3:gzy})
+snippet gsnHistogramDiscreteBinValues
+  gsnHistogramDiscreteBinValues
 
-snippet gradsg
-  gradsg(${1:z}, ${2:gzx}, ${3:gzy})
+snippet gsnHistogramDiscreteClassValues
+  gsnHistogramDiscreteClassValues
 
-snippet greg2jul
-  greg2jul(${1:year}, ${2:month}, ${3:day}, ${4:hour})
+snippet gsnHistogramHorizontal
+  gsnHistogramHorizontal
 
-snippet grid2triple
-  grid2triple(${1:x}, ${2:y}, ${3:z})
+snippet gsnHistogramMinMaxBinsOn
+  gsnHistogramMinMaxBinsOn
 
-snippet hlsrgb
-  hlsrgb(${1:hls})
+snippet gsnHistogramNumberOfBins
+  gsnHistogramNumberOfBins
 
-snippet hsvrgb
-  hsvrgb(${1:hsv})
+snippet gsnHistogramPercentSign
+  gsnHistogramPercentSign
 
-snippet hydro
-  hydro(${1:p}, ${2:tkv}, ${3:zsfc})
+snippet gsnHistogramSelectNiceIntervals
+  gsnHistogramSelectNiceIntervals
 
-snippet hyi2hyo
-  hyi2hyo(${1:p0}, ${2:hyai}, ${3:hybi}, ${4:ps}, ${5:xi}, ${6:hyao}, ${7:hybo}, ${8:intflg})
+snippet gsnLeftString
+  gsnLeftString
 
-snippet idsfft
-  idsfft(${1:xc}, ${2:yc}, ${3:zc}, ${4:dim})
+snippet gsnLeftStringFontColor
+  gsnLeftStringFontColor
 
-snippet igradsf
-  igradsf(${1:gzx}, ${2:gzy}, ${3:z})
+snippet gsnLeftStringFontHeightF
+  gsnLeftStringFontHeightF
 
-snippet igradsg
-  igradsg(${1:gzx}, ${2:gzy}, ${3:z})
+snippet gsnLeftStringFuncCode
+  gsnLeftStringFuncCode
 
-snippet ilapsf
-  ilapsf(${1:zlap}, ${2:zlmbda}, ${3:z})
+snippet gsnLeftStringOrthogonalPosF
+  gsnLeftStringOrthogonalPosF
 
-snippet ilapsg
-  ilapsg(${1:zlap}, ${2:zlmbda}, ${3:z})
+snippet gsnLeftStringParallelPosF
+  gsnLeftStringParallelPosF
 
-snippet ilapvf
-  ilapvf(${1:ulap}, ${2:vlap}, ${3:u}, ${4:v})
+snippet gsnMajorLatSpacing
+  gsnMajorLatSpacing
 
-snippet ilapvg
-  ilapvg(${1:ulap}, ${2:vlap}, ${3:u}, ${4:v})
+snippet gsnMajorLonSpacing
+  gsnMajorLonSpacing
 
-snippet ind
-  ind(${1:larray})
+snippet gsnMaskLambertConformal
+  gsnMaskLambertConformal
 
-snippet ind_resolve
-  ind_resolve(${1:indices}, ${2:dsizes})
+snippet gsnMaskLambertConformalOutlineOn
+  gsnMaskLambertConformalOutlineOn
 
-snippet int2p
-  int2p(${1:pin}, ${2:xin}, ${3:pout}, ${4:linlog})
+snippet gsnMaximize
+  gsnMaximize
 
-snippet int2p_n
-  int2p_n(${1:pin}, ${2:xin}, ${3:pout}, ${4:linlog}, ${5:pdim})
+snippet gsnMinorLatSpacing
+  gsnMinorLatSpacing
 
-snippet integertobyte
-  integertobyte(${1:integer_val})
+snippet gsnMinorLonSpacing
+  gsnMinorLonSpacing
 
-snippet integertochar
-  integertochar(${1:integer_val})
+snippet gsnPanelBottom
+  gsnPanelBottom
 
-snippet integertocharacter
-  integertocharacter(${1:integer_val})
+snippet gsnPanelCenter
+  gsnPanelCenter
 
-snippet integertoshort
-  integertoshort(${1:integer_val})
+snippet gsnPanelDebug
+  gsnPanelDebug
 
-snippet inttobyte
-  inttobyte(${1:integer_val})
+snippet gsnPanelFigureStrings
+  gsnPanelFigureStrings
 
-snippet inttochar
-  inttochar(${1:integer_val})
+snippet gsnPanelFigureStringsBackgroundFillColor
+  gsnPanelFigureStringsBackgroundFillColor
 
-snippet inttoshort
-  inttoshort(${1:integer_val})
+snippet gsnPanelFigureStringsFontHeightF
+  gsnPanelFigureStringsFontHeightF
 
-snippet inverse_matrix
-  inverse_matrix(${1:A})
+snippet gsnPanelFigureStringsJust
+  gsnPanelFigureStringsJust
 
-snippet isatt
-  isatt(${1:var}, ${2:attnames})
+snippet gsnPanelFigureStringsPerimOn
+  gsnPanelFigureStringsPerimOn
 
-snippet isbigendian
-  isbigendian()
+snippet gsnPanelLabelBar
+  gsnPanelLabelBar
 
-snippet isbyte
-  isbyte(${1:arg})
+snippet gsnPanelLeft
+  gsnPanelLeft
 
-snippet ischar
-  ischar(${1:arg})
+snippet gsnPanelMainFont
+  gsnPanelMainFont
 
-snippet iscoord
-  iscoord(${1:var}, ${2:coord_names})
+snippet gsnPanelMainFontColor
+  gsnPanelMainFontColor
 
-snippet isdefined
-  isdefined(${1:idn_names})
+snippet gsnPanelMainFontHeightF
+  gsnPanelMainFontHeightF
 
-snippet isdim
-  isdim(${1:var}, ${2:dimnames})
+snippet gsnPanelMainString
+  gsnPanelMainString
 
-snippet isdimnamed
-  isdimnamed(${1:var}, ${2:dim_nums})
+snippet gsnPanelRight
+  gsnPanelRight
 
-snippet isdouble
-  isdouble(${1:arg})
+snippet gsnPanelRowSpec
+  gsnPanelRowSpec
 
-snippet isenumeric
-  isenumeric(${1:arg})
+snippet gsnPanelScalePlotIndex
+  gsnPanelScalePlotIndex
 
-snippet isfile
-  isfile(${1:arg})
+snippet gsnPanelTop
+  gsnPanelTop
 
-snippet isfilepresent
-  isfilepresent(${1:file_path})
+snippet gsnPanelXF
+  gsnPanelXF
 
-snippet isfilevar
-  isfilevar(${1:thefile}, ${2:varnames})
+snippet gsnPanelXWhiteSpacePercent
+  gsnPanelXWhiteSpacePercent
 
-snippet isfilevaratt
-  isfilevaratt(${1:thefile}, ${2:varname}, ${3:attnames})
+snippet gsnPanelYF
+  gsnPanelYF
 
-snippet isfilevarcoord
-  isfilevarcoord(${1:thefile}, ${2:varname}, ${3:coordname})
+snippet gsnPanelYWhiteSpacePercent
+  gsnPanelYWhiteSpacePercent
 
-snippet isfilevardim
-  isfilevardim(${1:thefile}, ${2:varname}, ${3:dimnames})
+snippet gsnPaperHeight
+  gsnPaperHeight
 
-snippet isfloat
-  isfloat(${1:arg})
+snippet gsnPaperMargin
+  gsnPaperMargin
 
-snippet isfunc
-  isfunc(${1:func_names})
+snippet gsnPaperOrientation
+  gsnPaperOrientation
 
-snippet isgraphic
-  isgraphic(${1:arg})
+snippet gsnPaperWidth
+  gsnPaperWidth
 
-snippet isint
-  isint(${1:arg})
+snippet gsnPolar
+  gsnPolar
 
-snippet isint64
-  isint64(${1:arg})
+snippet gsnPolarLabelDistance
+  gsnPolarLabelDistance
 
-snippet isinteger
-  isinteger(${1:arg})
+snippet gsnPolarLabelFont
+  gsnPolarLabelFont
 
-snippet isleapyear
-  isleapyear(${1:year})
+snippet gsnPolarLabelFontHeightF
+  gsnPolarLabelFontHeightF
 
-snippet islogical
-  islogical(${1:arg})
+snippet gsnPolarLabelSpacing
+  gsnPolarLabelSpacing
 
-snippet islong
-  islong(${1:arg})
+snippet gsnPolarTime
+  gsnPolarTime
 
-snippet ismissing
-  ismissing(${1:data})
+snippet gsnPolarUT
+  gsnPolarUT
 
-snippet isnan_ieee
-  isnan_ieee(${1:x})
+snippet gsnRightString
+  gsnRightString
 
-snippet isnumeric
-  isnumeric(${1:arg})
+snippet gsnRightStringFontColor
+  gsnRightStringFontColor
 
-snippet ispan
-  ispan(${1:start}, ${2:finish}, ${3:stride})
+snippet gsnRightStringFontHeightF
+  gsnRightStringFontHeightF
 
-snippet isproc
-  isproc(${1:proc_names})
+snippet gsnRightStringFuncCode
+  gsnRightStringFuncCode
 
-snippet isscalar
-  isscalar(${1:x})
+snippet gsnRightStringOrthogonalPosF
+  gsnRightStringOrthogonalPosF
 
-snippet isshort
-  isshort(${1:arg})
+snippet gsnRightStringParallelPosF
+  gsnRightStringParallelPosF
 
-snippet issnumeric
-  issnumeric(${1:arg})
+snippet gsnScalarContour
+  gsnScalarContour
 
-snippet isstring
-  isstring(${1:arg})
+snippet gsnScale
+  gsnScale
 
-snippet isubyte
-  isubyte(${1:arg})
+snippet gsnShape
+  gsnShape
 
-snippet isuint
-  isuint(${1:arg})
+snippet gsnSpreadColorEnd
+  gsnSpreadColorEnd
 
-snippet isuint64
-  isuint64(${1:arg})
+snippet gsnSpreadColorStart
+  gsnSpreadColorStart
 
-snippet isulong
-  isulong(${1:arg})
+snippet gsnSpreadColors
+  gsnSpreadColors
 
-snippet isunlimited
-  isunlimited(${1:thefile}, ${2:dim_name})
+snippet gsnStringFont
+  gsnStringFont
 
-snippet isunsigned
-  isunsigned(${1:arg})
+snippet gsnStringFontColor
+  gsnStringFontColor
 
-snippet isushort
-  isushort(${1:arg})
+snippet gsnStringFontHeightF
+  gsnStringFontHeightF
 
-snippet isvar
-  isvar(${1:varnames})
+snippet gsnStringFuncCode
+  gsnStringFuncCode
 
-snippet jul2greg
-  jul2greg(${1:julian})
+snippet gsnTickMarksOn
+  gsnTickMarksOn
 
-snippet kmeans_as136
-  kmeans_as136(${1:x}, ${2:k}, ${3:opt})
+snippet gsnXAxisIrregular2Linear
+  gsnXAxisIrregular2Linear
 
-snippet kolsm2_n
-  kolsm2_n(${1:x}, ${2:y}, ${3:dims})
+snippet gsnXAxisIrregular2Log
+  gsnXAxisIrregular2Log
 
-snippet kron_product
-  kron_product(${1:a}, ${2:b})
+snippet gsnXRefLine
+  gsnXRefLine
 
-snippet lapsf
-  lapsf(${1:z}, ${2:zlap})
+snippet gsnXRefLineColor
+  gsnXRefLineColor
 
-snippet lapsg
-  lapsg(${1:z}, ${2:zlap})
+snippet gsnXRefLineDashPattern
+  gsnXRefLineDashPattern
 
-snippet lapvf
-  lapvf(${1:u}, ${2:v}, ${3:ulap}, ${4:vlap})
+snippet gsnXRefLineThicknessF
+  gsnXRefLineThicknessF
 
-snippet lapvg
-  lapvg(${1:u}, ${2:v}, ${3:ulap}, ${4:vlap})
+snippet gsnXYAboveFillColors
+  gsnXYAboveFillColors
 
-snippet latlon2utm
-  latlon2utm(${1:latlon}, ${2:datum})
+snippet gsnXYBarChart
+  gsnXYBarChart
 
-snippet lclvl
-  lclvl(${1:p}, ${2:tk}, ${3:tdk})
+snippet gsnXYBarChartBarWidth
+  gsnXYBarChartBarWidth
 
-snippet lderuvf
-  lderuvf(${1:u}, ${2:v}, ${3:uy}, ${4:vy})
+snippet gsnXYBarChartColors
+  gsnXYBarChartColors
 
-snippet lderuvg
-  lderuvg(${1:u}, ${2:v}, ${3:uy}, ${4:vy})
+snippet gsnXYBarChartColors2
+  gsnXYBarChartColors2
 
-snippet linint1
-  linint1(${1:xi}, ${2:fi}, ${3:fiCyclic}, ${4:xo}, ${5:foOption})
+snippet gsnXYBarChartFillDotSizeF
+  gsnXYBarChartFillDotSizeF
 
-snippet linint1_n
-  linint1_n(${1:xi}, ${2:fi}, ${3:fiCyclic}, ${4:xo}, ${5:foOption}, ${6:dim})
+snippet gsnXYBarChartFillLineThicknessF
+  gsnXYBarChartFillLineThicknessF
 
-snippet linint2
-  linint2(${1:xi}, ${2:yi}, ${3:fi}, ${4:fiCyclicX}, ${5:xo}, ${6:yo}, ${7:foOption})
+snippet gsnXYBarChartFillOpacityF
+  gsnXYBarChartFillOpacityF
 
-snippet linint2_points
-  linint2_points(${1:xi}, ${2:yi}, ${3:fi}, ${4:fiCyclicX}, ${5:xo}, ${6:yo}, ${7:Option})
+snippet gsnXYBarChartFillScaleF
+  gsnXYBarChartFillScaleF
 
-snippet linmsg
-  linmsg(${1:x}, ${2:opt})
+snippet gsnXYBarChartOutlineOnly
+  gsnXYBarChartOutlineOnly
 
-snippet linmsg_n
-  linmsg_n(${1:x}, ${2:opt}, ${3:dim})
+snippet gsnXYBarChartOutlineThicknessF
+  gsnXYBarChartOutlineThicknessF
 
-snippet linrood_latwgt
-  linrood_latwgt(${1:nlat})
+snippet gsnXYBarChartPatterns
+  gsnXYBarChartPatterns
 
-snippet linrood_wgt
-  linrood_wgt(${1:nlat})
+snippet gsnXYBarChartPatterns2
+  gsnXYBarChartPatterns2
 
-snippet list_files
-  list_files()
+snippet gsnXYBelowFillColors
+  gsnXYBelowFillColors
 
-snippet list_filevars
-  list_filevars(${1:filevar})
+snippet gsnXYFillColors
+  gsnXYFillColors
 
-snippet list_hlus
-  list_hlus()
+snippet gsnXYFillOpacities
+  gsnXYFillOpacities
 
-snippet list_procfuncs
-  list_procfuncs()
+snippet gsnXYLeftFillColors
+  gsnXYLeftFillColors
 
-snippet list_vars
-  list_vars()
+snippet gsnXYRightFillColors
+  gsnXYRightFillColors
 
-snippet ListAppend
-  ListAppend(${1:f}, ${2:v})
+snippet gsnYAxisIrregular2Linear
+  gsnYAxisIrregular2Linear
 
-snippet ListCount
-  ListCount(${1:f})
+snippet gsnYAxisIrregular2Log
+  gsnYAxisIrregular2Log
 
-snippet ListGetType
-  ListGetType(${1:f})
+snippet gsnYRefLine
+  gsnYRefLine
 
-snippet ListIndex
-  ListIndex(${1:f}, ${2:v})
+snippet gsnYRefLineColor
+  gsnYRefLineColor
 
-snippet ListIndexFromName
-  ListIndexFromName(${1:f}, ${2:vn})
+snippet gsnYRefLineColors
+  gsnYRefLineColors
 
-snippet ListPop
-  ListPop(${1:f})
+snippet gsnYRefLineDashPattern
+  gsnYRefLineDashPattern
 
-snippet ListPush
-  ListPush(${1:f}, ${2:v})
+snippet gsnYRefLineDashPatterns
+  gsnYRefLineDashPatterns
 
-snippet ListSetType
-  ListSetType(${1:f}, ${2:option})
+snippet gsnYRefLineThicknessF
+  gsnYRefLineThicknessF
 
-snippet loadscript
-  loadscript(${1:filename})
+snippet gsnYRefLineThicknesses
+  gsnYRefLineThicknesses
 
-snippet local_max
-  local_max(${1:x}, ${2:cyclic}, ${3:delta})
+snippet gsnZonalMean
+  gsnZonalMean
 
-snippet local_min
-  local_min(${1:x}, ${2:cyclic}, ${3:delta})
+snippet gsnZonalMeanXMaxF
+  gsnZonalMeanXMaxF
 
-snippet log
-  log(${1:value})
+snippet gsnZonalMeanXMinF
+  gsnZonalMeanXMinF
 
-snippet log10
-  log10(${1:value})
+snippet gsnZonalMeanYRefLine
+  gsnZonalMeanYRefLine
 
-snippet longtobyte
-  longtobyte(${1:long_val})
+snippet lbAutoManage
+  lbAutoManage
 
-snippet longtochar
-  longtochar(${1:long_val})
+snippet lbBottomMarginF
+  lbBottomMarginF
 
-snippet longtocharacter
-  longtocharacter(${1:long_val})
+snippet lbBoxCount
+  lbBoxCount
 
-snippet longtoint
-  longtoint(${1:long_val})
+snippet lbBoxEndCapStyle
+  lbBoxEndCapStyle
 
-snippet longtointeger
-  longtointeger(${1:long_val})
+snippet lbBoxFractions
+  lbBoxFractions
 
-snippet longtoshort
-  longtoshort(${1:long_val})
+snippet lbBoxLineColor
+  lbBoxLineColor
 
-snippet lspoly
-  lspoly(${1:x}, ${2:y}, ${3:wgt}, ${4:n})
+snippet lbBoxLineDashPattern
+  lbBoxLineDashPattern
 
-snippet lspoly_n
-  lspoly_n(${1:x}, ${2:y}, ${3:wgt}, ${4:n}, ${5:dim})
+snippet lbBoxLineDashSegLenF
+  lbBoxLineDashSegLenF
 
-snippet mask
-  mask(${1:array}, ${2:marray}, ${3:mvalue})
+snippet lbBoxLineThicknessF
+  lbBoxLineThicknessF
 
-snippet max
-  max(${1:value})
+snippet lbBoxLinesOn
+  lbBoxLinesOn
 
-snippet maxind
-  maxind(${1:arg})
+snippet lbBoxMajorExtentF
+  lbBoxMajorExtentF
 
-snippet min
-  min(${1:value})
+snippet lbBoxMinorExtentF
+  lbBoxMinorExtentF
 
-snippet minind
-  minind(${1:arg})
+snippet lbBoxSeparatorLinesOn
+  lbBoxSeparatorLinesOn
 
-snippet mixed_layer_depth
-  mixed_layer_depth(${1:pot_density}, ${2:kmt}, ${3:ht}, ${4:depth}, ${5:offset})
+snippet lbBoxSizing
+  lbBoxSizing
 
-snippet mixhum_ptd
-  mixhum_ptd(${1:p}, ${2:tdk}, ${3:iswit})
+snippet lbFillBackground
+  lbFillBackground
 
-snippet mixhum_ptrh
-  mixhum_ptrh(${1:p}, ${2:tk}, ${3:rh}, ${4:iswit})
+snippet lbFillColor
+  lbFillColor
 
-snippet mjo_cross_coh2pha
-  mjo_cross_coh2pha(${1:STC}, ${2:opt})
+snippet lbFillColors
+  lbFillColors
 
-snippet mjo_cross_segment
-  mjo_cross_segment(${1:x}, ${2:y}, ${3:opt})
+snippet lbFillDotSizeF
+  lbFillDotSizeF
 
-snippet moc_globe_atl
-  moc_globe_atl(${1:lat_aux_grid}, ${2:a_wvel}, ${3:a_bolus}, ${4:a_submeso}, ${5:tlat}, ${6:rmlak})
+snippet lbFillLineThicknessF
+  lbFillLineThicknessF
 
-snippet monthday
-  monthday(${1:year}, ${2:day})
+snippet lbFillPattern
+  lbFillPattern
 
-snippet natgrid
-  natgrid(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet lbFillPatterns
+  lbFillPatterns
 
-snippet natgridd
-  natgridd(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet lbFillScaleF
+  lbFillScaleF
 
-snippet natgrids
-  natgrids(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet lbFillScales
+  lbFillScales
 
-snippet ncargpath
-  ncargpath(${1:char})
+snippet lbJustification
+  lbJustification
 
-snippet ncargversion
-  ncargversion()
+snippet lbLabelAlignment
+  lbLabelAlignment
 
-snippet ndctodata
-  ndctodata(${1:plot}, ${2:x_in}, ${3:y_in}, ${4:x_out}, ${5:y_out})
+snippet lbLabelAngleF
+  lbLabelAngleF
 
-snippet ndtooned
-  ndtooned(${1:val})
+snippet lbLabelAutoStride
+  lbLabelAutoStride
 
-snippet new
-  new(${1:dimension_sizes}, ${2:vartype}, ${3:parameter})
+snippet lbLabelBarOn
+  lbLabelBarOn
 
-snippet NewList
-  NewList(${1:s})
+snippet lbLabelConstantSpacingF
+  lbLabelConstantSpacingF
 
-snippet ngezlogo
-  ngezlogo(${1:wks})
+snippet lbLabelDirection
+  lbLabelDirection
 
-snippet nggcog
-  nggcog(${1:clat}, ${2:clon}, ${3:crad}, ${4:alat}, ${5:alon})
+snippet lbLabelFont
+  lbLabelFont
 
-snippet nggetp
-  nggetp(${1:pnam})
+snippet lbLabelFontAspectF
+  lbLabelFontAspectF
 
-snippet nglogo
-  nglogo(${1:wks}, ${2:x}, ${3:y}, ${4:size}, ${5:type}, ${6:col1}, ${7:col2})
+snippet lbLabelFontColor
+  lbLabelFontColor
 
-snippet ngsetp
-  ngsetp(${1:pnam}, ${2:pval})
+snippet lbLabelFontHeightF
+  lbLabelFontHeightF
 
-snippet NhlAddAnnotation
-  NhlAddAnnotation(${1:plot_id}, ${2:anno_view_id})
+snippet lbLabelFontQuality
+  lbLabelFontQuality
 
-snippet NhlAddData
-  NhlAddData(${1:dcomms}, ${2:res_name}, ${3:data_items})
+snippet lbLabelFontThicknessF
+  lbLabelFontThicknessF
 
-snippet NhlAddOverlay
-  NhlAddOverlay(${1:base_id}, ${2:transform_id}, ${3:after_id})
+snippet lbLabelFuncCode
+  lbLabelFuncCode
 
-snippet NhlAddPrimitive
-  NhlAddPrimitive(${1:base_id}, ${2:primitive_ids}, ${3:before_id})
+snippet lbLabelJust
+  lbLabelJust
 
-snippet NhlAppGetDefaultParentId
-  NhlAppGetDefaultParentId()
+snippet lbLabelOffsetF
+  lbLabelOffsetF
 
-snippet NhlChangeWorkstation
-  NhlChangeWorkstation(${1:objects}, ${2:workstation})
+snippet lbLabelPosition
+  lbLabelPosition
 
-snippet NhlClassName
-  NhlClassName(${1:objects})
+snippet lbLabelStride
+  lbLabelStride
 
-snippet NhlClearWorkstation
-  NhlClearWorkstation(${1:wks})
+snippet lbLabelStrings
+  lbLabelStrings
 
-snippet NhlDataPolygon
-  NhlDataPolygon(${1:objects}, ${2:style}, ${3:x}, ${4:y})
+snippet lbLabelsOn
+  lbLabelsOn
 
-snippet NhlDataPolyline
-  NhlDataPolyline(${1:objects}, ${2:style}, ${3:x}, ${4:y})
+snippet lbLeftMarginF
+  lbLeftMarginF
 
-snippet NhlDataPolymarker
-  NhlDataPolymarker(${1:objects}, ${2:style}, ${3:x}, ${4:y})
+snippet lbMaxLabelLenF
+  lbMaxLabelLenF
 
-snippet NhlDataToNDC
-  NhlDataToNDC(${1:plot}, ${2:x_in}, ${3:y_in}, ${4:x_out}, ${5:y_out})
+snippet lbMinLabelSpacingF
+  lbMinLabelSpacingF
 
-snippet NhlDestroy
-  NhlDestroy(${1:objects})
+snippet lbMonoFillColor
+  lbMonoFillColor
 
-snippet NhlDraw
-  NhlDraw(${1:objects})
+snippet lbMonoFillPattern
+  lbMonoFillPattern
 
-snippet NhlFrame
-  NhlFrame(${1:wks})
+snippet lbMonoFillScale
+  lbMonoFillScale
 
-snippet NhlFreeColor
-  NhlFreeColor(${1:workstations}, ${2:color_index})
+snippet lbOrientation
+  lbOrientation
 
-snippet NhlGetBB
-  NhlGetBB(${1:objects})
+snippet lbPerimColor
+  lbPerimColor
 
-snippet NhlGetClassResources
-  NhlGetClassResources(${1:class_name}, ${2:filter_string})
+snippet lbPerimDashPattern
+  lbPerimDashPattern
 
-snippet NhlGetErrorObjectId
-  NhlGetErrorObjectId()
+snippet lbPerimDashSegLenF
+  lbPerimDashSegLenF
 
-snippet NhlGetNamedColorIndex
-  NhlGetNamedColorIndex(${1:wks}, ${2:color_name})
+snippet lbPerimFill
+  lbPerimFill
 
-snippet NhlGetParentId
-  NhlGetParentId(${1:objs})
+snippet lbPerimFillColor
+  lbPerimFillColor
 
-snippet NhlGetParentWorkstation
-  NhlGetParentWorkstation(${1:objs})
+snippet lbPerimOn
+  lbPerimOn
 
-snippet NhlGetWorkspaceObjectId
-  NhlGetWorkspaceObjectId()
+snippet lbPerimThicknessF
+  lbPerimThicknessF
 
-snippet NhlIsAllocatedColor
-  NhlIsAllocatedColor(${1:workstations}, ${2:color_index})
+snippet lbRasterFillOn
+  lbRasterFillOn
 
-snippet NhlIsApp
-  NhlIsApp(${1:objects})
+snippet lbRightMarginF
+  lbRightMarginF
 
-snippet NhlIsDataComm
-  NhlIsDataComm(${1:objects})
+snippet lbTitleAngleF
+  lbTitleAngleF
 
-snippet NhlIsDataItem
-  NhlIsDataItem(${1:objects})
+snippet lbTitleConstantSpacingF
+  lbTitleConstantSpacingF
 
-snippet NhlIsDataSpec
-  NhlIsDataSpec(${1:objects})
+snippet lbTitleDirection
+  lbTitleDirection
 
-snippet NhlIsTransform
-  NhlIsTransform(${1:objects})
+snippet lbTitleExtentF
+  lbTitleExtentF
 
-snippet NhlIsView
-  NhlIsView(${1:objects})
+snippet lbTitleFont
+  lbTitleFont
 
-snippet NhlIsWorkstation
-  NhlIsWorkstation(${1:objects})
+snippet lbTitleFontAspectF
+  lbTitleFontAspectF
 
-snippet NhlName
-  NhlName(${1:objects})
+snippet lbTitleFontColor
+  lbTitleFontColor
 
-snippet NhlNDCPolygon
-  NhlNDCPolygon(${1:objects}, ${2:style}, ${3:x}, ${4:y})
+snippet lbTitleFontHeightF
+  lbTitleFontHeightF
 
-snippet NhlNDCPolyline
-  NhlNDCPolyline(${1:objects}, ${2:style}, ${3:x}, ${4:y})
+snippet lbTitleFontQuality
+  lbTitleFontQuality
 
-snippet NhlNDCPolymarker
-  NhlNDCPolymarker(${1:objects}, ${2:style}, ${3:x}, ${4:y})
+snippet lbTitleFontThicknessF
+  lbTitleFontThicknessF
 
-snippet NhlNDCToData
-  NhlNDCToData(${1:plot}, ${2:x_in}, ${3:y_in}, ${4:x_out}, ${5:y_out})
+snippet lbTitleFuncCode
+  lbTitleFuncCode
 
-snippet NhlNewColor
-  NhlNewColor(${1:workstations}, ${2:red}, ${3:green}, ${4:blue})
+snippet lbTitleJust
+  lbTitleJust
 
-snippet NhlNewDashPattern
-  NhlNewDashPattern(${1:wks}, ${2:dash_patterns})
+snippet lbTitleOffsetF
+  lbTitleOffsetF
 
-snippet NhlNewMarker
-  NhlNewMarker(${1:wks}, ${2:marker_strings}, ${3:font_num}, ${4:xoffset}, ${5:yoffset}, ${6:aspect_ratio}, ${7:size}, ${8:angle})
+snippet lbTitleOn
+  lbTitleOn
 
-snippet NhlPalGetDefined
-  NhlPalGetDefined()
+snippet lbTitlePosition
+  lbTitlePosition
 
-snippet NhlRemoveAnnotation
-  NhlRemoveAnnotation(${1:plot_id}, ${2:anno_manager_id})
+snippet lbTitleString
+  lbTitleString
 
-snippet NhlRemoveData
-  NhlRemoveData(${1:plot_objs}, ${2:resname}, ${3:data_objs})
+snippet lbTopMarginF
+  lbTopMarginF
 
-snippet NhlRemoveOverlay
-  NhlRemoveOverlay(${1:base_id}, ${2:plot_id}, ${3:restore})
+snippet lgAutoManage
+  lgAutoManage
 
-snippet NhlRemovePrimitive
-  NhlRemovePrimitive(${1:base_id}, ${2:primitive_ids})
+snippet lgBottomMarginF
+  lgBottomMarginF
 
-snippet NhlSetColor
-  NhlSetColor(${1:workstations}, ${2:color_index}, ${3:red}, ${4:green}, ${5:blue})
+snippet lgBoxBackground
+  lgBoxBackground
 
-snippet NhlSetDashPattern
-  NhlSetDashPattern(${1:wks}, ${2:dash_indexes}, ${3:dash_patterns})
+snippet lgBoxLineColor
+  lgBoxLineColor
 
-snippet NhlSetMarker
-  NhlSetMarker(${1:wks}, ${2:marker_indexes}, ${3:marker_strings}, ${4:font_num}, ${5:xoffset}, ${6:yoffset}, ${7:aspect_ratio}, ${8:size}, ${9:angle})
+snippet lgBoxLineDashPattern
+  lgBoxLineDashPattern
 
-snippet NhlUpdateData
-  NhlUpdateData(${1:dcomms})
+snippet lgBoxLineDashSegLenF
+  lgBoxLineDashSegLenF
 
-snippet NhlUpdateWorkstation
-  NhlUpdateWorkstation(${1:wks})
+snippet lgBoxLineThicknessF
+  lgBoxLineThicknessF
 
-snippet nice_mnmxintvl
-  nice_mnmxintvl(${1:cmin}, ${2:cmax}, ${3:max_levels}, ${4:outside})
+snippet lgBoxLinesOn
+  lgBoxLinesOn
 
-snippet nngetaspectd
-  nngetaspectd(${1:i}, ${2:j})
+snippet lgBoxMajorExtentF
+  lgBoxMajorExtentF
 
-snippet nngetaspects
-  nngetaspects(${1:i}, ${2:j})
+snippet lgBoxMinorExtentF
+  lgBoxMinorExtentF
 
-snippet nngetp
-  nngetp(${1:pnam})
+snippet lgDashIndex
+  lgDashIndex
 
-snippet nngetsloped
-  nngetsloped(${1:i}, ${2:j})
+snippet lgDashIndexes
+  lgDashIndexes
 
-snippet nngetslopes
-  nngetslopes(${1:i}, ${2:j})
+snippet lgItemCount
+  lgItemCount
 
-snippet nngetwts
-  nngetwts(${1:numw}, ${2:nbrs}, ${3:wts}, ${4:xe}, ${5:ye}, ${6:ze})
+snippet lgItemOrder
+  lgItemOrder
 
-snippet nngetwtsd
-  nngetwtsd(${1:numw}, ${2:nbrs}, ${3:wts}, ${4:xe}, ${5:ye}, ${6:ze})
+snippet lgItemPlacement
+  lgItemPlacement
 
-snippet nnpnt
-  nnpnt(${1:x}, ${2:y})
+snippet lgItemPositions
+  lgItemPositions
 
-snippet nnpntd
-  nnpntd(${1:x}, ${2:y})
+snippet lgItemType
+  lgItemType
 
-snippet nnpntend
-  nnpntend()
+snippet lgItemTypes
+  lgItemTypes
 
-snippet nnpntendd
-  nnpntendd()
+snippet lgJustification
+  lgJustification
 
-snippet nnpntinit
-  nnpntinit(${1:x}, ${2:y}, ${3:z})
+snippet lgLabelAlignment
+  lgLabelAlignment
 
-snippet nnpntinitd
-  nnpntinitd(${1:x}, ${2:y}, ${3:z})
+snippet lgLabelAngleF
+  lgLabelAngleF
 
-snippet nnpntinits
-  nnpntinits(${1:x}, ${2:y}, ${3:z})
+snippet lgLabelAutoStride
+  lgLabelAutoStride
 
-snippet nnpnts
-  nnpnts(${1:x}, ${2:y})
+snippet lgLabelConstantSpacingF
+  lgLabelConstantSpacingF
 
-snippet nnsetp
-  nnsetp(${1:pnam}, ${2:pval})
+snippet lgLabelDirection
+  lgLabelDirection
 
-snippet num
-  num(${1:val})
+snippet lgLabelFont
+  lgLabelFont
 
-snippet obj_anal_ic
-  obj_anal_ic(${1:zlon}, ${2:zlat}, ${3:z}, ${4:glon}, ${5:glat}, ${6:rscan}, ${7:option})
+snippet lgLabelFontAspectF
+  lgLabelFontAspectF
 
-snippet omega_ccm
-  omega_ccm(${1:u}, ${2:v}, ${3:div}, ${4:dpsl}, ${5:dpsm}, ${6:pmid}, ${7:pdel}, ${8:psfc}, ${9:hybdif}, ${10:hybm}, ${11:nprlev})
+snippet lgLabelFontColor
+  lgLabelFontColor
 
-snippet onedtond
-  onedtond(${1:val}, ${2:dims})
+snippet lgLabelFontHeightF
+  lgLabelFontHeightF
 
-snippet overlay
-  overlay(${1:base_id}, ${2:transform_id})
+snippet lgLabelFontQuality
+  lgLabelFontQuality
 
-snippet paleo_outline
-  paleo_outline(${1:oro}, ${2:lat}, ${3:lon}, ${4:landvalue}, ${5:basename})
+snippet lgLabelFontThicknessF
+  lgLabelFontThicknessF
 
-snippet pdfxy_bin
-  pdfxy_bin(${1:x}, ${2:y}, ${3:binxbnd}, ${4:binybnd}, ${5:opt})
+snippet lgLabelFuncCode
+  lgLabelFuncCode
 
-snippet poisson_grid_fill
-  poisson_grid_fill(${1:x}, ${2:is_cyclic}, ${3:guess_type}, ${4:nscan}, ${5:epsx}, ${6:relc}, ${7:opt})
+snippet lgLabelJust
+  lgLabelJust
 
-snippet pop_remap
-  pop_remap(${1:x_dst}, ${2:map_wts}, ${3:dst_add}, ${4:src_add}, ${5:x_src})
+snippet lgLabelOffsetF
+  lgLabelOffsetF
 
-snippet potmp_insitu_ocn
-  potmp_insitu_ocn(${1:t}, ${2:s}, ${3:pres}, ${4:pref}, ${5:dims}, ${6:opt})
+snippet lgLabelPosition
+  lgLabelPosition
 
-snippet prcwater_dp
-  prcwater_dp(${1:q}, ${2:p})
+snippet lgLabelStride
+  lgLabelStride
 
-snippet pres2hybrid
-  pres2hybrid(${1:p}, ${2:ps}, ${3:p0}, ${4:xi}, ${5:hyao}, ${6:hybo}, ${7:intflg})
+snippet lgLabelStrings
+  lgLabelStrings
 
-snippet pres_hybrid_ccm
-  pres_hybrid_ccm(${1:ps}, ${2:p0}, ${3:hya}, ${4:hyb})
+snippet lgLabelsOn
+  lgLabelsOn
 
-snippet pres_hybrid_jra55
-  pres_hybrid_jra55(${1:ps}, ${2:hyai}, ${3:hybi})
+snippet lgLeftMarginF
+  lgLeftMarginF
 
-snippet pres_sigma
-  pres_sigma(${1:sigma}, ${2:ps})
+snippet lgLegendOn
+  lgLegendOn
 
-snippet print
-  print(${1:data})
+snippet lgLineColor
+  lgLineColor
 
-snippet print_table
-  print_table(${1:alist}, ${2:format})
+snippet lgLineColors
+  lgLineColors
 
-snippet printFileVarSummary
-  printFileVarSummary(${1:file}, ${2:varname})
+snippet lgLineDashSegLenF
+  lgLineDashSegLenF
 
-snippet printVarSummary
-  printVarSummary(${1:data})
+snippet lgLineDashSegLens
+  lgLineDashSegLens
 
-snippet product
-  product(${1:x})
+snippet lgLineLabelConstantSpacingF
+  lgLineLabelConstantSpacingF
 
-snippet pslec
-  pslec(${1:t}, ${2:phis}, ${3:ps}, ${4:pres})
+snippet lgLineLabelFont
+  lgLineLabelFont
 
-snippet pslhor
-  pslhor(${1:z}, ${2:t}, ${3:phis}, ${4:ps}, ${5:pres}, ${6:lats})
+snippet lgLineLabelFontAspectF
+  lgLineLabelFontAspectF
 
-snippet pslhyp
-  pslhyp(${1:pres}, ${2:z}, ${3:tv})
+snippet lgLineLabelFontColor
+  lgLineLabelFontColor
 
-snippet qsort
-  qsort(${1:value})
+snippet lgLineLabelFontColors
+  lgLineLabelFontColors
 
-snippet rand
-  rand()
+snippet lgLineLabelFontHeightF
+  lgLineLabelFontHeightF
 
-snippet random_chi
-  random_chi(${1:df}, ${2:N})
+snippet lgLineLabelFontHeights
+  lgLineLabelFontHeights
 
-snippet random_gamma
-  random_gamma(${1:locp}, ${2:shape}, ${3:N})
+snippet lgLineLabelFontQuality
+  lgLineLabelFontQuality
 
-snippet random_normal
-  random_normal(${1:av}, ${2:sd}, ${3:N})
+snippet lgLineLabelFontThicknessF
+  lgLineLabelFontThicknessF
 
-snippet random_setallseed
-  random_setallseed(${1:iseed1}, ${2:iseed2})
+snippet lgLineLabelFuncCode
+  lgLineLabelFuncCode
 
-snippet random_uniform
-  random_uniform(${1:low}, ${2:high}, ${3:N})
+snippet lgLineLabelStrings
+  lgLineLabelStrings
 
-snippet rcm2points
-  rcm2points(${1:lat2d}, ${2:lon2d}, ${3:fi}, ${4:lat}, ${5:lon}, ${6:opt})
+snippet lgLineLabelsOn
+  lgLineLabelsOn
 
-snippet rcm2rgrid
-  rcm2rgrid(${1:lat2d}, ${2:lon2d}, ${3:fi}, ${4:lat}, ${5:lon}, ${6:Option})
+snippet lgLineThicknessF
+  lgLineThicknessF
 
-snippet rdsstoi
-  rdsstoi(${1:nyrstrt}, ${2:nyrlast}, ${3:mlon}, ${4:nlat}, ${5:info})
+snippet lgLineThicknesses
+  lgLineThicknesses
 
-snippet read_colormap_file
-  read_colormap_file(${1:filename})
+snippet lgMarkerColor
+  lgMarkerColor
 
-snippet reg_multlin
-  reg_multlin(${1:y}, ${2:x}, ${3:option})
+snippet lgMarkerColors
+  lgMarkerColors
 
-snippet regcoef
-  regcoef(${1:x}, ${2:y}, ${3:tval}, ${4:nptxy})
+snippet lgMarkerIndex
+  lgMarkerIndex
 
-snippet regCoef_n
-  regCoef_n(${1:x}, ${2:y}, ${3:dims_x}, ${4:dims_y})
+snippet lgMarkerIndexes
+  lgMarkerIndexes
 
-snippet regline
-  regline(${1:x}, ${2:y})
+snippet lgMarkerSizeF
+  lgMarkerSizeF
 
-snippet relhum
-  relhum(${1:t}, ${2:w}, ${3:p})
+snippet lgMarkerSizes
+  lgMarkerSizes
 
-snippet relhum_ice
-  relhum_ice(${1:t}, ${2:w}, ${3:p})
+snippet lgMarkerThicknessF
+  lgMarkerThicknessF
 
-snippet relhum_water
-  relhum_water(${1:t}, ${2:w}, ${3:p})
+snippet lgMarkerThicknesses
+  lgMarkerThicknesses
 
-snippet replace_ieeenan
-  replace_ieeenan(${1:x}, ${2:value}, ${3:option})
+snippet lgMonoDashIndex
+  lgMonoDashIndex
 
-snippet reshape
-  reshape(${1:val}, ${2:dims})
+snippet lgMonoItemType
+  lgMonoItemType
 
-snippet reshape_ind
-  reshape_ind(${1:val}, ${2:indexes}, ${3:dims})
+snippet lgMonoLineColor
+  lgMonoLineColor
 
-snippet rgba_to_color_index
-  rgba_to_color_index(${1:rgba})
+snippet lgMonoLineDashSegLen
+  lgMonoLineDashSegLen
 
-snippet rgbhls
-  rgbhls(${1:rgb})
+snippet lgMonoLineLabelFontColor
+  lgMonoLineLabelFontColor
 
-snippet rgbhsv
-  rgbhsv(${1:rgb})
+snippet lgMonoLineLabelFontHeight
+  lgMonoLineLabelFontHeight
 
-snippet rgbyiq
-  rgbyiq(${1:rgb})
+snippet lgMonoLineThickness
+  lgMonoLineThickness
 
-snippet rgrid2rcm
-  rgrid2rcm(${1:lat}, ${2:lon}, ${3:fi}, ${4:lat2d}, ${5:lon2d}, ${6:Option})
+snippet lgMonoMarkerColor
+  lgMonoMarkerColor
 
-snippet rhomb_trunc
-  rhomb_trunc(${1:a}, ${2:b}, ${3:T})
+snippet lgMonoMarkerIndex
+  lgMonoMarkerIndex
 
-snippet rip_cape_2d
-  rip_cape_2d(${1:p}, ${2:t}, ${3:q}, ${4:z}, ${5:zsfc}, ${6:psfc}, ${7:opt})
+snippet lgMonoMarkerSize
+  lgMonoMarkerSize
 
-snippet rip_cape_3d
-  rip_cape_3d(${1:p}, ${2:t}, ${3:q}, ${4:z}, ${5:zsfc}, ${6:psfc}, ${7:opt})
+snippet lgMonoMarkerThickness
+  lgMonoMarkerThickness
 
-snippet round
-  round(${1:x}, ${2:opt})
+snippet lgOrientation
+  lgOrientation
 
-snippet rtest
-  rtest(${1:r}, ${2:Nr}, ${3:opt})
+snippet lgPerimColor
+  lgPerimColor
 
-snippet runave
-  runave(${1:x}, ${2:nave}, ${3:opt})
+snippet lgPerimDashPattern
+  lgPerimDashPattern
 
-snippet runave_n
-  runave_n(${1:x}, ${2:nave}, ${3:opt}, ${4:dim})
+snippet lgPerimDashSegLenF
+  lgPerimDashSegLenF
 
-snippet set_default_fillvalue
-  set_default_fillvalue(${1:type}, ${2:value})
+snippet lgPerimFill
+  lgPerimFill
 
-snippet set_sphere_radius
-  set_sphere_radius(${1:radius})
+snippet lgPerimFillColor
+  lgPerimFillColor
 
-snippet setfileoption
-  setfileoption(${1:format_or_file}, ${2:option}, ${3:value})
+snippet lgPerimOn
+  lgPerimOn
 
-snippet sfvp2uvf
-  sfvp2uvf(${1:sf}, ${2:vp}, ${3:u}, ${4:v})
+snippet lgPerimThicknessF
+  lgPerimThicknessF
 
-snippet sfvp2uvg
-  sfvp2uvg(${1:sf}, ${2:vp}, ${3:u}, ${4:v})
+snippet lgRightMarginF
+  lgRightMarginF
 
-snippet shaec
-  shaec(${1:g}, ${2:a}, ${3:b})
+snippet lgTitleAngleF
+  lgTitleAngleF
 
-snippet shagc
-  shagc(${1:g}, ${2:a}, ${3:b})
+snippet lgTitleConstantSpacingF
+  lgTitleConstantSpacingF
 
-snippet shgetnp
-  shgetnp(${1:px}, ${2:py}, ${3:pz}, ${4:x}, ${5:y}, ${6:z}, ${7:flag})
+snippet lgTitleDirection
+  lgTitleDirection
 
-snippet shgetp
-  shgetp(${1:pnam})
+snippet lgTitleExtentF
+  lgTitleExtentF
 
-snippet shgrid
-  shgrid(${1:xi}, ${2:yi}, ${3:zi}, ${4:ui}, ${5:xo}, ${6:yo}, ${7:zo})
+snippet lgTitleFont
+  lgTitleFont
 
-snippet shorttobyte
-  shorttobyte(${1:short_val})
+snippet lgTitleFontAspectF
+  lgTitleFontAspectF
 
-snippet shorttochar
-  shorttochar(${1:short_val})
+snippet lgTitleFontColor
+  lgTitleFontColor
 
-snippet shorttocharacter
-  shorttocharacter(${1:short_val})
+snippet lgTitleFontHeightF
+  lgTitleFontHeightF
 
-snippet show_ascii
-  show_ascii()
+snippet lgTitleFontQuality
+  lgTitleFontQuality
 
-snippet shsec
-  shsec(${1:a}, ${2:b}, ${3:g})
+snippet lgTitleFontThicknessF
+  lgTitleFontThicknessF
 
-snippet shsetp
-  shsetp(${1:pnam}, ${2:pval})
+snippet lgTitleFuncCode
+  lgTitleFuncCode
 
-snippet shsgc
-  shsgc(${1:a}, ${2:b}, ${3:g})
+snippet lgTitleJust
+  lgTitleJust
 
-snippet shsgc_R42
-  shsgc_R42(${1:a}, ${2:b})
+snippet lgTitleOffsetF
+  lgTitleOffsetF
 
-snippet sigma2hybrid
-  sigma2hybrid(${1:x}, ${2:sigx}, ${3:hya}, ${4:hyb}, ${5:p0}, ${6:ps}, ${7:intyp})
+snippet lgTitleOn
+  lgTitleOn
 
-snippet simpeq
-  simpeq(${1:fi}, ${2:dx})
+snippet lgTitlePosition
+  lgTitlePosition
 
-snippet simpne
-  simpne(${1:x}, ${2:y})
+snippet lgTitleString
+  lgTitleString
 
-snippet sin
-  sin(${1:value})
+snippet lgTopMarginF
+  lgTopMarginF
 
-snippet sindex_yrmo
-  sindex_yrmo(${1:slpt}, ${2:slpd}, ${3:iprnt})
+snippet mpAreaGroupCount
+  mpAreaGroupCount
 
-snippet sinh
-  sinh(${1:value})
+snippet mpAreaMaskingOn
+  mpAreaMaskingOn
 
-snippet sizeof
-  sizeof(${1:data})
+snippet mpAreaNames
+  mpAreaNames
 
-snippet sleep
-  sleep(${1:seconds})
+snippet mpAreaTypes
+  mpAreaTypes
 
-snippet smth9
-  smth9(${1:x}, ${2:p}, ${3:q}, ${4:wrap})
+snippet mpBottomAngleF
+  mpBottomAngleF
 
-snippet snindex_yrmo
-  snindex_yrmo(${1:slpt}, ${2:slpd}, ${3:iprnt}, ${4:soi_noise})
+snippet mpBottomMapPosF
+  mpBottomMapPosF
 
-snippet solve_linsys
-  solve_linsys(${1:A}, ${2:B})
+snippet mpBottomNDCF
+  mpBottomNDCF
 
-snippet span_color_indexes
-  span_color_indexes(${1:color_map}, ${2:num_colors})
+snippet mpBottomNPCF
+  mpBottomNPCF
 
-snippet span_color_rgba
-  span_color_rgba(${1:color_map}, ${2:num_colors})
+snippet mpBottomPointLatF
+  mpBottomPointLatF
 
-snippet sparse_matrix_mult
-  sparse_matrix_mult(${1:row}, ${2:col}, ${3:S}, ${4:x}, ${5:dims})
+snippet mpBottomPointLonF
+  mpBottomPointLonF
 
-snippet spcorr
-  spcorr(${1:x}, ${2:y})
+snippet mpBottomWindowF
+  mpBottomWindowF
 
-snippet spcorr_n
-  spcorr_n(${1:x}, ${2:y}, ${3:dim})
+snippet mpCenterLatF
+  mpCenterLatF
 
-snippet specx_anal
-  specx_anal(${1:x}, ${2:iopt}, ${3:jave}, ${4:pct})
+snippet mpCenterLonF
+  mpCenterLonF
 
-snippet specxy_anal
-  specxy_anal(${1:x}, ${2:y}, ${3:iopt}, ${4:jave}, ${5:pct})
+snippet mpCenterRotF
+  mpCenterRotF
 
-snippet speidx
-  speidx(${1:p}, ${2:t}, ${3:lat}, ${4:lrun}, ${5:optspei}, ${6:dims})
+snippet mpCountyLineColor
+  mpCountyLineColor
 
-snippet sprintf
-  sprintf(${1:format}, ${2:array})
+snippet mpCountyLineDashPattern
+  mpCountyLineDashPattern
 
-snippet sprinti
-  sprinti(${1:format}, ${2:array})
+snippet mpCountyLineDashSegLenF
+  mpCountyLineDashSegLenF
 
-snippet sqrt
-  sqrt(${1:value})
+snippet mpCountyLineThicknessF
+  mpCountyLineThicknessF
 
-snippet sqsort
-  sqsort(${1:value})
+snippet mpDataBaseVersion
+  mpDataBaseVersion
 
-snippet srand
-  srand(${1:seed})
+snippet mpDataResolution
+  mpDataResolution
 
-snippet stat2
-  stat2(${1:x}, ${2:xmean}, ${3:xvar}, ${4:nptused})
+snippet mpDataSetName
+  mpDataSetName
 
-snippet stat4
-  stat4(${1:x}, ${2:xmean}, ${3:xvar}, ${4:xskew}, ${5:xkurt}, ${6:nptused})
+snippet mpDefaultFillColor
+  mpDefaultFillColor
 
-snippet stat_medrng
-  stat_medrng(${1:x}, ${2:xmedian}, ${3:xmrange}, ${4:xrange}, ${5:nptused})
+snippet mpDefaultFillPattern
+  mpDefaultFillPattern
 
-snippet stat_trim
-  stat_trim(${1:x}, ${2:ptrim}, ${3:xmeant}, ${4:xsdt}, ${5:nptused})
+snippet mpDefaultFillScaleF
+  mpDefaultFillScaleF
 
-snippet status_exit
-  status_exit(${1:code})
+snippet mpDynamicAreaGroups
+  mpDynamicAreaGroups
 
-snippet stdatmus_p2tdz
-  stdatmus_p2tdz(${1:p})
+snippet mpEllipticalBoundary
+  mpEllipticalBoundary
 
-snippet stdatmus_z2tdp
-  stdatmus_z2tdp(${1:z})
+snippet mpFillAreaSpecifiers
+  mpFillAreaSpecifiers
 
-snippet stddev
-  stddev(${1:data})
+snippet mpFillBoundarySets
+  mpFillBoundarySets
 
-snippet str_capital
-  str_capital(${1:string_val})
+snippet mpFillColor
+  mpFillColor
 
-snippet str_concat
-  str_concat(${1:string_val})
+snippet mpFillColors
+  mpFillColors
 
-snippet str_fields_count
-  str_fields_count(${1:string_val}, ${2:delimiter})
+snippet mpFillDotSizeF
+  mpFillDotSizeF
 
-snippet str_get_cols
-  str_get_cols(${1:string_val}, ${2:start_col}, ${3:end_col})
+snippet mpFillDrawOrder
+  mpFillDrawOrder
 
-snippet str_get_dq
-  str_get_dq()
+snippet mpFillOn
+  mpFillOn
 
-snippet str_get_field
-  str_get_field(${1:string_val}, ${2:field_number}, ${3:delimiter})
+snippet mpFillPatternBackground
+  mpFillPatternBackground
 
-snippet str_get_nl
-  str_get_nl()
+snippet mpFillPattern
+  mpFillPattern
 
-snippet str_get_sq
-  str_get_sq()
+snippet mpFillPatterns
+  mpFillPatterns
 
-snippet str_get_tab
-  str_get_tab()
+snippet mpFillScaleF
+  mpFillScaleF
 
-snippet str_index_of_substr
-  str_index_of_substr(${1:str}, ${2:substr}, ${3:opt})
+snippet mpFillScales
+  mpFillScales
 
-snippet str_insert
-  str_insert(${1:string_val}, ${2:subString}, ${3:position})
+snippet mpFixedAreaGroups
+  mpFixedAreaGroups
 
-snippet str_is_blank
-  str_is_blank(${1:string_val})
+snippet mpGeophysicalLineColor
+  mpGeophysicalLineColor
 
-snippet str_join
-  str_join(${1:string_val}, ${2:delim})
+snippet mpGeophysicalLineDashPattern
+  mpGeophysicalLineDashPattern
 
-snippet str_left_strip
-  str_left_strip(${1:string_val})
+snippet mpGeophysicalLineDashSegLenF
+  mpGeophysicalLineDashSegLenF
 
-snippet str_lower
-  str_lower(${1:string_val})
+snippet mpGeophysicalLineThicknessF
+  mpGeophysicalLineThicknessF
 
-snippet str_match
-  str_match(${1:string_array}, ${2:sub_string})
+snippet mpGreatCircleLinesOn
+  mpGreatCircleLinesOn
 
-snippet str_match_ic
-  str_match_ic(${1:string_array}, ${2:sub_string})
+snippet mpGridAndLimbDrawOrder
+  mpGridAndLimbDrawOrder
 
-snippet str_match_ic_regex
-  str_match_ic_regex(${1:string_array}, ${2:expression})
+snippet mpGridAndLimbOn
+  mpGridAndLimbOn
 
-snippet str_match_ind
-  str_match_ind(${1:string_array}, ${2:sub_string})
+snippet mpGridLatSpacingF
+  mpGridLatSpacingF
 
-snippet str_match_ind_ic
-  str_match_ind_ic(${1:string_array}, ${2:sub_string})
+snippet mpGridLineColor
+  mpGridLineColor
 
-snippet str_match_ind_ic_regex
-  str_match_ind_ic_regex(${1:string_array}, ${2:expression})
+snippet mpGridLineDashPattern
+  mpGridLineDashPattern
 
-snippet str_match_ind_regex
-  str_match_ind_regex(${1:string_array}, ${2:expression})
+snippet mpGridLineDashSegLenF
+  mpGridLineDashSegLenF
 
-snippet str_match_regex
-  str_match_regex(${1:string_array}, ${2:expression})
+snippet mpGridLineThicknessF
+  mpGridLineThicknessF
 
-snippet str_right_strip
-  str_right_strip(${1:string_val})
+snippet mpGridLonSpacingF
+  mpGridLonSpacingF
 
-snippet str_split
-  str_split(${1:string_val}, ${2:delimiter})
+snippet mpGridMaskMode
+  mpGridMaskMode
 
-snippet str_split_by_length
-  str_split_by_length(${1:string_val}, ${2:length_val})
+snippet mpGridMaxLatF
+  mpGridMaxLatF
 
-snippet str_split_csv
-  str_split_csv(${1:string_val}, ${2:delimiter}, ${3:option})
+snippet mpGridPolarLonSpacingF
+  mpGridPolarLonSpacingF
 
-snippet str_squeeze
-  str_squeeze(${1:string_val})
+snippet mpGridSpacingF
+  mpGridSpacingF
 
-snippet str_strip
-  str_strip(${1:string_val})
+snippet mpInlandWaterFillColor
+  mpInlandWaterFillColor
 
-snippet str_sub_str
-  str_sub_str(${1:string_val}, ${2:oldString}, ${3:newString})
+snippet mpInlandWaterFillPattern
+  mpInlandWaterFillPattern
 
-snippet str_switch
-  str_switch(${1:string_val})
+snippet mpInlandWaterFillScaleF
+  mpInlandWaterFillScaleF
 
-snippet str_upper
-  str_upper(${1:string_val})
+snippet mpLabelDrawOrder
+  mpLabelDrawOrder
 
-snippet stringtochar
-  stringtochar(${1:string_val})
+snippet mpLabelFontColor
+  mpLabelFontColor
 
-snippet stringtocharacter
-  stringtocharacter(${1:string_val})
+snippet mpLabelFontHeightF
+  mpLabelFontHeightF
 
-snippet stringtodouble
-  stringtodouble(${1:string_val})
+snippet mpLabelsOn
+  mpLabelsOn
 
-snippet stringtofloat
-  stringtofloat(${1:string_val})
+snippet mpLambertMeridianF
+  mpLambertMeridianF
 
-snippet stringtoint
-  stringtoint(${1:string_val})
+snippet mpLambertParallel1F
+  mpLambertParallel1F
 
-snippet stringtointeger
-  stringtointeger(${1:string_val})
+snippet mpLambertParallel2F
+  mpLambertParallel2F
 
-snippet stringtolong
-  stringtolong(${1:string_val})
+snippet mpLandFillColor
+  mpLandFillColor
 
-snippet stringtoshort
-  stringtoshort(${1:string_val})
+snippet mpLandFillPattern
+  mpLandFillPattern
 
-snippet strlen
-  strlen(${1:str})
+snippet mpLandFillScaleF
+  mpLandFillScaleF
 
-snippet student_t
-  student_t(${1:t}, ${2:df})
+snippet mpLeftAngleF
+  mpLeftAngleF
 
-snippet sum
-  sum(${1:x})
+snippet mpLeftCornerLatF
+  mpLeftCornerLatF
 
-snippet svd_lapack
-  svd_lapack(${1:A}, ${2:jobu}, ${3:jobv}, ${4:optv}, ${5:U}, ${6:V})
+snippet mpLeftCornerLonF
+  mpLeftCornerLonF
 
-snippet svdcov
-  svdcov(${1:x}, ${2:y}, ${3:nsvd}, ${4:homlft}, ${5:hetlft}, ${6:homrgt}, ${7:hetrgt})
+snippet mpLeftMapPosF
+  mpLeftMapPosF
 
-snippet svdcov_sv
-  svdcov_sv(${1:x}, ${2:y}, ${3:nsvd}, ${4:svLeft}, ${5:svRight})
+snippet mpLeftNDCF
+  mpLeftNDCF
 
-snippet svdstd
-  svdstd(${1:x}, ${2:y}, ${3:nsvd}, ${4:homlft}, ${5:hetlft}, ${6:homrgt}, ${7:hetrgt})
+snippet mpLeftNPCF
+  mpLeftNPCF
 
-snippet svdstd_sv
-  svdstd_sv(${1:x}, ${2:y}, ${3:nsvd}, ${4:svLeft}, ${5:svRight})
+snippet mpLeftPointLatF
+  mpLeftPointLatF
 
-snippet system
-  system(${1:command})
+snippet mpLeftPointLonF
+  mpLeftPointLonF
 
-snippet systemfunc
-  systemfunc(${1:command})
+snippet mpLeftWindowF
+  mpLeftWindowF
 
-snippet tan
-  tan(${1:value})
+snippet mpLimbLineColor
+  mpLimbLineColor
 
-snippet tanh
-  tanh(${1:value})
+snippet mpLimbLineDashPattern
+  mpLimbLineDashPattern
 
-snippet taper
-  taper(${1:x}, ${2:p}, ${3:option})
+snippet mpLimbLineDashSegLenF
+  mpLimbLineDashSegLenF
 
-snippet taper_n
-  taper_n(${1:x}, ${2:p}, ${3:option}, ${4:dim})
+snippet mpLimbLineThicknessF
+  mpLimbLineThicknessF
 
-snippet tdclrs
-  tdclrs(${1:wks}, ${2:color_scheme}, ${3:shade_intensity}, ${4:shade_range}, ${5:color_index1}, ${6:color_index2}, ${7:nblocks})
+snippet mpLimitMode
+  mpLimitMode
 
-snippet tdctri
-  tdctri(${1:rtri}, ${2:ntri}, ${3:axis}, ${4:rcut})
+snippet mpMaskAreaSpecifiers
+  mpMaskAreaSpecifiers
 
-snippet tdcudp
-  tdcudp()
+snippet mpMaskOutlineSpecifiers
+  mpMaskOutlineSpecifiers
 
-snippet tdcurv
-  tdcurv(${1:wks}, ${2:ucurv}, ${3:vcurv}, ${4:wcurv}, ${5:iarh}, ${6:arhl}, ${7:arhw})
+snippet mpMaxLatF
+  mpMaxLatF
 
-snippet tddtri
-  tddtri(${1:wks}, ${2:rtri}, ${3:ntri}, ${4:itwk})
+snippet mpMaxLonF
+  mpMaxLonF
 
-snippet tdez2d
-  tdez2d(${1:wks}, ${2:x}, ${3:y}, ${4:z}, ${5:rmult}, ${6:theta}, ${7:phi}, ${8:ist})
+snippet mpMinLatF
+  mpMinLatF
 
-snippet tdez3d
-  tdez3d(${1:wks}, ${2:x}, ${3:y}, ${4:z}, ${5:u}, ${6:value}, ${7:rmult}, ${8:theta}, ${9:phi}, ${10:ist})
+snippet mpMinLonF
+  mpMinLonF
 
-snippet tdgetp
-  tdgetp(${1:pnam})
+snippet mpMonoFillColor
+  mpMonoFillColor
 
-snippet tdgrds
-  tdgrds(${1:wks}, ${2:uvwmin}, ${3:uvwmax}, ${4:uvwstep}, ${5:igrt}, ${6:ihide})
+snippet mpMonoFillPattern
+  mpMonoFillPattern
 
-snippet tdgrid
-  tdgrid(${1:wks}, ${2:xbegin}, ${3:xstep}, ${4:nx}, ${5:ybegin}, ${6:ystep}, ${7:ny}, ${8:grid_flag})
+snippet mpMonoFillScale
+  mpMonoFillScale
 
-snippet tdgtrs
-  tdgtrs(${1:render_index}, ${2:bot_fill_index1}, ${3:bot_fill_index2}, ${4:top_fill_index1}, ${5:top_fill_index2}, ${6:bot_line_index}, ${7:top_line_index}, ${8:draw_edge}, ${9:udist}, ${10:vdist}, ${11:wdist})
+snippet mpNationalLineColor
+  mpNationalLineColor
 
-snippet tdinit
-  tdinit(${1:eye}, ${2:origin}, ${3:orient}, ${4:otep})
+snippet mpNationalLineDashPattern
+  mpNationalLineDashPattern
 
-snippet tditri
-  tditri(${1:u}, ${2:v}, ${3:w}, ${4:f}, ${5:fiso}, ${6:rtri}, ${7:ntri}, ${8:render_index})
+snippet mpNationalLineDashSegLenF
+  mpNationalLineDashSegLenF
 
-snippet tdlbla
-  tdlbla(${1:wks}, ${2:axis}, ${3:info_label}, ${4:num_labels}, ${5:xrl_edge}, ${6:ybt_edge}, ${7:angle})
+snippet mpNationalLineThicknessF
+  mpNationalLineThicknessF
 
-snippet tdlblp
-  tdlblp()
+snippet mpOceanFillColor
+  mpOceanFillColor
 
-snippet tdlbls
-  tdlbls(${1:wks}, ${2:uvwmin}, ${3:uvwmax}, ${4:uvwnum_lab}, ${5:uvwinfo_lab}, ${6:edge_flag})
+snippet mpOceanFillPattern
+  mpOceanFillPattern
 
-snippet tdline
-  tdline(${1:wks}, ${2:uvw1}, ${3:uvw2})
+snippet mpOceanFillScaleF
+  mpOceanFillScaleF
 
-snippet tdlndp
-  tdlndp()
+snippet mpOutlineBoundarySets
+  mpOutlineBoundarySets
 
-snippet tdlnpa
-  tdlnpa(${1:wks}, ${2:uvw1}, ${3:uvw2})
+snippet mpOutlineDrawOrder
+  mpOutlineDrawOrder
 
-snippet tdlpdp
-  tdlpdp()
+snippet mpOutlineMaskingOn
+  mpOutlineMaskingOn
 
-snippet tdmtri
-  tdmtri(${1:marker_type}, ${2:center_point}, ${3:radius}, ${4:rtri}, ${5:ntri}, ${6:render_index}, ${7:uvwmin}, ${8:uvwmax})
+snippet mpOutlineOn
+  mpOutlineOn
 
-snippet tdotri
-  tdotri(${1:rtri}, ${2:ntri}, ${3:rtwk}, ${4:order_flag})
+snippet mpOutlineSpecifiers
+  mpOutlineSpecifiers
 
-snippet tdpara
-  tdpara(${1:uvw00}, ${2:uvw10}, ${3:uvw01})
+snippet mpPerimDrawOrder
+  mpPerimDrawOrder
 
-snippet tdplch
-  tdplch(${1:wks}, ${2:xpos}, ${3:ypos}, ${4:chrs}, ${5:size}, ${6:angle}, ${7:counter})
+snippet mpPerimLineColor
+  mpPerimLineColor
 
-snippet tdprpa
-  tdprpa(${1:xyipa})
+snippet mpPerimLineDashPattern
+  mpPerimLineDashPattern
 
-snippet tdprpi
-  tdprpi(${1:xyi2d})
+snippet mpPerimLineDashSegLenF
+  mpPerimLineDashSegLenF
 
-snippet tdprpt
-  tdprpt(${1:uvwi3d})
+snippet mpPerimLineThicknessF
+  mpPerimLineThicknessF
 
-snippet tdsetp
-  tdsetp(${1:pnam}, ${2:pval})
+snippet mpPerimOn
+  mpPerimOn
 
-snippet tdsort
-  tdsort(${1:rwrk}, ${2:sort_flag})
+snippet mpPolyMode
+  mpPolyMode
 
-snippet tdstri
-  tdstri(${1:u}, ${2:v}, ${3:w}, ${4:rtri}, ${5:ntri}, ${6:render_index})
+snippet mpProjection
+  mpProjection
 
-snippet tdstrs
-  tdstrs(${1:render_index}, ${2:bot_fill_index1}, ${3:bot_fill_index2}, ${4:top_fill_index1}, ${5:top_fill_index2}, ${6:bot_line_index}, ${7:top_line_index}, ${8:draw_edge}, ${9:udist}, ${10:vdist}, ${11:wdist})
+snippet mpProvincialLineColor
+  mpProvincialLineColor
 
-snippet tdttri
-  tdttri(${1:u}, ${2:v}, ${3:w}, ${4:marker_type}, ${5:radius}, ${6:gap_size}, ${7:rtri}, ${8:ntri}, ${9:render_index}, ${10:uvwmin}, ${11:uvwmax})
+snippet mpProvincialLineDashPattern
+  mpProvincialLineDashPattern
 
-snippet thornthwaite
-  thornthwaite(${1:t}, ${2:lat}, ${3:opt}, ${4:dim})
+snippet mpProvincialLineDashSegLenF
+  mpProvincialLineDashSegLenF
 
-snippet tobyte
-  tobyte(${1:input_val})
+snippet mpProvincialLineThicknessF
+  mpProvincialLineThicknessF
 
-snippet tochar
-  tochar(${1:input_val})
+snippet mpRelativeCenterLat
+  mpRelativeCenterLat
 
-snippet todouble
-  todouble(${1:input_val})
+snippet mpRelativeCenterLon
+  mpRelativeCenterLon
 
-snippet tofloat
-  tofloat(${1:input_val})
+snippet mpRightAngleF
+  mpRightAngleF
 
-snippet toint
-  toint(${1:input_val})
+snippet mpRightCornerLatF
+  mpRightCornerLatF
 
-snippet toint64
-  toint64(${1:input_val})
+snippet mpRightCornerLonF
+  mpRightCornerLonF
 
-snippet tointeger
-  tointeger(${1:input_val})
+snippet mpRightMapPosF
+  mpRightMapPosF
 
-snippet tolong
-  tolong(${1:input_val})
+snippet mpRightNDCF
+  mpRightNDCF
 
-snippet toshort
-  toshort(${1:input_val})
+snippet mpRightNPCF
+  mpRightNPCF
 
-snippet tosigned
-  tosigned(${1:input_val})
+snippet mpRightPointLatF
+  mpRightPointLatF
 
-snippet tostring
-  tostring(${1:input_val})
+snippet mpRightPointLonF
+  mpRightPointLonF
 
-snippet tostring_with_format
-  tostring_with_format(${1:input_val}, ${2:format})
+snippet mpRightWindowF
+  mpRightWindowF
 
-snippet totype
-  totype(${1:input_val}, ${2:type_val})
+snippet mpSatelliteAngle1F
+  mpSatelliteAngle1F
 
-snippet toubyte
-  toubyte(${1:input_val})
+snippet mpSatelliteAngle2F
+  mpSatelliteAngle2F
 
-snippet touint
-  touint(${1:input_val})
+snippet mpSatelliteDistF
+  mpSatelliteDistF
 
-snippet touint64
-  touint64(${1:input_val})
+snippet mpShapeMode
+  mpShapeMode
 
-snippet toulong
-  toulong(${1:input_val})
+snippet mpSpecifiedFillColors
+  mpSpecifiedFillColors
 
-snippet tounsigned
-  tounsigned(${1:input_val})
+snippet mpSpecifiedFillDirectIndexing
+  mpSpecifiedFillDirectIndexing
 
-snippet toushort
-  toushort(${1:input_val})
+snippet mpSpecifiedFillPatterns
+  mpSpecifiedFillPatterns
 
-snippet trend_manken
-  trend_manken(${1:x}, ${2:opt}, ${3:dims})
+snippet mpSpecifiedFillPriority
+  mpSpecifiedFillPriority
 
-snippet tri_trunc
-  tri_trunc(${1:a}, ${2:b}, ${3:T})
+snippet mpSpecifiedFillScales
+  mpSpecifiedFillScales
 
-snippet triple2grid
-  triple2grid(${1:x}, ${2:y}, ${3:data}, ${4:xgrid}, ${5:ygrid}, ${6:option})
+snippet mpTopAngleF
+  mpTopAngleF
 
-snippet triple2grid2d
-  triple2grid2d(${1:x}, ${2:y}, ${3:data}, ${4:xgrid}, ${5:ygrid}, ${6:option})
+snippet mpTopMapPosF
+  mpTopMapPosF
 
-snippet trop_wmo
-  trop_wmo(${1:p}, ${2:t}, ${3:punit}, ${4:opt})
+snippet mpTopNDCF
+  mpTopNDCF
 
-snippet ttest
-  ttest(${1:ave1}, ${2:var1}, ${3:s1}, ${4:ave2}, ${5:var2}, ${6:s2}, ${7:iflag}, ${8:tval_opt})
+snippet mpTopNPCF
+  mpTopNPCF
 
-snippet typeof
-  typeof(${1:val})
+snippet mpTopPointLatF
+  mpTopPointLatF
 
-snippet undef
-  undef(${1:names})
+snippet mpTopPointLonF
+  mpTopPointLonF
 
-snippet unique_string
-  unique_string(${1:prefix_string})
+snippet mpTopWindowF
+  mpTopWindowF
 
-snippet update
-  update(${1:wks})
+snippet mpUSStateLineColor
+  mpUSStateLineColor
 
-snippet ushorttoint
-  ushorttoint(${1:short_val})
+snippet mpUSStateLineDashPattern
+  mpUSStateLineDashPattern
 
-snippet ut_calendar
-  ut_calendar(${1:time}, ${2:option})
+snippet mpUSStateLineDashSegLenF
+  mpUSStateLineDashSegLenF
 
-snippet ut_inv_calendar
-  ut_inv_calendar(${1:year}, ${2:month}, ${3:day}, ${4:hour}, ${5:minute}, ${6:second}, ${7:units}, ${8:option})
+snippet mpUSStateLineThicknessF
+  mpUSStateLineThicknessF
 
-snippet utm2latlon
-  utm2latlon(${1:xy}, ${2:datum})
+snippet pmAnnoManagers
+  pmAnnoManagers
 
-snippet uv2dv_cfd
-  uv2dv_cfd(${1:u}, ${2:v}, ${3:lat}, ${4:lon}, ${5:boundOpt})
+snippet pmAnnoViews
+  pmAnnoViews
 
-snippet uv2dvf
-  uv2dvf(${1:u}, ${2:v}, ${3:dv})
+snippet pmLabelBarDisplayMode
+  pmLabelBarDisplayMode
 
-snippet uv2dvg
-  uv2dvg(${1:u}, ${2:v}, ${3:dv})
+snippet pmLabelBarHeightF
+  pmLabelBarHeightF
 
-snippet uv2sfvpf
-  uv2sfvpf(${1:u}, ${2:v}, ${3:sf}, ${4:vp})
+snippet pmLabelBarKeepAspect
+  pmLabelBarKeepAspect
 
-snippet uv2sfvpg
-  uv2sfvpg(${1:u}, ${2:v}, ${3:sf}, ${4:vp})
+snippet pmLabelBarOrthogonalPosF
+  pmLabelBarOrthogonalPosF
 
-snippet uv2vr_cfd
-  uv2vr_cfd(${1:u}, ${2:v}, ${3:lat}, ${4:lon}, ${5:boundOpt})
+snippet pmLabelBarParallelPosF
+  pmLabelBarParallelPosF
 
-snippet uv2vrdvf
-  uv2vrdvf(${1:u}, ${2:v}, ${3:vr}, ${4:dv})
+snippet pmLabelBarSide
+  pmLabelBarSide
 
-snippet uv2vrdvg
-  uv2vrdvg(${1:u}, ${2:v}, ${3:vr}, ${4:dv})
+snippet pmLabelBarWidthF
+  pmLabelBarWidthF
 
-snippet uv2vrf
-  uv2vrf(${1:u}, ${2:v}, ${3:vort})
+snippet pmLabelBarZone
+  pmLabelBarZone
 
-snippet uv2vrg
-  uv2vrg(${1:u}, ${2:v}, ${3:vort})
+snippet pmLegendDisplayMode
+  pmLegendDisplayMode
 
-snippet v5d_close
-  v5d_close()
+snippet pmLegendHeightF
+  pmLegendHeightF
 
-snippet v5d_create
-  v5d_create(${1:fname}, ${2:numtimes}, ${3:numvars}, ${4:nr}, ${5:nc}, ${6:nl}, ${7:varname}, ${8:timestamp}, ${9:datestamp}, ${10:compress}, ${11:projection}, ${12:proj_args}, ${13:vertical}, ${14:vert_args})
+snippet pmLegendKeepAspect
+  pmLegendKeepAspect
 
-snippet v5d_setLowLev
-  v5d_setLowLev(${1:lowLev})
+snippet pmLegendOrthogonalPosF
+  pmLegendOrthogonalPosF
 
-snippet v5d_setUnits
-  v5d_setUnits(${1:variable}, ${2:units})
+snippet pmLegendParallelPosF
+  pmLegendParallelPosF
 
-snippet v5d_write
-  v5d_write(${1:timestep}, ${2:varnum}, ${3:data})
+snippet pmLegendSide
+  pmLegendSide
 
-snippet v5d_write_var
-  v5d_write_var(${1:data})
+snippet pmLegendWidthF
+  pmLegendWidthF
 
-snippet variance
-  variance(${1:value})
+snippet pmLegendZone
+  pmLegendZone
 
-snippet vhaec
-  vhaec(${1:u}, ${2:v}, ${3:br}, ${4:bi}, ${5:cr}, ${6:ci})
+snippet pmOverlaySequenceIds
+  pmOverlaySequenceIds
 
-snippet vhagc
-  vhagc(${1:u}, ${2:v}, ${3:br}, ${4:bi}, ${5:cr}, ${6:ci})
+snippet pmTickMarkDisplayMode
+  pmTickMarkDisplayMode
 
-snippet vhsec
-  vhsec(${1:br}, ${2:bi}, ${3:cr}, ${4:ci}, ${5:u}, ${6:v})
+snippet pmTickMarkZone
+  pmTickMarkZone
 
-snippet vhsgc
-  vhsgc(${1:br}, ${2:bi}, ${3:cr}, ${4:ci}, ${5:u}, ${6:v})
+snippet pmTitleDisplayMode
+  pmTitleDisplayMode
 
-snippet vibeta
-  vibeta(${1:p}, ${2:x}, ${3:linlog}, ${4:psfc}, ${5:pbot}, ${6:ptop})
+snippet pmTitleZone
+  pmTitleZone
 
-snippet vinth2p
-  vinth2p(${1:datai}, ${2:hbcofa}, ${3:hbcofb}, ${4:plevo}, ${5:psfc}, ${6:intyp}, ${7:p0}, ${8:ii}, ${9:kxtrp})
+snippet prGraphicStyle
+  prGraphicStyle
 
-snippet vinth2p_ecmwf
-  vinth2p_ecmwf(${1:datai}, ${2:hbcofa}, ${3:hbcofb}, ${4:plevo}, ${5:psfc}, ${6:intyp}, ${7:p0}, ${8:ii}, ${9:kxtrp}, ${10:varflg}, ${11:tbot}, ${12:phis})
+snippet prPolyType
+  prPolyType
 
-snippet vinth2p_ecmwf_nodes
-  vinth2p_ecmwf_nodes(${1:datai}, ${2:hbcofa}, ${3:hbcofb}, ${4:plevo}, ${5:psfc}, ${6:intyp}, ${7:p0}, ${8:ii}, ${9:kxtrp}, ${10:varflg}, ${11:tbot}, ${12:phis})
+snippet prXArray
+  prXArray
 
-snippet vinth2p_nodes
-  vinth2p_nodes(${1:datai}, ${2:hbcofa}, ${3:hbcofb}, ${4:plevo}, ${5:psfc}, ${6:intyp}, ${7:p0}, ${8:ii}, ${9:kxtrp})
+snippet prYArray
+  prYArray
 
-snippet vintp2p_ecmwf
-  vintp2p_ecmwf(${1:datai}, ${2:presi}, ${3:plevo}, ${4:psfc}, ${5:intyp}, ${6:ii}, ${7:kxtrp}, ${8:varflg}, ${9:tbot}, ${10:phis})
+snippet sfCopyData
+  sfCopyData
 
-snippet vr2uvf
-  vr2uvf(${1:vor}, ${2:ur}, ${3:vr})
+snippet sfDataArray
+  sfDataArray
 
-snippet vr2uvg
-  vr2uvg(${1:vor}, ${2:ur}, ${3:vr})
+snippet sfDataMaxV
+  sfDataMaxV
 
-snippet vrdv2uvf
-  vrdv2uvf(${1:vr}, ${2:dv}, ${3:ud}, ${4:vd})
+snippet sfDataMinV
+  sfDataMinV
 
-snippet vrdv2uvg
-  vrdv2uvg(${1:vr}, ${2:dv}, ${3:u}, ${4:v})
+snippet sfElementNodes
+  sfElementNodes
 
-snippet wavelet
-  wavelet(${1:y}, ${2:mother}, ${3:dt}, ${4:param}, ${5:s0}, ${6:dj}, ${7:jtot}, ${8:npad}, ${9:noise}, ${10:isigtest}, ${11:siglvl}, ${12:nadof})
+snippet sfExchangeDimensions
+  sfExchangeDimensions
 
-snippet wavelet_default
-  wavelet_default(${1:y}, ${2:mother})
+snippet sfFirstNodeIndex
+  sfFirstNodeIndex
 
-snippet weibull
-  weibull(${1:x}, ${2:opt}, ${3:dims})
+snippet sfMissingValueV
+  sfMissingValueV
 
-snippet wgt_area_smooth
-  wgt_area_smooth(${1:field}, ${2:wgt}, ${3:opt})
+snippet sfXArray
+  sfXArray
 
-snippet wgt_areaave
-  wgt_areaave(${1:q}, ${2:wgty}, ${3:wgtx}, ${4:opt})
+snippet sfXCActualEndF
+  sfXCActualEndF
 
-snippet wgt_areaave2
-  wgt_areaave2(${1:q}, ${2:wgt}, ${3:opt})
+snippet sfXCActualStartF
+  sfXCActualStartF
 
-snippet wgt_arearmse
-  wgt_arearmse(${1:q}, ${2:r}, ${3:wgty}, ${4:wgtx}, ${5:opt})
+snippet sfXCEndIndex
+  sfXCEndIndex
 
-snippet wgt_arearmse2
-  wgt_arearmse2(${1:q}, ${2:r}, ${3:wgt}, ${4:opt})
+snippet sfXCEndSubsetV
+  sfXCEndSubsetV
 
-snippet wgt_areasum2
-  wgt_areasum2(${1:q}, ${2:wgt}, ${3:opt})
+snippet sfXCEndV
+  sfXCEndV
 
-snippet wgt_runave
-  wgt_runave(${1:x}, ${2:wgt}, ${3:opt})
+snippet sfXCStartIndex
+  sfXCStartIndex
 
-snippet wgt_runave_n
-  wgt_runave_n(${1:x}, ${2:wgt}, ${3:opt}, ${4:dim})
+snippet sfXCStartSubsetV
+  sfXCStartSubsetV
 
-snippet wgt_vert_avg_beta
-  wgt_vert_avg_beta(${1:p}, ${2:datai}, ${3:psfc}, ${4:punits}, ${5:opt})
+snippet sfXCStartV
+  sfXCStartV
 
-snippet wgt_volave
-  wgt_volave(${1:q}, ${2:wgtz}, ${3:wgty}, ${4:wgtx}, ${5:opt})
+snippet sfXCStride
+  sfXCStride
 
-snippet wgt_volave_ccm
-  wgt_volave_ccm(${1:q}, ${2:wgtz}, ${3:wgty}, ${4:wgtx}, ${5:opt})
+snippet sfXCellBounds
+  sfXCellBounds
 
-snippet wgt_volrmse
-  wgt_volrmse(${1:q}, ${2:r}, ${3:wgtz}, ${4:wgty}, ${5:wgtx}, ${6:opt})
+snippet sfYArray
+  sfYArray
 
-snippet wgt_volrmse_ccm
-  wgt_volrmse_ccm(${1:q}, ${2:r}, ${3:wgtq}, ${4:wgtr}, ${5:wgty}, ${6:wgtx}, ${7:opt})
+snippet sfYCActualEndF
+  sfYCActualEndF
 
-snippet where
-  where(${1:condtnl_expr}, ${2:true_value}, ${3:false_value})
+snippet sfYCActualStartF
+  sfYCActualStartF
 
-snippet wk_smooth121
-  wk_smooth121(${1:x})
+snippet sfYCEndIndex
+  sfYCEndIndex
 
-snippet wmbarb
-  wmbarb(${1:wks}, ${2:x}, ${3:y}, ${4:dx}, ${5:dy})
+snippet sfYCEndSubsetV
+  sfYCEndSubsetV
 
-snippet wmbarbmap
-  wmbarbmap(${1:wks}, ${2:lat}, ${3:lon}, ${4:u}, ${5:v})
+snippet sfYCEndV
+  sfYCEndV
 
-snippet wmdrft
-  wmdrft(${1:wks}, ${2:y}, ${3:x})
+snippet sfYCStartIndex
+  sfYCStartIndex
 
-snippet wmgetp
-  wmgetp(${1:pnam})
+snippet sfYCStartSubsetV
+  sfYCStartSubsetV
 
-snippet wmlabs
-  wmlabs(${1:wks}, ${2:x}, ${3:y}, ${4:sym})
+snippet sfYCStartV
+  sfYCStartV
 
-snippet wmsetp
-  wmsetp(${1:pnam}, ${2:pval})
+snippet sfYCStride
+  sfYCStride
 
-snippet wmstnm
-  wmstnm(${1:wks}, ${2:x}, ${3:y}, ${4:imdat})
+snippet sfYCellBounds
+  sfYCellBounds
 
-snippet wmvect
-  wmvect(${1:wks}, ${2:x}, ${3:y}, ${4:dx}, ${5:dy})
+snippet stArrowLengthF
+  stArrowLengthF
 
-snippet wmvectmap
-  wmvectmap(${1:wks}, ${2:lat}, ${3:lon}, ${4:u}, ${5:v})
+snippet stArrowStride
+  stArrowStride
 
-snippet wmvlbl
-  wmvlbl(${1:wks}, ${2:x}, ${3:y})
+snippet stCrossoverCheckCount
+  stCrossoverCheckCount
 
-snippet wrf_avo
-  wrf_avo(${1:u}, ${2:v}, ${3:msfu}, ${4:msfv}, ${5:msfm}, ${6:cor}, ${7:dx}, ${8:dy}, ${9:opt})
+snippet stExplicitLabelBarLabelsOn
+  stExplicitLabelBarLabelsOn
 
-snippet wrf_cape_2d
-  wrf_cape_2d(${1:p}, ${2:t}, ${3:q}, ${4:z}, ${5:zsfc}, ${6:psfc}, ${7:opt})
+snippet stLabelBarEndLabelsOn
+  stLabelBarEndLabelsOn
 
-snippet wrf_cape_3d
-  wrf_cape_3d(${1:p}, ${2:t}, ${3:q}, ${4:z}, ${5:zsfc}, ${6:psfc}, ${7:opt})
+snippet stLabelFormat
+  stLabelFormat
 
-snippet wrf_dbz
-  wrf_dbz(${1:P}, ${2:T}, ${3:qv}, ${4:qr}, ${5:qs}, ${6:qg}, ${7:ivarint}, ${8:iliqskin})
+snippet stLengthCheckCount
+  stLengthCheckCount
 
-snippet wrf_eth
-  wrf_eth(${1:qv}, ${2:T}, ${3:P})
+snippet stLevelColors
+  stLevelColors
 
-snippet wrf_helicity
-  wrf_helicity(${1:UA}, ${2:VA}, ${3:Z}, ${4:TER}, ${5:top})
+snippet stLevelCount
+  stLevelCount
 
-snippet wrf_ij_to_ll
-  wrf_ij_to_ll(${1:iloc}, ${2:jloc}, ${3:opt})
+snippet stLevelPalette
+  stLevelPalette
 
-snippet wrf_interp_1d
-  wrf_interp_1d(${1:v_in}, ${2:z_in}, ${3:z_out})
+snippet stLevelSelectionMode
+  stLevelSelectionMode
 
-snippet wrf_interp_2d_xy
-  wrf_interp_2d_xy(${1:v3d}, ${2:xy})
+snippet stLevelSpacingF
+  stLevelSpacingF
 
-snippet wrf_interp_3d_z
-  wrf_interp_3d_z(${1:v3d}, ${2:vert}, ${3:loc})
+snippet stLevels
+  stLevels
 
-snippet wrf_latlon_to_ij
-  wrf_latlon_to_ij(${1:lat_wrf}, ${2:lon_wrf}, ${3:lat_pts}, ${4:lon_pts})
+snippet stLineColor
+  stLineColor
 
-snippet wrf_ll_to_ij
-  wrf_ll_to_ij(${1:lon}, ${2:lat}, ${3:opt})
+snippet stLineOpacityF
+  stLineOpacityF
 
-snippet wrf_omega
-  wrf_omega(${1:qv}, ${2:t}, ${3:v}, ${4:p})
+snippet stLineStartStride
+  stLineStartStride
 
-snippet wrf_pvo
-  wrf_pvo(${1:u}, ${2:v}, ${3:THETA}, ${4:P}, ${5:msfu}, ${6:msfv}, ${7:msfm}, ${8:cor}, ${9:dx}, ${10:dy}, ${11:opt})
+snippet stLineThicknessF
+  stLineThicknessF
 
-snippet wrf_rh
-  wrf_rh(${1:qv}, ${2:P}, ${3:T})
+snippet stMapDirection
+  stMapDirection
 
-snippet wrf_slp
-  wrf_slp(${1:Z}, ${2:T}, ${3:P}, ${4:Q})
+snippet stMaxLevelCount
+  stMaxLevelCount
 
-snippet wrf_smooth_2d
-  wrf_smooth_2d(${1:fld}, ${2:iter})
+snippet stMaxLevelValF
+  stMaxLevelValF
 
-snippet wrf_td
-  wrf_td(${1:P}, ${2:qv})
+snippet stMinArrowSpacingF
+  stMinArrowSpacingF
 
-snippet wrf_tk
-  wrf_tk(${1:P}, ${2:THETA})
+snippet stMinDistanceF
+  stMinDistanceF
 
-snippet wrf_updraft_helicity
-  wrf_updraft_helicity(${1:ZP}, ${2:MAPFCT}, ${3:US}, ${4:VS}, ${5:W}, ${6:dx}, ${7:dy}, ${8:opt})
+snippet stMinLevelValF
+  stMinLevelValF
 
-snippet wrf_uvmet
-  wrf_uvmet(${1:u}, ${2:v}, ${3:lat}, ${4:lon}, ${5:cen_lon}, ${6:cone})
+snippet stMinLineSpacingF
+  stMinLineSpacingF
 
-snippet wrf_virtual_temp
-  wrf_virtual_temp(${1:t}, ${2:qv})
+snippet stMinStepFactorF
+  stMinStepFactorF
 
-snippet wrf_wetbulb
-  wrf_wetbulb(${1:p}, ${2:t}, ${3:qv})
+snippet stMonoLineColor
+  stMonoLineColor
 
-snippet wrf_wps_close_int
-  wrf_wps_close_int(${1:istatus})
+snippet stNoDataLabelOn
+  stNoDataLabelOn
 
-snippet wrf_wps_open_int
-  wrf_wps_open_int(${1:filename})
+snippet stNoDataLabelString
+  stNoDataLabelString
 
-snippet wrf_wps_rddata_int
-  wrf_wps_rddata_int(${1:istatus}, ${2:nx}, ${3:ny})
+snippet stScalarFieldData
+  stScalarFieldData
 
-snippet wrf_wps_rdhead_int
-  wrf_wps_rdhead_int(${1:istatus}, ${2:rhead}, ${3:field}, ${4:date}, ${5:units}, ${6:map_source}, ${7:description})
+snippet stScalarMissingValColor
+  stScalarMissingValColor
 
-snippet wrf_wps_read_int
-  wrf_wps_read_int(${1:filename})
+snippet stSpanLevelPalette
+  stSpanLevelPalette
 
-snippet wrf_wps_write_int
-  wrf_wps_write_int(${1:filename}, ${2:field}, ${3:units}, ${4:description}, ${5:data}, ${6:opt})
+snippet stStepSizeF
+  stStepSizeF
 
-snippet write_matrix
-  write_matrix(${1:data}, ${2:fmtf}, ${3:option})
+snippet stStreamlineDrawOrder
+  stStreamlineDrawOrder
 
-snippet write_table
-  write_table(${1:filename}, ${2:option}, ${3:alist}, ${4:format})
+snippet stUseScalarArray
+  stUseScalarArray
 
-snippet yiqrgb
-  yiqrgb(${1:yiq})
+snippet stVectorFieldData
+  stVectorFieldData
 
-snippet z2geouv
-  z2geouv(${1:z}, ${2:lat}, ${3:lon}, ${4:iopt})
+snippet stZeroFLabelAngleF
+  stZeroFLabelAngleF
 
-snippet zonal_mpsi
-  zonal_mpsi(${1:v}, ${2:lat}, ${3:p}, ${4:ps})
+snippet stZeroFLabelBackgroundColor
+  stZeroFLabelBackgroundColor
 
-snippet addfiles_GetVar
-  addfiles_GetVar(${1:f}, ${2:files}, ${3:name})
+snippet stZeroFLabelConstantSpacingF
+  stZeroFLabelConstantSpacingF
 
-snippet advect_variable
-  advect_variable(${1:u}, ${2:v}, ${3:x}, ${4:gridType}, ${5:longName}, ${6:units}, ${7:opt})
+snippet stZeroFLabelFont
+  stZeroFLabelFont
 
-snippet albedo_ccm
-  albedo_ccm(${1:flux1}, ${2:flux2}, ${3:formula})
+snippet stZeroFLabelFontAspectF
+  stZeroFLabelFontAspectF
 
-snippet area_conserve_remap_Wrap
-  area_conserve_remap_Wrap(${1:loni}, ${2:lati}, ${3:fi}, ${4:lono}, ${5:lato}, ${6:opt})
+snippet stZeroFLabelFontColor
+  stZeroFLabelFontColor
 
-snippet area_hi2lores_Wrap
-  area_hi2lores_Wrap(${1:xi}, ${2:yi}, ${3:fi}, ${4:fiCyclicX}, ${5:wy}, ${6:xo}, ${7:yo}, ${8:foOption})
+snippet stZeroFLabelFontHeightF
+  stZeroFLabelFontHeightF
 
-snippet array_append_record
-  array_append_record(${1:x1}, ${2:x2}, ${3:opt})
+snippet stZeroFLabelFontQuality
+  stZeroFLabelFontQuality
 
-snippet assignFillValue
-  assignFillValue(${1:var_from}, ${2:var_to})
+snippet stZeroFLabelFontThicknessF
+  stZeroFLabelFontThicknessF
 
-snippet byte2flt
-  byte2flt(${1:x})
+snippet stZeroFLabelFuncCode
+  stZeroFLabelFuncCode
 
-snippet byte2flt_hdf
-  byte2flt_hdf(${1:x})
+snippet stZeroFLabelJust
+  stZeroFLabelJust
 
-snippet calcDayAnomTLL
-  calcDayAnomTLL(${1:x}, ${2:yyyyddd}, ${3:clmDay})
+snippet stZeroFLabelOn
+  stZeroFLabelOn
 
-snippet calcMonAnomLLLT
-  calcMonAnomLLLT(${1:x}, ${2:xAve})
+snippet stZeroFLabelOrthogonalPosF
+  stZeroFLabelOrthogonalPosF
 
-snippet calcMonAnomLLT
-  calcMonAnomLLT(${1:x}, ${2:xAve})
+snippet stZeroFLabelParallelPosF
+  stZeroFLabelParallelPosF
 
-snippet calcMonAnomTLL
-  calcMonAnomTLL(${1:x}, ${2:xAve})
+snippet stZeroFLabelPerimColor
+  stZeroFLabelPerimColor
 
-snippet calcMonAnomTLLL
-  calcMonAnomTLLL(${1:x}, ${2:xAve})
+snippet stZeroFLabelPerimOn
+  stZeroFLabelPerimOn
 
-snippet calculate_monthly_values
-  calculate_monthly_values(${1:x}, ${2:arith}, ${3:nDim}, ${4:opt})
+snippet stZeroFLabelPerimSpaceF
+  stZeroFLabelPerimSpaceF
 
-snippet cd_convert
-  cd_convert(${1:dateFrom}, ${2:unitsTo})
+snippet stZeroFLabelPerimThicknessF
+  stZeroFLabelPerimThicknessF
 
-snippet changeCase
-  changeCase(${1:x}, ${2:case})
+snippet stZeroFLabelSide
+  stZeroFLabelSide
 
-snippet changeCaseChar
-  changeCaseChar(${1:x})
+snippet stZeroFLabelString
+  stZeroFLabelString
 
-snippet clmDayTLL
-  clmDayTLL(${1:x}, ${2:yyyyddd})
+snippet stZeroFLabelTextDirection
+  stZeroFLabelTextDirection
 
-snippet clmDayTLLL
-  clmDayTLLL(${1:x}, ${2:yyyyddd})
+snippet stZeroFLabelZone
+  stZeroFLabelZone
 
-snippet clmMon2clmDay
-  clmMon2clmDay(${1:xClmMon}, ${2:retOrder}, ${3:opt})
+snippet tfDoNDCOverlay
+  tfDoNDCOverlay
 
-snippet clmMonLLLT
-  clmMonLLLT(${1:x})
+snippet tfPlotManagerOn
+  tfPlotManagerOn
 
-snippet clmMonLLT
-  clmMonLLT(${1:x})
+snippet tfPolyDrawList
+  tfPolyDrawList
 
-snippet clmMonTLL
-  clmMonTLL(${1:x})
+snippet tfPolyDrawOrder
+  tfPolyDrawOrder
 
-snippet clmMonTLLL
-  clmMonTLLL(${1:x})
+snippet tiDeltaF
+  tiDeltaF
 
-snippet closest_val
-  closest_val(${1:xval}, ${2:x})
+snippet tiMainAngleF
+  tiMainAngleF
 
-snippet copy_VarAtts
-  copy_VarAtts(${1:var_from}, ${2:var_to})
+snippet tiMainConstantSpacingF
+  tiMainConstantSpacingF
 
-snippet copy_VarCoords
-  copy_VarCoords(${1:var_from}, ${2:var_to})
+snippet tiMainDirection
+  tiMainDirection
 
-snippet copy_VarCoords_1
-  copy_VarCoords_1(${1:var_from}, ${2:var_to})
+snippet tiMainFont
+  tiMainFont
 
-snippet copy_VarCoords_2
-  copy_VarCoords_2(${1:var_from}, ${2:var_to})
+snippet tiMainFontAspectF
+  tiMainFontAspectF
 
-snippet copy_VarMeta
-  copy_VarMeta(${1:var_from}, ${2:var_to})
+snippet tiMainFontColor
+  tiMainFontColor
 
-snippet copyatt
-  copyatt(${1:var_to}, ${2:var_from})
+snippet tiMainFontHeightF
+  tiMainFontHeightF
 
-snippet crossp3
-  crossp3(${1:a}, ${2:b})
+snippet tiMainFontQuality
+  tiMainFontQuality
 
-snippet cshstringtolist
-  cshstringtolist(${1:cshlist})
+snippet tiMainFontThicknessF
+  tiMainFontThicknessF
 
-snippet cssgrid_Wrap
-  cssgrid_Wrap(${1:rlat}, ${2:rlon}, ${3:fval}, ${4:plat}, ${5:plon})
+snippet tiMainFuncCode
+  tiMainFuncCode
 
-snippet dble2flt
-  dble2flt(${1:x})
+snippet tiMainJust
+  tiMainJust
 
-snippet decimalPlaces
-  decimalPlaces(${1:x}, ${2:nplaces}, ${3:round})
+snippet tiMainOffsetXF
+  tiMainOffsetXF
 
-snippet delete_VarAtts
-  delete_VarAtts(${1:var}, ${2:atts})
+snippet tiMainOffsetYF
+  tiMainOffsetYF
 
-snippet demod_cmplx
-  demod_cmplx(${1:x}, ${2:frqdem}, ${3:frqcut}, ${4:nwt}, ${5:ndim}, ${6:opt})
+snippet tiMainOn
+  tiMainOn
 
-snippet dim_avg_n_Wrap
-  dim_avg_n_Wrap(${1:x}, ${2:dims})
+snippet tiMainPosition
+  tiMainPosition
 
-snippet dim_avg_wgt_n_Wrap
-  dim_avg_wgt_n_Wrap(${1:x}, ${2:w}, ${3:opt}, ${4:dim})
+snippet tiMainSide
+  tiMainSide
 
-snippet dim_avg_wgt_Wrap
-  dim_avg_wgt_Wrap(${1:x}, ${2:w}, ${3:opt})
+snippet tiMainString
+  tiMainString
 
-snippet dim_avg_Wrap
-  dim_avg_Wrap(${1:x})
+snippet tiUseMainAttributes
+  tiUseMainAttributes
 
-snippet dim_cumsum_n_Wrap
-  dim_cumsum_n_Wrap(${1:x}, ${2:opt}, ${3:dims})
+snippet tiXAxisAngleF
+  tiXAxisAngleF
 
-snippet dim_cumsum_Wrap
-  dim_cumsum_Wrap(${1:x}, ${2:opt})
+snippet tiXAxisConstantSpacingF
+  tiXAxisConstantSpacingF
 
-snippet dim_max_n_Wrap
-  dim_max_n_Wrap(${1:x}, ${2:dims})
+snippet tiXAxisDirection
+  tiXAxisDirection
 
-snippet dim_min_n_Wrap
-  dim_min_n_Wrap(${1:x}, ${2:dims})
+snippet tiXAxisFont
+  tiXAxisFont
 
-snippet dim_rmsd_n_Wrap
-  dim_rmsd_n_Wrap(${1:x}, ${2:y}, ${3:dims})
+snippet tiXAxisFontAspectF
+  tiXAxisFontAspectF
 
-snippet dim_rmsd_Wrap
-  dim_rmsd_Wrap(${1:x}, ${2:y})
+snippet tiXAxisFontColor
+  tiXAxisFontColor
 
-snippet dim_rmvmean_n_Wrap
-  dim_rmvmean_n_Wrap(${1:x}, ${2:dims})
+snippet tiXAxisFontHeightF
+  tiXAxisFontHeightF
 
-snippet dim_rmvmean_Wrap
-  dim_rmvmean_Wrap(${1:x})
+snippet tiXAxisFontQuality
+  tiXAxisFontQuality
 
-snippet dim_rmvmed_n_Wrap
-  dim_rmvmed_n_Wrap(${1:x}, ${2:dims})
+snippet tiXAxisFontThicknessF
+  tiXAxisFontThicknessF
 
-snippet dim_rmvmed_Wrap
-  dim_rmvmed_Wrap(${1:x})
+snippet tiXAxisFuncCode
+  tiXAxisFuncCode
 
-snippet dim_standardize_n_Wrap
-  dim_standardize_n_Wrap(${1:x}, ${2:opt}, ${3:dims})
+snippet tiXAxisJust
+  tiXAxisJust
 
-snippet dim_standardize_Wrap
-  dim_standardize_Wrap(${1:x}, ${2:opt})
+snippet tiXAxisOffsetXF
+  tiXAxisOffsetXF
 
-snippet dim_stddev_n_Wrap
-  dim_stddev_n_Wrap(${1:x}, ${2:dims})
+snippet tiXAxisOffsetYF
+  tiXAxisOffsetYF
 
-snippet dim_stddev_Wrap
-  dim_stddev_Wrap(${1:x})
+snippet tiXAxisOn
+  tiXAxisOn
 
-snippet dim_sum_n_Wrap
-  dim_sum_n_Wrap(${1:x}, ${2:dims})
+snippet tiXAxisPosition
+  tiXAxisPosition
 
-snippet dim_sum_wgt_n_Wrap
-  dim_sum_wgt_n_Wrap(${1:x}, ${2:w}, ${3:opt}, ${4:dim})
+snippet tiXAxisSide
+  tiXAxisSide
 
-snippet dim_sum_wgt_Wrap
-  dim_sum_wgt_Wrap(${1:x}, ${2:w}, ${3:opt})
+snippet tiXAxisString
+  tiXAxisString
 
-snippet dim_sum_Wrap
-  dim_sum_Wrap(${1:x})
+snippet tiYAxisAngleF
+  tiYAxisAngleF
 
-snippet dim_variance_n_Wrap
-  dim_variance_n_Wrap(${1:x}, ${2:dims})
+snippet tiYAxisConstantSpacingF
+  tiYAxisConstantSpacingF
 
-snippet dim_variance_Wrap
-  dim_variance_Wrap(${1:x})
+snippet tiYAxisDirection
+  tiYAxisDirection
 
-snippet dpres_plevel_Wrap
-  dpres_plevel_Wrap(${1:plev}, ${2:psfc}, ${3:ptop}, ${4:iopt})
+snippet tiYAxisFont
+  tiYAxisFont
 
-snippet dtrend_leftdim
-  dtrend_leftdim(${1:y}, ${2:return_info})
+snippet tiYAxisFontAspectF
+  tiYAxisFontAspectF
 
-snippet dv2uvF_Wrap
-  dv2uvF_Wrap(${1:dv})
+snippet tiYAxisFontColor
+  tiYAxisFontColor
 
-snippet dv2uvG_Wrap
-  dv2uvG_Wrap(${1:dv})
+snippet tiYAxisFontHeightF
+  tiYAxisFontHeightF
 
-snippet eof_north
-  eof_north(${1:eval}, ${2:N}, ${3:prinfo})
+snippet tiYAxisFontQuality
+  tiYAxisFontQuality
 
-snippet eofcor_Wrap
-  eofcor_Wrap(${1:data}, ${2:neval})
+snippet tiYAxisFontThicknessF
+  tiYAxisFontThicknessF
 
-snippet eofcov_Wrap
-  eofcov_Wrap(${1:data}, ${2:neval})
+snippet tiYAxisFuncCode
+  tiYAxisFuncCode
 
-snippet eofunc_north
-  eofunc_north(${1:eval}, ${2:N}, ${3:prinfo})
+snippet tiYAxisJust
+  tiYAxisJust
 
-snippet eofunc_ts_Wrap
-  eofunc_ts_Wrap(${1:data}, ${2:evec}, ${3:optETS})
+snippet tiYAxisOffsetXF
+  tiYAxisOffsetXF
 
-snippet eofunc_varimax_reorder
-  eofunc_varimax_reorder(${1:evec_rot})
+snippet tiYAxisOffsetYF
+  tiYAxisOffsetYF
 
-snippet eofunc_varimax_Wrap
-  eofunc_varimax_Wrap(${1:evec}, ${2:optEVX})
+snippet tiYAxisOn
+  tiYAxisOn
 
-snippet eofunc_Wrap
-  eofunc_Wrap(${1:data}, ${2:neval}, ${3:optEOF})
+snippet tiYAxisPosition
+  tiYAxisPosition
 
-snippet epflux
-  epflux(${1:u}, ${2:v}, ${3:t}, ${4:plvl}, ${5:lat}, ${6:opt})
+snippet tiYAxisSide
+  tiYAxisSide
 
-snippet epsZero
-  epsZero(${1:x}, ${2:eps})
+snippet tiYAxisString
+  tiYAxisString
 
-snippet extract_filevaratts_hdf5
-  extract_filevaratts_hdf5(${1:info}, ${2:key_word})
+snippet tmBorderLineColor
+  tmBorderLineColor
 
-snippet f2fosh_Wrap
-  f2fosh_Wrap(${1:grid})
+snippet tmBorderThicknessF
+  tmBorderThicknessF
 
-snippet f2foshv_Wrap
-  f2foshv_Wrap(${1:ureg}, ${2:vreg}, ${3:uoff}, ${4:voff})
+snippet tmEqualizeXYSizes
+  tmEqualizeXYSizes
 
-snippet f2fsh_Wrap
-  f2fsh_Wrap(${1:grid}, ${2:outdims})
+snippet tmLabelAutoStride
+  tmLabelAutoStride
 
-snippet f2fshv_Wrap
-  f2fshv_Wrap(${1:ua}, ${2:va}, ${3:ub}, ${4:vb})
+snippet tmSciNoteCutoff
+  tmSciNoteCutoff
 
-snippet f2gsh_Wrap
-  f2gsh_Wrap(${1:grid}, ${2:outdims}, ${3:twave})
+snippet tmXBAutoPrecision
+  tmXBAutoPrecision
 
-snippet f2gshv_Wrap
-  f2gshv_Wrap(${1:ua}, ${2:va}, ${3:ub}, ${4:vb}, ${5:twave})
+snippet tmXBBorderOn
+  tmXBBorderOn
 
-snippet fbindirSwap
-  fbindirSwap(${1:in_file}, ${2:dims}, ${3:type}, ${4:out_file})
+snippet tmXBDataLeftF
+  tmXBDataLeftF
 
-snippet fbinseqSwap1
-  fbinseqSwap1(${1:in_file}, ${2:out_file}, ${3:type}, ${4:dims})
+snippet tmXBDataRightF
+  tmXBDataRightF
 
-snippet fbinseqSwap2
-  fbinseqSwap2(${1:in_file}, ${2:out_file}, ${3:type}, ${4:dims})
+snippet tmXBFormat
+  tmXBFormat
 
-snippet fire_index_haines
-  fire_index_haines(${1:p}, ${2:t}, ${3:td}, ${4:opt})
+snippet tmXBIrrTensionF
+  tmXBIrrTensionF
 
-snippet flt2dble
-  flt2dble(${1:x})
+snippet tmXBIrregularPoints
+  tmXBIrregularPoints
 
-snippet flt2string
-  flt2string(${1:x})
+snippet tmXBLabelAngleF
+  tmXBLabelAngleF
 
-snippet fo2fsh_Wrap
-  fo2fsh_Wrap(${1:grid})
+snippet tmXBLabelConstantSpacingF
+  tmXBLabelConstantSpacingF
 
-snippet fo2fshv_Wrap
-  fo2fshv_Wrap(${1:uoff}, ${2:voff}, ${3:ureg}, ${4:vreg})
+snippet tmXBLabelDeltaF
+  tmXBLabelDeltaF
 
-snippet g2fsh_Wrap
-  g2fsh_Wrap(${1:grid}, ${2:outdims})
+snippet tmXBLabelDirection
+  tmXBLabelDirection
 
-snippet g2fshv_Wrap
-  g2fshv_Wrap(${1:ua}, ${2:va}, ${3:ub}, ${4:vb})
+snippet tmXBLabelFont
+  tmXBLabelFont
 
-snippet g2gsh_Wrap
-  g2gsh_Wrap(${1:grid}, ${2:outdims}, ${3:twave})
+snippet tmXBLabelFontAspectF
+  tmXBLabelFontAspectF
 
-snippet g2gshv_Wrap
-  g2gshv_Wrap(${1:ua}, ${2:va}, ${3:ub}, ${4:vb}, ${5:twave})
+snippet tmXBLabelFontColor
+  tmXBLabelFontColor
 
-snippet generate_sample_indices
-  generate_sample_indices(${1:N}, ${2:method})
+snippet tmXBLabelFontHeightF
+  tmXBLabelFontHeightF
 
-snippet generate_unique_indices
-  generate_unique_indices(${1:N})
+snippet tmXBLabelFontQuality
+  tmXBLabelFontQuality
 
-snippet genNormalDist
-  genNormalDist(${1:xAve}, ${2:xStd}, ${3:opt})
+snippet tmXBLabelFontThicknessF
+  tmXBLabelFontThicknessF
 
-snippet get1Dindex
-  get1Dindex(${1:x}, ${2:wanted_value})
+snippet tmXBLabelFuncCode
+  tmXBLabelFuncCode
 
-snippet get1Dindex_Collapse
-  get1Dindex_Collapse(${1:x}, ${2:exclude_value})
+snippet tmXBLabelJust
+  tmXBLabelJust
 
-snippet get1Dindex_Exclude
-  get1Dindex_Exclude(${1:x}, ${2:exclude_value})
+snippet tmXBLabelStride
+  tmXBLabelStride
 
-snippet get_file_suffix
-  get_file_suffix(${1:fileName}, ${2:opt})
+snippet tmXBLabels
+  tmXBLabels
 
-snippet GetFillColor
-  GetFillColor(${1:cnlevels}, ${2:cmap}, ${3:value})
+snippet tmXBLabelsOn
+  tmXBLabelsOn
 
-snippet GetFillColorIndex
-  GetFillColorIndex(${1:cnlevels}, ${2:indices}, ${3:value})
+snippet tmXBMajorLengthF
+  tmXBMajorLengthF
 
-snippet getFillValue
-  getFillValue(${1:x})
+snippet tmXBMajorLineColor
+  tmXBMajorLineColor
 
-snippet getind_latlon2d
-  getind_latlon2d(${1:lat2d}, ${2:lon2d}, ${3:lat}, ${4:lon})
+snippet tmXBMajorOutwardLengthF
+  tmXBMajorOutwardLengthF
 
-snippet getVarDimNames
-  getVarDimNames(${1:x})
+snippet tmXBMajorThicknessF
+  tmXBMajorThicknessF
 
-snippet getVarFillValue
-  getVarFillValue(${1:x})
+snippet tmXBMaxLabelLenF
+  tmXBMaxLabelLenF
 
-snippet grib_stime2itime
-  grib_stime2itime(${1:stime})
+snippet tmXBMaxTicks
+  tmXBMaxTicks
 
-snippet hyi2hyo_Wrap
-  hyi2hyo_Wrap(${1:p0}, ${2:hyai}, ${3:hybi}, ${4:ps}, ${5:xi}, ${6:hyao}, ${7:hybo}, ${8:intflg})
+snippet tmXBMinLabelSpacingF
+  tmXBMinLabelSpacingF
 
-snippet ilapsF_Wrap
-  ilapsF_Wrap(${1:zlap}, ${2:zlmbda})
+snippet tmXBMinorLengthF
+  tmXBMinorLengthF
 
-snippet ilapsG_Wrap
-  ilapsG_Wrap(${1:zlap}, ${2:zlmbda})
+snippet tmXBMinorLineColor
+  tmXBMinorLineColor
 
-snippet ind_nearest_coord
-  ind_nearest_coord(${1:z}, ${2:zcoord}, ${3:iopt})
+snippet tmXBMinorOn
+  tmXBMinorOn
 
-snippet indStrSubset
-  indStrSubset(${1:str}, ${2:str_subset})
+snippet tmXBMinorOutwardLengthF
+  tmXBMinorOutwardLengthF
 
-snippet int2dble
-  int2dble(${1:x})
+snippet tmXBMinorPerMajor
+  tmXBMinorPerMajor
 
-snippet int2flt
-  int2flt(${1:x})
+snippet tmXBMinorThicknessF
+  tmXBMinorThicknessF
 
-snippet int2p_n_Wrap
-  int2p_n_Wrap(${1:pin}, ${2:xin}, ${3:pout}, ${4:linlog}, ${5:pdim})
+snippet tmXBMinorValues
+  tmXBMinorValues
 
-snippet int2p_Wrap
-  int2p_Wrap(${1:pin}, ${2:xin}, ${3:pout}, ${4:linlog})
+snippet tmXBMode
+  tmXBMode
 
-snippet isMonotonic
-  isMonotonic(${1:x})
+snippet tmXBOn
+  tmXBOn
 
-snippet isStrSubset
-  isStrSubset(${1:str}, ${2:str_subset})
+snippet tmXBPrecision
+  tmXBPrecision
 
-snippet latGau
-  latGau(${1:nlat}, ${2:name}, ${3:longname}, ${4:units})
+snippet tmXBStyle
+  tmXBStyle
 
-snippet latGauWgt
-  latGauWgt(${1:nlat}, ${2:name}, ${3:longname}, ${4:units})
+snippet tmXBTickEndF
+  tmXBTickEndF
 
-snippet latGlobeF
-  latGlobeF(${1:nlat}, ${2:name}, ${3:longname}, ${4:units})
+snippet tmXBTickSpacingF
+  tmXBTickSpacingF
 
-snippet latGlobeFo
-  latGlobeFo(${1:nlat}, ${2:name}, ${3:longname}, ${4:units})
+snippet tmXBTickStartF
+  tmXBTickStartF
 
-snippet latRegWgt
-  latRegWgt(${1:lat}, ${2:nType}, ${3:opt})
+snippet tmXBValues
+  tmXBValues
 
-snippet linint1_n_Wrap
-  linint1_n_Wrap(${1:xi}, ${2:fi}, ${3:fiCyclic}, ${4:xo}, ${5:foOption}, ${6:dim})
+snippet tmXMajorGrid
+  tmXMajorGrid
 
-snippet linint1_Wrap
-  linint1_Wrap(${1:xi}, ${2:fi}, ${3:fiCyclic}, ${4:xo}, ${5:foOption})
+snippet tmXMajorGridLineColor
+  tmXMajorGridLineColor
 
-snippet linint2_points_Wrap
-  linint2_points_Wrap(${1:xi}, ${2:yi}, ${3:fi}, ${4:fiCyclicX}, ${5:xo}, ${6:yo}, ${7:Option})
+snippet tmXMajorGridLineDashPattern
+  tmXMajorGridLineDashPattern
 
-snippet linint2_Wrap
-  linint2_Wrap(${1:xi}, ${2:yi}, ${3:fi}, ${4:fiCyclicX}, ${5:xo}, ${6:yo}, ${7:foOption})
+snippet tmXMajorGridThicknessF
+  tmXMajorGridThicknessF
 
-snippet local_max_1d
-  local_max_1d(${1:x}, ${2:cyclic}, ${3:delta}, ${4:iopt})
+snippet tmXMinorGrid
+  tmXMinorGrid
 
-snippet local_min_1d
-  local_min_1d(${1:x}, ${2:cyclic}, ${3:delta}, ${4:iopt})
+snippet tmXMinorGridLineColor
+  tmXMinorGridLineColor
 
-snippet lonFlip
-  lonFlip(${1:x})
+snippet tmXMinorGridLineDashPattern
+  tmXMinorGridLineDashPattern
 
-snippet lonGlobeF
-  lonGlobeF(${1:nlon}, ${2:name}, ${3:longname}, ${4:units})
+snippet tmXMinorGridThicknessF
+  tmXMinorGridThicknessF
 
-snippet lonGlobeFo
-  lonGlobeFo(${1:nlon}, ${2:name}, ${3:longname}, ${4:units})
+snippet tmXTAutoPrecision
+  tmXTAutoPrecision
 
-snippet lonPivot
-  lonPivot(${1:x}, ${2:pivotLon})
+snippet tmXTBorderOn
+  tmXTBorderOn
 
-snippet merge_levels_sfc
-  merge_levels_sfc(${1:x}, ${2:xsfc}, ${3:opt})
+snippet tmXTDataLeftF
+  tmXTDataLeftF
 
-snippet mod
-  mod(${1:n}, ${2:m})
+snippet tmXTDataRightF
+  tmXTDataRightF
 
-snippet month_to_annual
-  month_to_annual(${1:x}, ${2:opt})
+snippet tmXTFormat
+  tmXTFormat
 
-snippet month_to_annual_weighted
-  month_to_annual_weighted(${1:yyyymm}, ${2:x}, ${3:opt})
+snippet tmXTIrrTensionF
+  tmXTIrrTensionF
 
-snippet month_to_season
-  month_to_season(${1:xMon}, ${2:season})
+snippet tmXTIrregularPoints
+  tmXTIrregularPoints
 
-snippet month_to_season12
-  month_to_season12(${1:xMon})
+snippet tmXTLabelAngleF
+  tmXTLabelAngleF
 
-snippet month_to_seasonN
-  month_to_seasonN(${1:xMon}, ${2:season})
+snippet tmXTLabelConstantSpacingF
+  tmXTLabelConstantSpacingF
 
-snippet monthly_total_to_daily_mean
-  monthly_total_to_daily_mean(${1:yyyymm}, ${2:x}, ${3:opt})
+snippet tmXTLabelDeltaF
+  tmXTLabelDeltaF
 
-snippet nameDim
-  nameDim(${1:x}, ${2:dimNames}, ${3:longName}, ${4:units})
+snippet tmXTLabelDirection
+  tmXTLabelDirection
 
-snippet natgrid_Wrap
-  natgrid_Wrap(${1:x}, ${2:y}, ${3:z}, ${4:xo}, ${5:yo})
+snippet tmXTLabelFont
+  tmXTLabelFont
 
-snippet NewCosWeight
-  NewCosWeight(${1:y})
+snippet tmXTLabelFontAspectF
+  tmXTLabelFontAspectF
 
-snippet niceLatLon2D
-  niceLatLon2D(${1:lat2d}, ${2:lon2d})
+snippet tmXTLabelFontColor
+  tmXTLabelFontColor
 
-snippet NormCosWgtGlobe
-  NormCosWgtGlobe(${1:lat})
+snippet tmXTLabelFontHeightF
+  tmXTLabelFontHeightF
 
-snippet numAsciiCol
-  numAsciiCol(${1:file_name})
+snippet tmXTLabelFontQuality
+  tmXTLabelFontQuality
 
-snippet numAsciiRow
-  numAsciiRow(${1:file_name})
+snippet tmXTLabelFontThicknessF
+  tmXTLabelFontThicknessF
 
-snippet numeric2int
-  numeric2int(${1:x}, ${2:iopt})
+snippet tmXTLabelFuncCode
+  tmXTLabelFuncCode
 
-snippet obj_anal_ic_deprecated
-  obj_anal_ic_deprecated(${1:zlon}, ${2:zlat}, ${3:z}, ${4:glon}, ${5:glat}, ${6:rscan}, ${7:option})
+snippet tmXTLabelJust
+  tmXTLabelJust
 
-snippet obj_anal_ic_Wrap
-  obj_anal_ic_Wrap(${1:zlon}, ${2:zlat}, ${3:z}, ${4:glon}, ${5:glat}, ${6:rscan}, ${7:option})
+snippet tmXTLabelStride
+  tmXTLabelStride
 
-snippet omega_ccm_driver
-  omega_ccm_driver(${1:p0}, ${2:psfc}, ${3:u}, ${4:v}, ${5:hyam}, ${6:hybm}, ${7:hyai}, ${8:hybi})
+snippet tmXTLabels
+  tmXTLabels
 
-snippet omega_to_w
-  omega_to_w(${1:omega}, ${2:p}, ${3:t})
+snippet tmXTLabelsOn
+  tmXTLabelsOn
 
-snippet oneDtostring
-  oneDtostring(${1:x})
+snippet tmXTMajorLengthF
+  tmXTMajorLengthF
 
-snippet pack_values
-  pack_values(${1:x}, ${2:packType}, ${3:opt})
+snippet tmXTMajorLineColor
+  tmXTMajorLineColor
 
-snippet getfilevaratts_hdf5
-  getfilevaratts_hdf5(${1:f}, ${2:attName})
+snippet tmXTMajorOutwardLengthF
+  tmXTMajorOutwardLengthF
 
-snippet pattern_cor
-  pattern_cor(${1:x}, ${2:y}, ${3:w}, ${4:opt})
+snippet tmXTMajorThicknessF
+  tmXTMajorThicknessF
 
-snippet pdfx
-  pdfx(${1:x}, ${2:nbin}, ${3:opt})
+snippet tmXTMaxLabelLenF
+  tmXTMaxLabelLenF
 
-snippet pdfxy
-  pdfxy(${1:x}, ${2:y}, ${3:nbinx}, ${4:nbiny}, ${5:opt})
+snippet tmXTMaxTicks
+  tmXTMaxTicks
 
-snippet pdfxy_conform
-  pdfxy_conform(${1:x}, ${2:y}, ${3:nbinx}, ${4:nbiny}, ${5:opt})
+snippet tmXTMinLabelSpacingF
+  tmXTMinLabelSpacingF
 
-snippet pot_temp
-  pot_temp(${1:p}, ${2:t}, ${3:dim}, ${4:opt})
+snippet tmXTMinorLengthF
+  tmXTMinorLengthF
 
-snippet pot_vort_hybrid
-  pot_vort_hybrid(${1:p}, ${2:u}, ${3:v}, ${4:t}, ${5:lat}, ${6:gridType}, ${7:opt})
+snippet tmXTMinorLineColor
+  tmXTMinorLineColor
 
-snippet pot_vort_isobaric
-  pot_vort_isobaric(${1:p}, ${2:u}, ${3:v}, ${4:t}, ${5:lat}, ${6:gridType}, ${7:opt})
+snippet tmXTMinorOn
+  tmXTMinorOn
 
-snippet pres2hybrid_Wrap
-  pres2hybrid_Wrap(${1:p}, ${2:ps}, ${3:p0}, ${4:xi}, ${5:hyao}, ${6:hybo}, ${7:intflg})
+snippet tmXTMinorOutwardLengthF
+  tmXTMinorOutwardLengthF
 
-snippet print_clock
-  print_clock(${1:title})
+snippet tmXTMinorPerMajor
+  tmXTMinorPerMajor
 
-snippet printMinMax
-  printMinMax(${1:data}, ${2:opt})
+snippet tmXTMinorThicknessF
+  tmXTMinorThicknessF
 
-snippet quadroots
-  quadroots(${1:a}, ${2:b}, ${3:c})
+snippet tmXTMinorValues
+  tmXTMinorValues
 
-snippet rcm2points_Wrap
-  rcm2points_Wrap(${1:lat2d}, ${2:lon2d}, ${3:fi}, ${4:lat}, ${5:lon}, ${6:opt})
+snippet tmXTMode
+  tmXTMode
 
-snippet rcm2rgrid_Wrap
-  rcm2rgrid_Wrap(${1:lat2d}, ${2:lon2d}, ${3:fi}, ${4:lat}, ${5:lon}, ${6:Option})
+snippet tmXTOn
+  tmXTOn
 
-snippet readAsciiHead
-  readAsciiHead(${1:filename}, ${2:opt})
+snippet tmXTPrecision
+  tmXTPrecision
 
-snippet readAsciiTable
-  readAsciiTable(${1:filename}, ${2:ncol}, ${3:data_type}, ${4:opt})
+snippet tmXTStyle
+  tmXTStyle
 
-snippet reg_multlin_stats
-  reg_multlin_stats(${1:y}, ${2:x}, ${3:opt})
+snippet tmXTTickEndF
+  tmXTTickEndF
 
-snippet region_ind
-  region_ind(${1:lat2d}, ${2:lon2d}, ${3:latS}, ${4:latN}, ${5:lonW}, ${6:lonE})
+snippet tmXTTickSpacingF
+  tmXTTickSpacingF
 
-snippet regline_stats
-  regline_stats(${1:x}, ${2:y})
+snippet tmXTTickStartF
+  tmXTTickStartF
 
-snippet relhum_ttd
-  relhum_ttd(${1:t}, ${2:td}, ${3:opt})
+snippet tmXTValues
+  tmXTValues
 
-snippet replaceSingleChar
-  replaceSingleChar(${1:x}, ${2:oldC}, ${3:newC})
+snippet tmXUseBottom
+  tmXUseBottom
 
-snippet RGBtoCmap
-  RGBtoCmap(${1:filename})
+snippet tmYLAutoPrecision
+  tmYLAutoPrecision
 
-snippet rgrid2rcm_Wrap
-  rgrid2rcm_Wrap(${1:lat}, ${2:lon}, ${3:fi}, ${4:lat2d}, ${5:lon2d}, ${6:Option})
+snippet tmYLBorderOn
+  tmYLBorderOn
 
-snippet rho_mwjf
-  rho_mwjf(${1:t2d}, ${2:s2d}, ${3:depth})
+snippet tmYLDataBottomF
+  tmYLDataBottomF
 
-snippet rigrad_bruntv_atm
-  rigrad_bruntv_atm(${1:thv}, ${2:u}, ${3:v}, ${4:z}, ${5:opt}, ${6:dim})
+snippet tmYLDataTopF
+  tmYLDataTopF
 
-snippet rm_single_dims
-  rm_single_dims(${1:x})
+snippet tmYLFormat
+  tmYLFormat
 
-snippet rmAnnCycle1D
-  rmAnnCycle1D(${1:x})
+snippet tmYLIrrTensionF
+  tmYLIrrTensionF
 
-snippet rmInsufData
-  rmInsufData(${1:x}, ${2:percent})
+snippet tmYLIrregularPoints
+  tmYLIrregularPoints
 
-snippet rmMonAnnCycLLLT
-  rmMonAnnCycLLLT(${1:x})
+snippet tmYLLabelAngleF
+  tmYLLabelAngleF
 
-snippet rmMonAnnCycLLT
-  rmMonAnnCycLLT(${1:x})
+snippet tmYLLabelConstantSpacingF
+  tmYLLabelConstantSpacingF
 
-snippet rmMonAnnCycTLL
-  rmMonAnnCycTLL(${1:x})
+snippet tmYLLabelDeltaF
+  tmYLLabelDeltaF
 
-snippet runave_n_Wrap
-  runave_n_Wrap(${1:x}, ${2:nave}, ${3:opt}, ${4:dim})
+snippet tmYLLabelDirection
+  tmYLLabelDirection
 
-snippet runave_Wrap
-  runave_Wrap(${1:x}, ${2:nave}, ${3:opt})
+snippet tmYLLabelFont
+  tmYLLabelFont
 
-snippet short2flt
-  short2flt(${1:x})
+snippet tmYLLabelFontAspectF
+  tmYLLabelFontAspectF
 
-snippet short2flt_hdf
-  short2flt_hdf(${1:x})
+snippet tmYLLabelFontColor
+  tmYLLabelFontColor
 
-snippet shsgc_R42_Wrap
-  shsgc_R42_Wrap(${1:a}, ${2:b})
+snippet tmYLLabelFontHeightF
+  tmYLLabelFontHeightF
 
-snippet sign_f90
-  sign_f90(${1:X}, ${2:Y})
+snippet tmYLLabelFontQuality
+  tmYLLabelFontQuality
 
-snippet sign_matlab
-  sign_matlab(${1:X})
+snippet tmYLLabelFontThicknessF
+  tmYLLabelFontThicknessF
 
-snippet smth9_Wrap
-  smth9_Wrap(${1:x}, ${2:p}, ${3:q}, ${4:wrap})
+snippet tmYLLabelFuncCode
+  tmYLLabelFuncCode
 
-snippet smthClmDayTLL
-  smthClmDayTLL(${1:clmDay}, ${2:nHarm})
+snippet tmYLLabelJust
+  tmYLLabelJust
 
-snippet smthClmDayTLLL
-  smthClmDayTLLL(${1:clmDay}, ${2:nHarm})
+snippet tmYLLabelStride
+  tmYLLabelStride
 
-snippet SqrtCosWeight
-  SqrtCosWeight(${1:y})
+snippet tmYLLabels
+  tmYLLabels
 
-snippet stat_dispersion
-  stat_dispersion(${1:x}, ${2:opt})
+snippet tmYLLabelsOn
+  tmYLLabelsOn
 
-snippet static_stability
-  static_stability(${1:p}, ${2:t}, ${3:dim}, ${4:sopt})
+snippet tmYLMajorLengthF
+  tmYLMajorLengthF
 
-snippet stdMonLLLT
-  stdMonLLLT(${1:x})
+snippet tmYLMajorLineColor
+  tmYLMajorLineColor
 
-snippet stdMonLLT
-  stdMonLLT(${1:x})
+snippet tmYLMajorOutwardLengthF
+  tmYLMajorOutwardLengthF
 
-snippet stdMonTLL
-  stdMonTLL(${1:x})
+snippet tmYLMajorThicknessF
+  tmYLMajorThicknessF
 
-snippet stdMonTLLL
-  stdMonTLLL(${1:x})
+snippet tmYLMaxLabelLenF
+  tmYLMaxLabelLenF
 
-snippet symMinMaxPlt
-  symMinMaxPlt(${1:x}, ${2:ncontours}, ${3:outside}, ${4:res})
+snippet tmYLMaxTicks
+  tmYLMaxTicks
 
-snippet table_attach_columns
-  table_attach_columns(${1:t1}, ${2:t2}, ${3:opt})
+snippet tmYLMinLabelSpacingF
+  tmYLMinLabelSpacingF
 
-snippet table_attach_rows
-  table_attach_rows(${1:t1}, ${2:t2}, ${3:opt})
+snippet tmYLMinorLengthF
+  tmYLMinorLengthF
 
-snippet time_reassign
-  time_reassign(${1:f}, ${2:timeName})
+snippet tmYLMinorLineColor
+  tmYLMinorLineColor
 
-snippet time_reassign_cv2var
-  time_reassign_cv2var(${1:f}, ${2:timeName}, ${3:varName})
+snippet tmYLMinorOn
+  tmYLMinorOn
 
-snippet time_to_newtime
-  time_to_newtime(${1:time}, ${2:new_time_unit})
+snippet tmYLMinorOutwardLengthF
+  tmYLMinorOutwardLengthF
 
-snippet transpose
-  transpose(${1:x})
+snippet tmYLMinorPerMajor
+  tmYLMinorPerMajor
 
-snippet triple2grid_Wrap
-  triple2grid_Wrap(${1:x}, ${2:y}, ${3:data}, ${4:xgrid}, ${5:ygrid}, ${6:option})
+snippet tmYLMinorThicknessF
+  tmYLMinorThicknessF
 
-snippet ut_convert
-  ut_convert(${1:dateFrom}, ${2:unitsTo})
+snippet tmYLMinorValues
+  tmYLMinorValues
 
-snippet uv2dvF_Wrap
-  uv2dvF_Wrap(${1:u}, ${2:v})
+snippet tmYLMode
+  tmYLMode
 
-snippet uv2dvG_Wrap
-  uv2dvG_Wrap(${1:u}, ${2:v})
+snippet tmYLOn
+  tmYLOn
 
-snippet uv2vrF_Wrap
-  uv2vrF_Wrap(${1:u}, ${2:v})
+snippet tmYLPrecision
+  tmYLPrecision
 
-snippet uv2vrG_Wrap
-  uv2vrG_Wrap(${1:u}, ${2:v})
+snippet tmYLStyle
+  tmYLStyle
 
-snippet vr2uvF_Wrap
-  vr2uvF_Wrap(${1:vr})
+snippet tmYLTickEndF
+  tmYLTickEndF
 
-snippet vr2uvG_Wrap
-  vr2uvG_Wrap(${1:vr})
+snippet tmYLTickSpacingF
+  tmYLTickSpacingF
 
-snippet w_to_omega
-  w_to_omega(${1:w}, ${2:p}, ${3:t})
+snippet tmYLTickStartF
+  tmYLTickStartF
 
-snippet wallClockElapseTime
-  wallClockElapseTime(${1:date}, ${2:title}, ${3:opt})
+snippet tmYLValues
+  tmYLValues
 
-snippet wave_number_spc
-  wave_number_spc(${1:x}, ${2:grid_type})
+snippet tmYMajorGrid
+  tmYMajorGrid
 
-snippet wgt_areaave_Wrap
-  wgt_areaave_Wrap(${1:q}, ${2:wgty}, ${3:wgtx}, ${4:opt})
+snippet tmYMajorGridLineColor
+  tmYMajorGridLineColor
 
-snippet wgt_runave_leftdim
-  wgt_runave_leftdim(${1:x}, ${2:wgt}, ${3:opt})
+snippet tmYMajorGridLineDashPattern
+  tmYMajorGridLineDashPattern
 
-snippet wgt_runave_n_Wrap
-  wgt_runave_n_Wrap(${1:x}, ${2:wgt}, ${3:opt}, ${4:dim})
+snippet tmYMajorGridThicknessF
+  tmYMajorGridThicknessF
 
-snippet wgt_runave_Wrap
-  wgt_runave_Wrap(${1:x}, ${2:wgt}, ${3:opt})
+snippet tmYMinorGrid
+  tmYMinorGrid
 
-snippet wgt_vertical_n
-  wgt_vertical_n(${1:x}, ${2:dp}, ${3:iopt}, ${4:dim})
+snippet tmYMinorGridLineColor
+  tmYMinorGridLineColor
 
-snippet wind_component
-  wind_component(${1:wspd}, ${2:wdir}, ${3:opt})
+snippet tmYMinorGridLineDashPattern
+  tmYMinorGridLineDashPattern
 
-snippet wind_direction
-  wind_direction(${1:u}, ${2:v}, ${3:opt})
+snippet tmYMinorGridThicknessF
+  tmYMinorGridThicknessF
 
-snippet wind_speed
-  wind_speed(${1:u}, ${2:v})
+snippet tmYRAutoPrecision
+  tmYRAutoPrecision
 
-snippet yyyyddd_to_yyyymmdd
-  yyyyddd_to_yyyymmdd(${1:yyyyddd})
+snippet tmYRBorderOn
+  tmYRBorderOn
 
-snippet yyyymm_time
-  yyyymm_time(${1:yrStrt}, ${2:yrLast}, ${3:TYPE})
+snippet tmYRDataBottomF
+  tmYRDataBottomF
 
-snippet yyyymm_to_yyyyfrac
-  yyyymm_to_yyyyfrac(${1:yyyymm}, ${2:mm_offset})
+snippet tmYRDataTopF
+  tmYRDataTopF
 
-snippet yyyymmdd_time
-  yyyymmdd_time(${1:yrStrt}, ${2:yrLast}, ${3:TYPE})
+snippet tmYRFormat
+  tmYRFormat
 
-snippet yyyymmdd_to_yyyyddd
-  yyyymmdd_to_yyyyddd(${1:yyyymmdd})
+snippet tmYRIrrTensionF
+  tmYRIrrTensionF
 
-snippet yyyymmdd_to_yyyyfrac
-  yyyymmdd_to_yyyyfrac(${1:yyyymmdd}, ${2:dd_offset})
+snippet tmYRIrregularPoints
+  tmYRIrregularPoints
 
-snippet yyyymmddhh_time
-  yyyymmddhh_time(${1:yrStrt}, ${2:yrLast}, ${3:hrStep}, ${4:TYPE})
+snippet tmYRLabelAngleF
+  tmYRLabelAngleF
 
-snippet yyyymmddhh_to_yyyyfrac
-  yyyymmddhh_to_yyyyfrac(${1:yyyymmddhh}, ${2:hh_offset})
+snippet tmYRLabelConstantSpacingF
+  tmYRLabelConstantSpacingF
 
-snippet zonal_mpsi_Wrap
-  zonal_mpsi_Wrap(${1:v}, ${2:lat}, ${3:p}, ${4:ps})
+snippet tmYRLabelDeltaF
+  tmYRLabelDeltaF
 
-snippet zonalAve
-  zonalAve(${1:x})
+snippet tmYRLabelDirection
+  tmYRLabelDirection
 
-snippet band_pass_area_time
-  band_pass_area_time(${1:x}, ${2:srate}, ${3:bpf}, ${4:wgty}, ${5:opt})
+snippet tmYRLabelFont
+  tmYRLabelFont
 
-snippet band_pass_area_time_plot
-  band_pass_area_time_plot(${1:x}, ${2:time}, ${3:pltDir}, ${4:pltType}, ${5:pltName}, ${6:opt})
+snippet tmYRLabelFontAspectF
+  tmYRLabelFontAspectF
 
-snippet band_pass_hovmueller
-  band_pass_hovmueller(${1:x}, ${2:srate}, ${3:bpf}, ${4:wgty}, ${5:opt})
+snippet tmYRLabelFontColor
+  tmYRLabelFontColor
 
-snippet band_pass_hovmueller_plot
-  band_pass_hovmueller_plot(${1:x}, ${2:pltDir}, ${3:pltType}, ${4:pltName}, ${5:opt})
+snippet tmYRLabelFontHeightF
+  tmYRLabelFontHeightF
 
-snippet band_pass_latlon_time
-  band_pass_latlon_time(${1:x}, ${2:srate}, ${3:bpf}, ${4:opt})
+snippet tmYRLabelFontQuality
+  tmYRLabelFontQuality
 
-snippet band_pass_latlon_time_plot
-  band_pass_latlon_time_plot(${1:x})
+snippet tmYRLabelFontThicknessF
+  tmYRLabelFontThicknessF
 
-snippet decompose2SymAsym
-  decompose2SymAsym(${1:x}, ${2:iret})
+snippet tmYRLabelFuncCode
+  tmYRLabelFuncCode
 
-snippet mjo_cross
-  mjo_cross(${1:x}, ${2:y}, ${3:segLength}, ${4:segOverLap}, ${5:opt})
+snippet tmYRLabelJust
+  tmYRLabelJust
 
-snippet mjo_cross_plot
-  mjo_cross_plot(${1:x}, ${2:pltDir}, ${3:pltType}, ${4:pltName}, ${5:opt})
+snippet tmYRLabelStride
+  tmYRLabelStride
 
-snippet mjo_phase_background
-  mjo_phase_background(${1:wks}, ${2:opt})
+snippet tmYRLabels
+  tmYRLabels
 
-snippet mjo_space_time_cross
-  mjo_space_time_cross(${1:x}, ${2:y}, ${3:segLength}, ${4:segOverLap}, ${5:opt})
+snippet tmYRLabelsOn
+  tmYRLabelsOn
 
-snippet mjo_spectra
-  mjo_spectra(${1:x}, ${2:date}, ${3:wy}, ${4:latS}, ${5:latN}, ${6:lonL}, ${7:lonR}, ${8:nameRegion}, ${9:opt})
+snippet tmYRMajorLengthF
+  tmYRMajorLengthF
 
-snippet mjo_spectra_season
-  mjo_spectra_season(${1:x}, ${2:date}, ${3:wy}, ${4:seasonName}, ${5:opt})
+snippet tmYRMajorLineColor
+  tmYRMajorLineColor
 
-snippet mjo_wavenum_freq_season
-  mjo_wavenum_freq_season(${1:x}, ${2:date}, ${3:seasonName}, ${4:opt})
+snippet tmYRMajorOutwardLengthF
+  tmYRMajorOutwardLengthF
 
-snippet mjo_wavenum_freq_season_plot
-  mjo_wavenum_freq_season_plot(${1:x}, ${2:season}, ${3:pltDir}, ${4:pltType}, ${5:pltName}, ${6:opt})
+snippet tmYRMajorThicknessF
+  tmYRMajorThicknessF
 
-snippet mjo_xcor_lag_ovly
-  mjo_xcor_lag_ovly(${1:ra}, ${2:rb}, ${3:pltDir}, ${4:pltType}, ${5:pltName}, ${6:opt})
+snippet tmYRMaxLabelLenF
+  tmYRMaxLabelLenF
 
-snippet mjo_xcor_lag_ovly_panel
-  mjo_xcor_lag_ovly_panel(${1:ra}, ${2:rb}, ${3:rc}, ${4:rd}, ${5:pltDir}, ${6:pltType}, ${7:pltName}, ${8:opt})
+snippet tmYRMaxTicks
+  tmYRMaxTicks
 
-snippet mjo_xcor_lag_season
-  mjo_xcor_lag_season(${1:ref}, ${2:x}, ${3:mxlag}, ${4:opt})
+snippet tmYRMinLabelSpacingF
+  tmYRMinLabelSpacingF
 
-snippet resolveWavesHayashi
-  resolveWavesHayashi(${1:x}, ${2:window}, ${3:spd})
+snippet tmYRMinorLengthF
+  tmYRMinorLengthF
 
-snippet wkSpaceTime
-  wkSpaceTime(${1:x}, ${2:diro}, ${3:caseName}, ${4:varName}, ${5:latBound}, ${6:spd}, ${7:nDayWin}, ${8:nDaySkip}, ${9:opt})
+snippet tmYRMinorLineColor
+  tmYRMinorLineColor
 
-snippet wkSpaceTime_cam
-  wkSpaceTime_cam(${1:diri}, ${2:fili}, ${3:diro}, ${4:caseName}, ${5:varName}, ${6:latBound}, ${7:spd}, ${8:level}, ${9:nDayWin}, ${10:nDaySkip}, ${11:opt})
+snippet tmYRMinorOn
+  tmYRMinorOn
 
-snippet curvilinear_to_SCRIP
-  curvilinear_to_SCRIP(${1:SCRIP_filename}, ${2:lat}, ${3:lon}, ${4:opt})
+snippet tmYRMinorOutwardLengthF
+  tmYRMinorOutwardLengthF
 
-snippet ESMF_regrid
-  ESMF_regrid(${1:data}, ${2:opt})
+snippet tmYRMinorPerMajor
+  tmYRMinorPerMajor
 
-snippet ESMF_regrid_gen_weights
-  ESMF_regrid_gen_weights(${1:srcGridFile}, ${2:dstGridFile}, ${3:wgtFile}, ${4:opt})
+snippet tmYRMinorThicknessF
+  tmYRMinorThicknessF
 
-snippet ESMF_regrid_with_weights
-  ESMF_regrid_with_weights(${1:data}, ${2:wgtFile}, ${3:opt})
+snippet tmYRMinorValues
+  tmYRMinorValues
 
-snippet latlon_to_SCRIP
-  latlon_to_SCRIP(${1:SCRIP_filename}, ${2:grid_type}, ${3:opt})
+snippet tmYRMode
+  tmYRMode
 
-snippet rectilinear_to_SCRIP
-  rectilinear_to_SCRIP(${1:SCRIP_filename}, ${2:lat}, ${3:lon}, ${4:opt})
+snippet tmYROn
+  tmYROn
 
-snippet unstructured_to_ESMF
-  unstructured_to_ESMF(${1:ESMF_filename}, ${2:lat}, ${3:lon}, ${4:opt})
+snippet tmYRPrecision
+  tmYRPrecision
 
-snippet PopLatLon
-  PopLatLon(${1:x}, ${2:grd_src}, ${3:grd_dst}, ${4:method}, ${5:area_type}, ${6:date})
+snippet tmYRStyle
+  tmYRStyle
 
-snippet PopLatLonV
-  PopLatLonV(${1:u}, ${2:v}, ${3:grd_src}, ${4:grd_dst}, ${5:method}, ${6:area_type}, ${7:date})
+snippet tmYRTickEndF
+  tmYRTickEndF
 
-snippet skewT_BackGround
-  skewT_BackGround(${1:wks}, ${2:res})
+snippet tmYRTickSpacingF
+  tmYRTickSpacingF
 
-snippet skewT_PlotData
-  skewT_PlotData(${1:wks}, ${2:skewt_bkgd}, ${3:P}, ${4:TC}, ${5:TDC}, ${6:Z}, ${7:WSPD}, ${8:WDIR}, ${9:dataOpts})
+snippet tmYRTickStartF
+  tmYRTickStartF
 
-snippet calendar_decode2
-  calendar_decode2(${1:time}, ${2:option})
+snippet tmYRValues
+  tmYRValues
 
-snippet cd_string
-  cd_string(${1:time}, ${2:inFormat})
+snippet tmYUseLeft
+  tmYUseLeft
 
-snippet kf_filter
-  kf_filter(${1:x}, ${2:obsPerDay}, ${3:tMin}, ${4:tMax}, ${5:kMin}, ${6:kMax}, ${7:hMin}, ${8:hMax}, ${9:waveName})
+snippet trGridType
+  trGridType
 
-snippet run_cor
-  run_cor(${1:x}, ${2:y}, ${3:time}, ${4:wSize})
+snippet trLineInterpolationOn
+  trLineInterpolationOn
 
-snippet time_axis_labels
-  time_axis_labels(${1:time}, ${2:resplot}, ${3:restick})
+snippet trXAxisType
+  trXAxisType
 
-snippet ut_string
-  ut_string(${1:time}, ${2:inFormat})
+snippet trXCoordPoints
+  trXCoordPoints
 
-snippet wrf_contour
-  wrf_contour(${1:nc_file}, ${2:wks}, ${3:data}, ${4:res})
+snippet trXInterPoints
+  trXInterPoints
 
-snippet wrf_map
-  wrf_map(${1:wks}, ${2:nc_file}, ${3:res})
+snippet trXLog
+  trXLog
 
-snippet wrf_map_overlay
-  wrf_map_overlay(${1:wks}, ${2:map}, ${3:plots}, ${4:res})
+snippet trXMaxF
+  trXMaxF
 
-snippet wrf_map_overlays
-  wrf_map_overlays(${1:nc_file}, ${2:wks}, ${3:plots}, ${4:plt_res}, ${5:map_res})
+snippet trXMinF
+  trXMinF
 
-snippet wrf_map_resources
-  wrf_map_resources(${1:nc_file}, ${2:res})
+snippet trXReverse
+  trXReverse
 
-snippet wrf_map_zoom
-  wrf_map_zoom(${1:wks}, ${2:nc_file}, ${3:res}, ${4:y_start}, ${5:y_end}, ${6:x_start}, ${7:x_end})
+snippet trXSamples
+  trXSamples
 
-snippet wrf_overlay
-  wrf_overlay(${1:wks}, ${2:plots}, ${3:res})
+snippet trXTensionF
+  trXTensionF
 
-snippet wrf_overlays
-  wrf_overlays(${1:nc_file}, ${2:wks}, ${3:plots}, ${4:res})
+snippet trYAxisType
+  trYAxisType
 
-snippet wrf_user_getvar
-  wrf_user_getvar(${1:file_handle}, ${2:variable}, ${3:time})
+snippet trYCoordPoints
+  trYCoordPoints
 
-snippet wrf_user_ij_to_ll
-  wrf_user_ij_to_ll(${1:file_handle}, ${2:i}, ${3:j}, ${4:opt})
+snippet trYInterPoints
+  trYInterPoints
 
-snippet wrf_user_intrp2d
-  wrf_user_intrp2d(${1:var2d}, ${2:loc}, ${3:angle}, ${4:res})
+snippet trYLog
+  trYLog
 
-snippet wrf_user_intrp3d
-  wrf_user_intrp3d(${1:var3d}, ${2:vert}, ${3:plot_type}, ${4:loc}, ${5:angle}, ${6:res})
+snippet trYMaxF
+  trYMaxF
 
-snippet wrf_user_latlon_to_ij
-  wrf_user_latlon_to_ij(${1:nc_file}, ${2:latitude}, ${3:longitude})
+snippet trYMinF
+  trYMinF
 
-snippet wrf_user_list_times
-  wrf_user_list_times(${1:file_handle})
+snippet trYReverse
+  trYReverse
 
-snippet wrf_user_ll_to_ij
-  wrf_user_ll_to_ij(${1:file_handle}, ${2:lon}, ${3:lat}, ${4:opt})
+snippet trYSamples
+  trYSamples
 
-snippet wrf_user_unstagger
-  wrf_user_unstagger(${1:varin}, ${2:unstagDim})
+snippet trYTensionF
+  trYTensionF
 
-snippet wrf_user_vert_interp
-  wrf_user_vert_interp(${1:file_handle}, ${2:field}, ${3:vert_coordinate}, ${4:interp_levels}, ${5:opts})
+snippet txAngleF
+  txAngleF
 
-snippet wrf_vector
-  wrf_vector(${1:nc_file}, ${2:wks}, ${3:data_u}, ${4:data_v}, ${5:res})
+snippet txBackgroundFillColor
+  txBackgroundFillColor
 
-snippet wrf_mapres_c
-  wrf_mapres_c(${1:f}, ${2:res}, ${3:opt})
+snippet txConstantSpacingF
+  txConstantSpacingF
 
-snippet wrf_times_c
-  wrf_times_c(${1:Times}, ${2:opt})
+snippet txDirection
+  txDirection
 
-snippet WindRoseBasic
-  WindRoseBasic(${1:wks}, ${2:wspd}, ${3:wdir}, ${4:numPetals}, ${5:circFr}, ${6:res})
+snippet txFont
+  txFont
 
-snippet WindRoseColor
-  WindRoseColor(${1:wks}, ${2:wspd}, ${3:wdir}, ${4:numPetals}, ${5:circFr}, ${6:spdBounds}, ${7:colorBounds}, ${8:res})
+snippet txFontAspectF
+  txFontAspectF
 
-snippet WindRoseThickLine
-  WindRoseThickLine(${1:wks}, ${2:wspd}, ${3:wdir}, ${4:numPetals}, ${5:circFr}, ${6:spdBounds}, ${7:res})
+snippet txFontColor
+  txFontColor
 
-snippet gsn_add_annotation
-  gsn_add_annotation(${1:plot_id}, ${2:graphic_id}, ${3:res})
+snippet txFontHeightF
+  txFontHeightF
 
-snippet gsn_add_polygon
-  gsn_add_polygon(${1:wks}, ${2:plot}, ${3:x}, ${4:y}, ${5:res})
+snippet txFontOpacityF
+  txFontOpacityF
 
-snippet gsn_add_polyline
-  gsn_add_polyline(${1:wks}, ${2:plot}, ${3:x}, ${4:y}, ${5:res})
+snippet txFontQuality
+  txFontQuality
 
-snippet gsn_add_polymarker
-  gsn_add_polymarker(${1:wks}, ${2:plot}, ${3:x}, ${4:y}, ${5:res})
+snippet txFontThicknessF
+  txFontThicknessF
 
-snippet gsn_add_shapefile_polygons
-  gsn_add_shapefile_polygons(${1:wks}, ${2:plot}, ${3:shp_name}, ${4:res})
+snippet txFuncCode
+  txFuncCode
 
-snippet gsn_add_shapefile_polylines
-  gsn_add_shapefile_polylines(${1:wks}, ${2:plot}, ${3:shp_name}, ${4:res})
+snippet txJust
+  txJust
 
-snippet gsn_add_shapefile_polymarkers
-  gsn_add_shapefile_polymarkers(${1:wks}, ${2:plot}, ${3:shp_name}, ${4:res})
+snippet txPerimColor
+  txPerimColor
 
-snippet gsn_add_text
-  gsn_add_text(${1:wks}, ${2:plot}, ${3:text}, ${4:x}, ${5:y}, ${6:res})
+snippet txPerimDashLengthF
+  txPerimDashLengthF
 
-snippet gsn_attach_plots
-  gsn_attach_plots(${1:base_plot}, ${2:plots}, ${3:res_base}, ${4:res_plots})
+snippet txPerimDashPattern
+  txPerimDashPattern
 
-snippet gsn_blank_plot
-  gsn_blank_plot(${1:wks}, ${2:res})
+snippet txPerimOn
+  txPerimOn
 
-snippet gsn_contour
-  gsn_contour(${1:wks}, ${2:data}, ${3:res})
+snippet txPerimSpaceF
+  txPerimSpaceF
 
-snippet gsn_contour_map
-  gsn_contour_map(${1:wks}, ${2:data}, ${3:res})
+snippet txPerimThicknessF
+  txPerimThicknessF
 
-snippet gsn_contour_shade
-  gsn_contour_shade(${1:plot}, ${2:lowval}, ${3:highval}, ${4:opt})
+snippet txPosXF
+  txPosXF
 
-snippet gsn_coordinates
-  gsn_coordinates(${1:wks}, ${2:plot}, ${3:data}, ${4:res})
+snippet txPosYF
+  txPosYF
 
-snippet gsn_create_labelbar
-  gsn_create_labelbar(${1:wks}, ${2:nboxes}, ${3:labels}, ${4:res})
+snippet txString
+  txString
 
-snippet gsn_create_legend
-  gsn_create_legend(${1:wks}, ${2:nitems}, ${3:labels}, ${4:res})
+snippet vcExplicitLabelBarLabelsOn
+  vcExplicitLabelBarLabelsOn
 
-snippet gsn_create_text
-  gsn_create_text(${1:wks}, ${2:text}, ${3:res})
+snippet vcFillArrowEdgeColor
+  vcFillArrowEdgeColor
 
-snippet gsn_csm_attach_zonal_means
-  gsn_csm_attach_zonal_means(${1:wks}, ${2:map}, ${3:data}, ${4:res})
+snippet vcFillArrowEdgeThicknessF
+  vcFillArrowEdgeThicknessF
 
-snippet gsn_csm_blank_plot
-  gsn_csm_blank_plot(${1:wks}, ${2:res})
+snippet vcFillArrowFillColor
+  vcFillArrowFillColor
 
-snippet gsn_csm_contour
-  gsn_csm_contour(${1:wks}, ${2:data}, ${3:res})
+snippet vcFillArrowHeadInteriorXF
+  vcFillArrowHeadInteriorXF
 
-snippet gsn_csm_contour_map
-  gsn_csm_contour_map(${1:wks}, ${2:data}, ${3:res})
+snippet vcFillArrowHeadMinFracXF
+  vcFillArrowHeadMinFracXF
 
-snippet gsn_csm_contour_map_ce
-  gsn_csm_contour_map_ce(${1:wks}, ${2:data}, ${3:res})
+snippet vcFillArrowHeadMinFracYF
+  vcFillArrowHeadMinFracYF
 
-snippet gsn_csm_contour_map_overlay
-  gsn_csm_contour_map_overlay(${1:wks}, ${2:data1}, ${3:data2}, ${4:res1}, ${5:res2})
+snippet vcFillArrowHeadXF
+  vcFillArrowHeadXF
 
-snippet gsn_csm_contour_map_polar
-  gsn_csm_contour_map_polar(${1:wks}, ${2:data}, ${3:res})
+snippet vcFillArrowHeadYF
+  vcFillArrowHeadYF
 
-snippet gsn_csm_hov
-  gsn_csm_hov(${1:wks}, ${2:data}, ${3:res})
+snippet vcFillArrowMinFracWidthF
+  vcFillArrowMinFracWidthF
 
-snippet gsn_csm_lat_time
-  gsn_csm_lat_time(${1:wks}, ${2:data}, ${3:res})
+snippet vcFillArrowWidthF
+  vcFillArrowWidthF
 
-snippet gsn_csm_map
-  gsn_csm_map(${1:wks}, ${2:res})
+snippet vcFillArrowsOn
+  vcFillArrowsOn
 
-snippet gsn_csm_map_ce
-  gsn_csm_map_ce(${1:wks}, ${2:res})
+snippet vcFillOverEdge
+  vcFillOverEdge
 
-snippet gsn_csm_map_polar
-  gsn_csm_map_polar(${1:wks}, ${2:res})
+snippet vcGlyphOpacityF
+  vcGlyphOpacityF
 
-snippet gsn_csm_pres_hgt
-  gsn_csm_pres_hgt(${1:wks}, ${2:data}, ${3:res})
+snippet vcGlyphStyle
+  vcGlyphStyle
 
-snippet gsn_csm_pres_hgt_streamline
-  gsn_csm_pres_hgt_streamline(${1:wks}, ${2:data}, ${3:xcomp}, ${4:zcomp}, ${5:res})
+snippet vcLabelBarEndLabelsOn
+  vcLabelBarEndLabelsOn
 
-snippet gsn_csm_pres_hgt_vector
-  gsn_csm_pres_hgt_vector(${1:wks}, ${2:data}, ${3:xcomp}, ${4:zcomp}, ${5:res})
+snippet vcLabelFontColor
+  vcLabelFontColor
 
-snippet gsn_csm_streamline
-  gsn_csm_streamline(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcLabelFontHeightF
+  vcLabelFontHeightF
 
-snippet gsn_csm_streamline_contour_map
-  gsn_csm_streamline_contour_map(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcLabelsOn
+  vcLabelsOn
 
-snippet gsn_csm_streamline_contour_map_ce
-  gsn_csm_streamline_contour_map_ce(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcLabelsUseVectorColor
+  vcLabelsUseVectorColor
 
-snippet gsn_csm_streamline_contour_map_polar
-  gsn_csm_streamline_contour_map_polar(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcLevelColors
+  vcLevelColors
 
-snippet gsn_csm_streamline_map
-  gsn_csm_streamline_map(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcLevelCount
+  vcLevelCount
 
-snippet gsn_csm_streamline_map_ce
-  gsn_csm_streamline_map_ce(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcLevelPalette
+  vcLevelPalette
 
-snippet gsn_csm_streamline_map_polar
-  gsn_csm_streamline_map_polar(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcLevelSelectionMode
+  vcLevelSelectionMode
 
-snippet gsn_csm_streamline_scalar
-  gsn_csm_streamline_scalar(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcLevelSpacingF
+  vcLevelSpacingF
 
-snippet gsn_csm_streamline_scalar_map
-  gsn_csm_streamline_scalar_map(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcLevels
+  vcLevels
 
-snippet gsn_csm_streamline_scalar_map_ce
-  gsn_csm_streamline_scalar_map_ce(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcLineArrowColor
+  vcLineArrowColor
 
-snippet gsn_csm_streamline_scalar_map_polar
-  gsn_csm_streamline_scalar_map_polar(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcLineArrowHeadMaxSizeF
+  vcLineArrowHeadMaxSizeF
 
-snippet gsn_csm_time_lat
-  gsn_csm_time_lat(${1:wks}, ${2:data}, ${3:res})
+snippet vcLineArrowHeadMinSizeF
+  vcLineArrowHeadMinSizeF
 
-snippet gsn_csm_vector
-  gsn_csm_vector(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcLineArrowThicknessF
+  vcLineArrowThicknessF
 
-snippet gsn_csm_vector_map
-  gsn_csm_vector_map(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcMagnitudeFormat
+  vcMagnitudeFormat
 
-snippet gsn_csm_vector_map_ce
-  gsn_csm_vector_map_ce(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcMagnitudeScaleFactorF
+  vcMagnitudeScaleFactorF
 
-snippet gsn_csm_vector_map_polar
-  gsn_csm_vector_map_polar(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcMagnitudeScaleValueF
+  vcMagnitudeScaleValueF
 
-snippet gsn_csm_vector_scalar
-  gsn_csm_vector_scalar(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcMagnitudeScalingMode
+  vcMagnitudeScalingMode
 
-snippet gsn_csm_vector_scalar_map
-  gsn_csm_vector_scalar_map(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcMapDirection
+  vcMapDirection
 
-snippet gsn_csm_vector_scalar_map_ce
-  gsn_csm_vector_scalar_map_ce(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcMaxLevelCount
+  vcMaxLevelCount
 
-snippet gsn_csm_vector_scalar_map_polar
-  gsn_csm_vector_scalar_map_polar(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcMaxLevelValF
+  vcMaxLevelValF
 
-snippet gsn_csm_x2y
-  gsn_csm_x2y(${1:wks}, ${2:x1}, ${3:x2}, ${4:y}, ${5:res1}, ${6:res2})
+snippet vcMaxMagnitudeF
+  vcMaxMagnitudeF
 
-snippet gsn_csm_x2y2
-  gsn_csm_x2y2(${1:wks}, ${2:x1}, ${3:x2}, ${4:y1}, ${5:y2}, ${6:res1}, ${7:res2})
+snippet vcMinAnnoAngleF
+  vcMinAnnoAngleF
 
-snippet gsn_csm_xy
-  gsn_csm_xy(${1:wks}, ${2:x}, ${3:y}, ${4:res})
+snippet vcMinAnnoArrowAngleF
+  vcMinAnnoArrowAngleF
 
-snippet gsn_csm_xy2
-  gsn_csm_xy2(${1:wks}, ${2:x}, ${3:y1}, ${4:y2}, ${5:res1}, ${6:res2})
+snippet vcMinAnnoArrowEdgeColor
+  vcMinAnnoArrowEdgeColor
 
-snippet gsn_csm_xy3
-  gsn_csm_xy3(${1:wks}, ${2:x}, ${3:yL}, ${4:yR}, ${5:yR2}, ${6:resL}, ${7:resR}, ${8:resR2})
+snippet vcMinAnnoArrowFillColor
+  vcMinAnnoArrowFillColor
 
-snippet gsn_csm_y
-  gsn_csm_y(${1:wks}, ${2:y}, ${3:res})
+snippet vcMinAnnoArrowLineColor
+  vcMinAnnoArrowLineColor
 
-snippet gsn_define_colormap
-  gsn_define_colormap(${1:wks}, ${2:color_map})
+snippet vcMinAnnoArrowMinOffsetF
+  vcMinAnnoArrowMinOffsetF
 
-snippet gsn_draw_colormap
-  gsn_draw_colormap(${1:wks})
+snippet vcMinAnnoArrowSpaceF
+  vcMinAnnoArrowSpaceF
 
-snippet gsn_draw_named_colors
-  gsn_draw_named_colors(${1:wks}, ${2:colors}, ${3:dims})
+snippet vcMinAnnoArrowUseVecColor
+  vcMinAnnoArrowUseVecColor
 
-snippet gsn_histogram
-  gsn_histogram(${1:wks}, ${2:data}, ${3:res})
+snippet vcMinAnnoBackgroundColor
+  vcMinAnnoBackgroundColor
 
-snippet gsn_labelbar_ndc
-  gsn_labelbar_ndc(${1:wks}, ${2:nboxes}, ${3:labels}, ${4:x}, ${5:y}, ${6:res})
+snippet vcMinAnnoConstantSpacingF
+  vcMinAnnoConstantSpacingF
 
-snippet gsn_legend_ndc
-  gsn_legend_ndc(${1:wks}, ${2:nitems}, ${3:labels}, ${4:x}, ${5:y}, ${6:res})
+snippet vcMinAnnoExplicitMagnitudeF
+  vcMinAnnoExplicitMagnitudeF
 
-snippet gsn_map
-  gsn_map(${1:wks}, ${2:projection}, ${3:res})
+snippet vcMinAnnoFont
+  vcMinAnnoFont
 
-snippet gsn_merge_colormaps
-  gsn_merge_colormaps(${1:wks}, ${2:color_map1}, ${3:color_map2})
+snippet vcMinAnnoFontAspectF
+  vcMinAnnoFontAspectF
 
-snippet gsn_open_wks
-  gsn_open_wks(${1:type}, ${2:name})
+snippet vcMinAnnoFontColor
+  vcMinAnnoFontColor
 
-snippet gsn_panel
-  gsn_panel(${1:wks}, ${2:plots}, ${3:dims}, ${4:res})
+snippet vcMinAnnoFontHeightF
+  vcMinAnnoFontHeightF
 
-snippet gsn_polygon
-  gsn_polygon(${1:wks}, ${2:plot}, ${3:x}, ${4:y}, ${5:res})
+snippet vcMinAnnoFontQuality
+  vcMinAnnoFontQuality
 
-snippet gsn_polygon_ndc
-  gsn_polygon_ndc(${1:wks}, ${2:x}, ${3:y}, ${4:res})
+snippet vcMinAnnoFontThicknessF
+  vcMinAnnoFontThicknessF
 
-snippet gsn_polyline
-  gsn_polyline(${1:wks}, ${2:plot}, ${3:x}, ${4:y}, ${5:res})
+snippet vcMinAnnoFuncCode
+  vcMinAnnoFuncCode
 
-snippet gsn_polyline_ndc
-  gsn_polyline_ndc(${1:wks}, ${2:x}, ${3:y}, ${4:res})
+snippet vcMinAnnoJust
+  vcMinAnnoJust
 
-snippet gsn_polymarker
-  gsn_polymarker(${1:wks}, ${2:plot}, ${3:x}, ${4:y}, ${5:res})
+snippet vcMinAnnoOn
+  vcMinAnnoOn
 
-snippet gsn_polymarker_ndc
-  gsn_polymarker_ndc(${1:wks}, ${2:x}, ${3:y}, ${4:res})
+snippet vcMinAnnoOrientation
+  vcMinAnnoOrientation
 
-snippet gsn_retrieve_colormap
-  gsn_retrieve_colormap(${1:wks})
+snippet vcMinAnnoOrthogonalPosF
+  vcMinAnnoOrthogonalPosF
 
-snippet gsn_reverse_colormap
-  gsn_reverse_colormap(${1:wks})
+snippet vcMinAnnoParallelPosF
+  vcMinAnnoParallelPosF
 
-snippet gsn_streamline
-  gsn_streamline(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcMinAnnoPerimColor
+  vcMinAnnoPerimColor
 
-snippet gsn_streamline_map
-  gsn_streamline_map(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcMinAnnoPerimOn
+  vcMinAnnoPerimOn
 
-snippet gsn_streamline_scalar
-  gsn_streamline_scalar(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcMinAnnoPerimSpaceF
+  vcMinAnnoPerimSpaceF
 
-snippet gsn_streamline_scalar_map
-  gsn_streamline_scalar_map(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcMinAnnoPerimThicknessF
+  vcMinAnnoPerimThicknessF
 
-snippet gsn_table
-  gsn_table(${1:wks}, ${2:dims}, ${3:x}, ${4:y}, ${5:text}, ${6:res})
+snippet vcMinAnnoSide
+  vcMinAnnoSide
 
-snippet gsn_text
-  gsn_text(${1:wks}, ${2:plot}, ${3:text}, ${4:x}, ${5:y}, ${6:res})
+snippet vcMinAnnoString1
+  vcMinAnnoString1
 
-snippet gsn_text_ndc
-  gsn_text_ndc(${1:wks}, ${2:text}, ${3:x}, ${4:y}, ${5:res})
+snippet vcMinAnnoString1On
+  vcMinAnnoString1On
 
-snippet gsn_vector
-  gsn_vector(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcMinAnnoString2
+  vcMinAnnoString2
 
-snippet gsn_vector_map
-  gsn_vector_map(${1:wks}, ${2:u}, ${3:v}, ${4:res})
+snippet vcMinAnnoString2On
+  vcMinAnnoString2On
 
-snippet gsn_vector_scalar
-  gsn_vector_scalar(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcMinAnnoTextDirection
+  vcMinAnnoTextDirection
 
-snippet gsn_vector_scalar_map
-  gsn_vector_scalar_map(${1:wks}, ${2:u}, ${3:v}, ${4:data}, ${5:res})
+snippet vcMinAnnoZone
+  vcMinAnnoZone
 
-snippet gsn_xy
-  gsn_xy(${1:wks}, ${2:x}, ${3:y}, ${4:res})
+snippet vcMinDistanceF
+  vcMinDistanceF
 
-snippet gsn_y
-  gsn_y(${1:wks}, ${2:y}, ${3:res})
+snippet vcMinFracLengthF
+  vcMinFracLengthF
 
-snippet hsv2rgb
-  hsv2rgb(${1:h}, ${2:s}, ${3:v})
+snippet vcMinLevelValF
+  vcMinLevelValF
 
-snippet maximize_output
-  maximize_output(${1:wks}, ${2:res})
+snippet vcMinMagnitudeF
+  vcMinMagnitudeF
 
-snippet namedcolor2rgb
-  namedcolor2rgb(${1:colors})
+snippet vcMonoFillArrowEdgeColor
+  vcMonoFillArrowEdgeColor
 
-snippet namedcolor2rgba
-  namedcolor2rgba(${1:colors})
+snippet vcMonoFillArrowFillColor
+  vcMonoFillArrowFillColor
 
-snippet reset_device_coordinates
-  reset_device_coordinates(${1:wks})
+snippet vcMonoLineArrowColor
+  vcMonoLineArrowColor
 
-snippet span_named_colors
-  span_named_colors(${1:colors}, ${2:opt})
+snippet vcMonoWindBarbColor
+  vcMonoWindBarbColor
+
+snippet vcNoDataLabelOn
+  vcNoDataLabelOn
+
+snippet vcNoDataLabelString
+  vcNoDataLabelString
+
+snippet vcPositionMode
+  vcPositionMode
+
+snippet vcRefAnnoAngleF
+  vcRefAnnoAngleF
+
+snippet vcRefAnnoArrowAngleF
+  vcRefAnnoArrowAngleF
+
+snippet vcRefAnnoArrowEdgeColor
+  vcRefAnnoArrowEdgeColor
+
+snippet vcRefAnnoArrowFillColor
+  vcRefAnnoArrowFillColor
+
+snippet vcRefAnnoArrowLineColor
+  vcRefAnnoArrowLineColor
+
+snippet vcRefAnnoArrowMinOffsetF
+  vcRefAnnoArrowMinOffsetF
+
+snippet vcRefAnnoArrowSpaceF
+  vcRefAnnoArrowSpaceF
+
+snippet vcRefAnnoArrowUseVecColor
+  vcRefAnnoArrowUseVecColor
+
+snippet vcRefAnnoBackgroundColor
+  vcRefAnnoBackgroundColor
+
+snippet vcRefAnnoConstantSpacingF
+  vcRefAnnoConstantSpacingF
+
+snippet vcRefAnnoExplicitMagnitudeF
+  vcRefAnnoExplicitMagnitudeF
+
+snippet vcRefAnnoFont
+  vcRefAnnoFont
+
+snippet vcRefAnnoFontAspectF
+  vcRefAnnoFontAspectF
+
+snippet vcRefAnnoFontColor
+  vcRefAnnoFontColor
+
+snippet vcRefAnnoFontHeightF
+  vcRefAnnoFontHeightF
+
+snippet vcRefAnnoFontQuality
+  vcRefAnnoFontQuality
+
+snippet vcRefAnnoFontThicknessF
+  vcRefAnnoFontThicknessF
+
+snippet vcRefAnnoFuncCode
+  vcRefAnnoFuncCode
+
+snippet vcRefAnnoJust
+  vcRefAnnoJust
+
+snippet vcRefAnnoOn
+  vcRefAnnoOn
+
+snippet vcRefAnnoOrientation
+  vcRefAnnoOrientation
+
+snippet vcRefAnnoOrthogonalPosF
+  vcRefAnnoOrthogonalPosF
+
+snippet vcRefAnnoParallelPosF
+  vcRefAnnoParallelPosF
+
+snippet vcRefAnnoPerimColor
+  vcRefAnnoPerimColor
+
+snippet vcRefAnnoPerimOn
+  vcRefAnnoPerimOn
+
+snippet vcRefAnnoPerimSpaceF
+  vcRefAnnoPerimSpaceF
+
+snippet vcRefAnnoPerimThicknessF
+  vcRefAnnoPerimThicknessF
+
+snippet vcRefAnnoSide
+  vcRefAnnoSide
+
+snippet vcRefAnnoString1
+  vcRefAnnoString1
+
+snippet vcRefAnnoString1On
+  vcRefAnnoString1On
+
+snippet vcRefAnnoString2
+  vcRefAnnoString2
+
+snippet vcRefAnnoString2On
+  vcRefAnnoString2On
+
+snippet vcRefAnnoTextDirection
+  vcRefAnnoTextDirection
+
+snippet vcRefAnnoZone
+  vcRefAnnoZone
+
+snippet vcRefLengthF
+  vcRefLengthF
+
+snippet vcRefMagnitudeF
+  vcRefMagnitudeF
+
+snippet vcScalarFieldData
+  vcScalarFieldData
+
+snippet vcScalarMissingValColor
+  vcScalarMissingValColor
+
+snippet vcScalarValueFormat
+  vcScalarValueFormat
+
+snippet vcScalarValueScaleFactorF
+  vcScalarValueScaleFactorF
+
+snippet vcScalarValueScaleValueF
+  vcScalarValueScaleValueF
+
+snippet vcScalarValueScalingMode
+  vcScalarValueScalingMode
+
+snippet vcSpanLevelPalette
+  vcSpanLevelPalette
+
+snippet vcUseRefAnnoRes
+  vcUseRefAnnoRes
+
+snippet vcUseScalarArray
+  vcUseScalarArray
+
+snippet vcVectorDrawOrder
+  vcVectorDrawOrder
+
+snippet vcVectorFieldData
+  vcVectorFieldData
+
+snippet vcWindBarbCalmCircleSizeF
+  vcWindBarbCalmCircleSizeF
+
+snippet vcWindBarbColor
+  vcWindBarbColor
+
+snippet vcWindBarbLineThicknessF
+  vcWindBarbLineThicknessF
+
+snippet vcWindBarbScaleFactorF
+  vcWindBarbScaleFactorF
+
+snippet vcWindBarbTickAngleF
+  vcWindBarbTickAngleF
+
+snippet vcWindBarbTickLengthF
+  vcWindBarbTickLengthF
+
+snippet vcWindBarbTickSpacingF
+  vcWindBarbTickSpacingF
+
+snippet vcZeroFLabelAngleF
+  vcZeroFLabelAngleF
+
+snippet vcZeroFLabelBackgroundColor
+  vcZeroFLabelBackgroundColor
+
+snippet vcZeroFLabelConstantSpacingF
+  vcZeroFLabelConstantSpacingF
+
+snippet vcZeroFLabelFont
+  vcZeroFLabelFont
+
+snippet vcZeroFLabelFontAspectF
+  vcZeroFLabelFontAspectF
+
+snippet vcZeroFLabelFontColor
+  vcZeroFLabelFontColor
+
+snippet vcZeroFLabelFontHeightF
+  vcZeroFLabelFontHeightF
+
+snippet vcZeroFLabelFontQuality
+  vcZeroFLabelFontQuality
+
+snippet vcZeroFLabelFontThicknessF
+  vcZeroFLabelFontThicknessF
+
+snippet vcZeroFLabelFuncCode
+  vcZeroFLabelFuncCode
+
+snippet vcZeroFLabelJust
+  vcZeroFLabelJust
+
+snippet vcZeroFLabelOn
+  vcZeroFLabelOn
+
+snippet vcZeroFLabelOrthogonalPosF
+  vcZeroFLabelOrthogonalPosF
+
+snippet vcZeroFLabelParallelPosF
+  vcZeroFLabelParallelPosF
+
+snippet vcZeroFLabelPerimColor
+  vcZeroFLabelPerimColor
+
+snippet vcZeroFLabelPerimOn
+  vcZeroFLabelPerimOn
+
+snippet vcZeroFLabelPerimSpaceF
+  vcZeroFLabelPerimSpaceF
+
+snippet vcZeroFLabelPerimThicknessF
+  vcZeroFLabelPerimThicknessF
+
+snippet vcZeroFLabelSide
+  vcZeroFLabelSide
+
+snippet vcZeroFLabelString
+  vcZeroFLabelString
+
+snippet vcZeroFLabelTextDirection
+  vcZeroFLabelTextDirection
+
+snippet vcZeroFLabelZone
+  vcZeroFLabelZone
+
+snippet vfCopyData
+  vfCopyData
+
+snippet vfDataArray
+  vfDataArray
+
+snippet vfExchangeDimensions
+  vfExchangeDimensions
+
+snippet vfExchangeUVData
+  vfExchangeUVData
+
+snippet vfMagMaxV
+  vfMagMaxV
+
+snippet vfMagMinV
+  vfMagMinV
+
+snippet vfMissingUValueV
+  vfMissingUValueV
+
+snippet vfMissingVValueV
+  vfMissingVValueV
+
+snippet vfPolarData
+  vfPolarData
+
+snippet vfSingleMissingValue
+  vfSingleMissingValue
+
+snippet vfUDataArray
+  vfUDataArray
+
+snippet vfUMaxV
+  vfUMaxV
+
+snippet vfUMinV
+  vfUMinV
+
+snippet vfVDataArray
+  vfVDataArray
+
+snippet vfVMaxV
+  vfVMaxV
+
+snippet vfVMinV
+  vfVMinV
+
+snippet vfXArray
+  vfXArray
+
+snippet vfXCActualEndF
+  vfXCActualEndF
+
+snippet vfXCActualStartF
+  vfXCActualStartF
+
+snippet vfXCEndIndex
+  vfXCEndIndex
+
+snippet vfXCEndSubsetV
+  vfXCEndSubsetV
+
+snippet vfXCEndV
+  vfXCEndV
+
+snippet vfXCStartIndex
+  vfXCStartIndex
+
+snippet vfXCStartSubsetV
+  vfXCStartSubsetV
+
+snippet vfXCStartV
+  vfXCStartV
+
+snippet vfXCStride
+  vfXCStride
+
+snippet vfYArray
+  vfYArray
+
+snippet vfYCActualEndF
+  vfYCActualEndF
+
+snippet vfYCActualStartF
+  vfYCActualStartF
+
+snippet vfYCEndIndex
+  vfYCEndIndex
+
+snippet vfYCEndSubsetV
+  vfYCEndSubsetV
+
+snippet vfYCEndV
+  vfYCEndV
+
+snippet vfYCStartIndex
+  vfYCStartIndex
+
+snippet vfYCStartSubsetV
+  vfYCStartSubsetV
+
+snippet vfYCStartV
+  vfYCStartV
+
+snippet vfYCStride
+  vfYCStride
+
+snippet vpAnnoManagerId
+  vpAnnoManagerId
+
+snippet vpClipOn
+  vpClipOn
+
+snippet vpHeightF
+  vpHeightF
+
+snippet vpKeepAspect
+  vpKeepAspect
+
+snippet vpOn
+  vpOn
+
+snippet vpUseSegments
+  vpUseSegments
+
+snippet vpWidthF
+  vpWidthF
+
+snippet vpXF
+  vpXF
+
+snippet vpYF
+  vpYF
+
+snippet wkAntiAlias
+  wkAntiAlias
+
+snippet wkBackgroundColor
+  wkBackgroundColor
+
+snippet wkBackgroundOpacityF
+  wkBackgroundOpacityF
+
+snippet wkColorMapLen
+  wkColorMapLen
+
+snippet wkColorMap
+  wkColorMap
+
+snippet wkColorModel
+  wkColorModel
+
+snippet wkDashTableLength
+  wkDashTableLength
+
+snippet wkDefGraphicStyleId
+  wkDefGraphicStyleId
+
+snippet wkDeviceLowerX
+  wkDeviceLowerX
+
+snippet wkDeviceLowerY
+  wkDeviceLowerY
+
+snippet wkDeviceUpperX
+  wkDeviceUpperX
+
+snippet wkDeviceUpperY
+  wkDeviceUpperY
+
+snippet wkFileName
+  wkFileName
+
+snippet wkFillTableLength
+  wkFillTableLength
+
+snippet wkForegroundColor
+  wkForegroundColor
+
+snippet wkFormat
+  wkFormat
+
+snippet wkFullBackground
+  wkFullBackground
+
+snippet wkGksWorkId
+  wkGksWorkId
+
+snippet wkHeight
+  wkHeight
+
+snippet wkMarkerTableLength
+  wkMarkerTableLength
+
+snippet wkMetaName
+  wkMetaName
+
+snippet wkOrientation
+  wkOrientation
+
+snippet wkPDFFileName
+  wkPDFFileName
+
+snippet wkPDFFormat
+  wkPDFFormat
+
+snippet wkPDFResolution
+  wkPDFResolution
+
+snippet wkPSFileName
+  wkPSFileName
+
+snippet wkPSFormat
+  wkPSFormat
+
+snippet wkPSResolution
+  wkPSResolution
+
+snippet wkPaperHeightF
+  wkPaperHeightF
+
+snippet wkPaperSize
+  wkPaperSize
+
+snippet wkPaperWidthF
+  wkPaperWidthF
+
+snippet wkPause
+  wkPause
+
+snippet wkTopLevelViews
+  wkTopLevelViews
+
+snippet wkViews
+  wkViews
+
+snippet wkVisualType
+  wkVisualType
+
+snippet wkWidth
+  wkWidth
+
+snippet wkWindowId
+  wkWindowId
+
+snippet wkXColorMode
+  wkXColorMode
+
+snippet wsCurrentSize
+  wsCurrentSize
+
+snippet wsMaximumSize
+  wsMaximumSize
+
+snippet wsThresholdSize
+  wsThresholdSize
+
+snippet xyComputeXMax
+  xyComputeXMax
+
+snippet xyComputeXMin
+  xyComputeXMin
+
+snippet xyComputeYMax
+  xyComputeYMax
+
+snippet xyComputeYMin
+  xyComputeYMin
+
+snippet xyCoordData
+  xyCoordData
+
+snippet xyCoordDataSpec
+  xyCoordDataSpec
+
+snippet xyCurveDrawOrder
+  xyCurveDrawOrder
+
+snippet xyDashPattern
+  xyDashPattern
+
+snippet xyDashPatterns
+  xyDashPatterns
+
+snippet xyExplicitLabels
+  xyExplicitLabels
+
+snippet xyExplicitLegendLabels
+  xyExplicitLegendLabels
+
+snippet xyLabelMode
+  xyLabelMode
+
+snippet xyLineColor
+  xyLineColor
+
+snippet xyLineColors
+  xyLineColors
+
+snippet xyLineDashSegLenF
+  xyLineDashSegLenF
+
+snippet xyLineLabelConstantSpacingF
+  xyLineLabelConstantSpacingF
+
+snippet xyLineLabelFont
+  xyLineLabelFont
+
+snippet xyLineLabelFontAspectF
+  xyLineLabelFontAspectF
+
+snippet xyLineLabelFontColor
+  xyLineLabelFontColor
+
+snippet xyLineLabelFontColors
+  xyLineLabelFontColors
+
+snippet xyLineLabelFontHeightF
+  xyLineLabelFontHeightF
+
+snippet xyLineLabelFontQuality
+  xyLineLabelFontQuality
+
+snippet xyLineLabelFontThicknessF
+  xyLineLabelFontThicknessF
+
+snippet xyLineLabelFuncCode
+  xyLineLabelFuncCode
+
+snippet xyLineThicknessF
+  xyLineThicknessF
+
+snippet xyLineThicknesses
+  xyLineThicknesses
+
+snippet xyMarkLineMode
+  xyMarkLineMode
+
+snippet xyMarkLineModes
+  xyMarkLineModes
+
+snippet xyMarker
+  xyMarker
+
+snippet xyMarkerColor
+  xyMarkerColor
+
+snippet xyMarkerColors
+  xyMarkerColors
+
+snippet xyMarkerSizeF
+  xyMarkerSizeF
+
+snippet xyMarkerSizes
+  xyMarkerSizes
+
+snippet xyMarkerThicknessF
+  xyMarkerThicknessF
+
+snippet xyMarkerThicknesses
+  xyMarkerThicknesses
+
+snippet xyMarkers
+  xyMarkers
+
+snippet xyMonoDashPattern
+  xyMonoDashPattern
+
+snippet xyMonoLineColor
+  xyMonoLineColor
+
+snippet xyMonoLineLabelFontColor
+  xyMonoLineLabelFontColor
+
+snippet xyMonoLineThickness
+  xyMonoLineThickness
+
+snippet xyMonoMarkLineMode
+  xyMonoMarkLineMode
+
+snippet xyMonoMarker
+  xyMonoMarker
+
+snippet xyMonoMarkerColor
+  xyMonoMarkerColor
+
+snippet xyMonoMarkerSize
+  xyMonoMarkerSize
+
+snippet xyMonoMarkerThickness
+  xyMonoMarkerThickness
+
+snippet xyXIrrTensionF
+  xyXIrrTensionF
+
+snippet xyXIrregularPoints
+  xyXIrregularPoints
+
+snippet xyXStyle
+  xyXStyle
+
+snippet xyYIrrTensionF
+  xyYIrrTensionF
+
+snippet xyYIrregularPoints
+  xyYIrregularPoints
+
+snippet xyYStyle
+  xyYStyle
 

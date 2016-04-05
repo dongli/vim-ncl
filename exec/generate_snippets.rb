@@ -60,4 +60,19 @@ categories.each do |category|
   end
 end
 
+print "[Notice]: Grabing graphics resources from NCL website.\n"
+page1 = `curl -s #{url_prefix}/Document/Graphics/Resources/list_alpha_res.shtml`
+
+resources = [] # There may be duplicate links in NCL graphics resources webpage.
+page1.scan(/^<a name="\w+"><\/a><strong>/).each do |x|
+  res = x.match(/"(\w+)"></)[1]
+  # Also remove the trailing '_*' stuff.
+  res.gsub!(/_\w+/, '')
+  puts "[Notice]: Generating completion for #{res}."
+  if not resources.include? res
+    snip_file << "snippet #{res}\n"
+    snip_file << "  #{res}\n\n"
+    resources << res
+  end
+end
 
