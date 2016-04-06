@@ -43,9 +43,8 @@ categories.each do |category|
     begin
       prototype = page2.match(/(function|procedure) \w+ \(([^\)]*)\)$/m)[2].strip
     rescue
-      print page2.match(/(function|procedure) \w+ \(([^\)]*)\)$/m)[0]+"\n"
       print "[Error]: Failed to extract prototype for #{func}!\n"
-      exit
+      next
     end
     snip_file << "snippet #{func}\n"
     snip_file << "  #{func}("
@@ -76,3 +75,10 @@ page1.scan(/^<a name="\w+"><\/a><strong>/).each do |x|
   end
 end
 
+snip_file << <<-EOT
+snippet load3
+  load "$NCARG_ROOT/lib/ncarg/nclscripts/csm/gsn_code.ncl"
+  load "$NCARG_ROOT/lib/ncarg/nclscripts/csm/gsn_csm.ncl"
+  load "$NCARG_ROOT/lib/ncarg/nclscripts/csm/contributed.ncl"
+
+EOT
