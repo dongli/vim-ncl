@@ -1,8 +1,12 @@
-autocmd Bufread,BufNewfile *.ncl set dictionary=$HOME/.vim/bundle/vim-ncl/dict/ncl.dic
-autocmd Bufread,BufNewfile *.ncl set tags+=$HOME/.vim/bundle/vim-ncl/tags/ncl_func_help_inx.tags
-autocmd Bufread,BufNewfile *.ncl set tags+=$HOME/.vim/bundle/vim-ncl/tags/ncl_res_help_inx.tags
-let g:neosnippet#snippets_directory = "~/.vim/bundle/vim-ncl/snippet"
+let s:path=resolve(expand('<sfile>:p:h'))
+execute "setlocal dictionary=".s:path."/../dict/ncl.dict"
+execute "setlocal tags+=".s:path."/../tags/ncl_func_help_inx.tags"
+execute "setlocal tags+=".s:path."/../tags/ncl_res_help_inx.tags"
+execute "setlocal tags+=".s:path."/../tags/ncl_code_std_inx.tags"
+execute "setlocal tags+=".s:path."/../tags/ncl_code_geo_inx.tags"
 
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+let g:neosnippet#snippets_directory = s:path."/../snippet"
+
+setlocal tabstop=2
+setlocal softtabstop=2
+setlocal shiftwidth=2

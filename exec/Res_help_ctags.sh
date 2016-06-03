@@ -6,10 +6,14 @@
 # {{{ comment flod start-----------------------
 # Description: update the tags for win
 # Last modified: 2015-10-04 13:20:06
+# ---------------------------------------------
+# Description: use a new method to get the shell location 
+# Last modified: 2016-06-03 23:53:23
 # }}} comment flod end
 #==========================================================
-export tags_path=$(cd $PWD/../tags && pwd )
-export res_path=$(cd $PWD/../res  && pwd )
+pwd_path=$(cd $(dirname $BASH_SOURCE) && pwd)
+export tags_path=$(cd $pwd_path/../tags && pwd )
+export res_path=$(cd $pwd_path/../res  && pwd )
 
 if [[ ! -d "$tags_path" ]];then
     echo "[Warring]: $tags_path dosen.t exsit, auto creat it"
@@ -28,7 +32,7 @@ function_pattern='/^[[:space:]]{3}([a-zA-Z0-9_]+)[[:space:]]?\(?[a-zA-Z0-9_]*\)?
 #procedure_pattern='/^[[:space:]]+procedure[[:space:]]+([a-zA-Z0-9_]+)[[:space:]]\($/\1/p,procedure/'
 ctags  -a --verbose=yes -f $tags_name --langdef=ncl --langmap=ncl:.ncl  \
 --regex-ncl=$function_pattern \
-`find $res_path -type f \! -path "*UCAS*" -name "*.ncl" 2>/dev/null`
+`find $res_path -type f -name "*.ncl" 2>/dev/null`
 #   --regex-ncl=$procedure_pattern \
 sed -i ""  "s#$HOME#\$HOME#g" $tags_name # replace the $HOME path
 ##for vim in win
