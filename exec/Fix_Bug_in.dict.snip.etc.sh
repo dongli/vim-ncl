@@ -1,12 +1,15 @@
 #!/bin/bash
 #==========================================================
 # Author: fanghuan - fanghuan_nju@163.com
-# Filename: Fix_Bug_in..func-help.ncl..ncl.dict..ncl.vim..ncl.snip-.sh
+# Filename: Fix_Bug_in.dict.snip.etc.sh
 # Creat time: 2015-03-21 00:11:35
 # {{{ comment flod start-----------------------
 # Description: Fix some error in ../tags/ncl_func_help_inx.tags 
 # of ../func/function-help.ncl
 # Last modified: 2015-10-04 17:05:18
+# ---------------------------------------------
+# Description: use a new method to get the shell location 
+# Last modified: 2016-06-03 23:54:22
 # ---------------------------------------------
 # Description: Add Fix error in ../syntax/ncl.vim
 #                               ../dict/ncl.dict
@@ -18,7 +21,8 @@
 # }}} comment flod end
 #==========================================================
 export LC_ALL=C
-func_path="$PWD/../func"
+pwd_path=$(cd $(dirname $BASH_SOURCE) && pwd)
+func_path="$pwd_path/../func"
 func_exit=0
 # {{{ 
 if [[ ! -d "$func_path" ]];then
@@ -28,7 +32,7 @@ else
     export func_path=$(cd $func_path && pwd )
 fi # }}}
 #---------------------------------------------------------------
-doc_path="$PWD/../doc"
+doc_path="$pwd_path/../doc"
 doc_exit=0
 # {{{ 
 if [[ ! -d "$doc_path" ]];then
@@ -43,7 +47,7 @@ else
     fi
 fi # }}}
 #---------------------------------------------------------------
-dict_path="$PWD/../dict"
+dict_path="$pwd_path/../dict"
 dict_exit=0
 # {{{ 
 if [[ ! -d "$dict_path" ]];then
@@ -58,7 +62,7 @@ else
     fi
 fi # }}}
 #---------------------------------------------------------------
-syntax_path="$PWD/../syntax"
+syntax_path="$pwd_path/../syntax"
 syntax_exit=0
 # {{{ 
 if [[ ! -d "$syntax_path" ]];then
@@ -73,7 +77,7 @@ else
     fi
 fi # }}}
 #---------------------------------------------------------------
-snip_path="$PWD/../snippet"
+snip_path="$pwd_path/../snippet"
 snip_exit=0
 # {{{ 
 if [[ ! -d "$snip_path" ]];then

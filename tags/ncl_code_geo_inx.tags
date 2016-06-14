@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+attach_china_map	$GEODIAG_ROOT/framework/ncl_scripts/map/china/china_map.ncl	/^procedure attach_china_map(wks, base_plot)$/;"	p
+get_china_mask	$GEODIAG_ROOT/framework/ncl_scripts/map/china/china_map.ncl	/^function get_china_mask(data, res)$/;"	f
+plot_shapefile	$GEODIAG_ROOT/framework/ncl_scripts/map/china/china_map.ncl	/^procedure plot_shapefile(wks, base_plot, attach_plot, shapefile, res)$/;"	p
+set_default	$GEODIAG_ROOT/framework/ncl_scripts/map/china/china_map.ncl	/^procedure set_default(res, att_name, default)$/;"	p
+setup_china_map	$GEODIAG_ROOT/framework/ncl_scripts/map/china/china_map.ncl	/^procedure setup_china_map(res)$/;"	p
+shapefile_mask_data	$GEODIAG_ROOT/framework/ncl_scripts/shapefile_mask_data.ncl	/^function shapefile_mask_data(data:numeric,shp_file_name[1]:string,\\$/;"	f
+transfer_attribute	$GEODIAG_ROOT/framework/ncl_scripts/map/china/china_map.ncl	/^procedure transfer_attribute(res_from, res_to, att_name, default)$/;"	p
