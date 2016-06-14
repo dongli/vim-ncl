@@ -13,9 +13,10 @@ This configure is specified for [NCL](http://www.ncl.ucar.edu/) users, which pro
  
  - It can work in Uinx-Like System, I test it in mac OS X and Linux.The compatibility in Windows(Gvim) is unkonwn.
 
-# Screen-Shot #
+# Overall Preview #
 
- ![alt total-review][1]
+ ![overall-demo.gif](http://imgchr.com/images/overall-demo.gif)
+
 
 # Installtion #
 ### Method.1 Vundle ###
@@ -159,7 +160,7 @@ if has('mouse') "
     set selectmode=mouse,key
 endif
 
-let g:SuperTabDefaultCompletionType     = "<c-x><c-k>"
+let g:SuperTabDefaultCompletionType     = "<c-x><c-n>"
 
 if has('lua')
     " NeoComplete settings
@@ -170,7 +171,7 @@ if has('lua')
     let g:neocomplete#enable_smart_case    = 1
     let g:neocomplete#enable_cursor_hold_i = 1
 
-    " neosnippet mapping setting "
+    " neosnippet mapping setting
     inoremap <expr><C-g>     neocomplete#undo_completion()
     inoremap <expr><C-l>     neocomplete#complete_common_string()
 else
@@ -206,38 +207,38 @@ smap <expr>; neosnippet#expandable_or_jumpable() ?
  
 
 # Useage #
-#### 1.Complete the key words ####
-When typing [NCL functions,precedures](http://www.ncl.ucar.edu/Document/Functions/list_alpha.shtml),[resources](http://www.ncl.ucar.edu/Document/Graphics/Resources/list_alpha_res.shtml),press **`Ctrl + n `** or **`Ctrl + p `** will complete the word. Example: 
-	![complete][2]
+#### 1.Key words completion####
+When typing [NCL functions,precedures](http://www.ncl.ucar.edu/Document/Functions/list_alpha.shtml),[resources](http://www.ncl.ucar.edu/Document/Graphics/Resources/list_alpha_res.shtml),press **`Ctrl + n(TAB) `** or **`Ctrl + p `** will complete the word. Example: 
+	![keywordscompletion.gif](http://imgchr.com/images/keywordscompletion.gif)
 
-#### 2.Tags jump ####
+#### 2.Tags navigation ####
 
  when the cursor is on **`NCL functions(precedures)`** or **`NCL resources`** text, press **`g]`** in **normal model**, the cursor will jump to the document of the functions or resources. If the function (precedure) has more than **one tag**, you need to select it by typing the number of tags. Press **`Ctrl + t`** in **normal model**, the cursor returns to the original file. 
  **Example:**
  
-![alt text][3]
+![tags-navigation1.png](http://imgchr.com/images/tags-navigation1.png)
 
   press **`g]`** , then get this 
   
-![alt text][4]
+![tags-navigation2.png](http://imgchr.com/images/tags-navigation2.png)
   	
   Press **`1`** to enter the first tag file
   	
- ![alt text][5]
+ ![tags-navigation3.png](http://imgchr.com/images/tags-navigation3.png)
  
-  Press **`Ctrl + t`** to return the original file
+  Press **`Ctrl + t`** to return the original file.
+  
+  The gif below give the detail explanation.
+
+  ![tags-navigation.gif](http://imgchr.com/images/tags-navigation.gif)
   	
-#### 3. Snippets expand ####
-Enter a keyword such as **`gsn_csm_y`**, move cursor bebind the keyword, then   press **`;`** to expand the snippets. And **`;`**  can also mv cursor from the **one argeument** to **the next argeument**. In order to expand snippets successfully, ensure there is **`at least a blank before the keyword`**.
-  	![alt text][6]
+#### 3. Snippets expansion ####
+Enter a keyword such as **`gsn_add_shapefile_polygons`**, move cursor bebind the keyword, then   press **`;`** to expand the snippets. And **`;`**  can also mv cursor from the **one argeument** to **the next argeument**. In order to expand snippets successfully, ensure there is **`at least a blank before the keyword`**.
+
+  ![snippets-expansion.png](http://imgchr.com/images/snippets-expansion.png)
+  ![snippets-expansion-demo.gif](http://imgchr.com/images/snippets-expansion-demo.gif)
 
 # Authors #
 
 - Li Dong <dongli@lasg.iap.ac.cn>
 
- [1]: http://ww4.sinaimg.cn/large/9ae304aajw1f4mfwz817zg20gv0a1e81.gif
- [2]: http://ww2.sinaimg.cn/large/9ae304aajw1f4mi0muk92j20ef08n76w.jpg
- [3]: http://ww2.sinaimg.cn/large/9ae304aajw1f4miopeni6j20hz01tdfp.jpg
- [4]: http://ww3.sinaimg.cn/large/9ae304aajw1f4mi0spupyj20kr06ewgv.jpg
- [5]: http://ww1.sinaimg.cn/large/9ae304aajw1f4mip3qavtj20n80drn0l.jpg
- [6]: http://ww1.sinaimg.cn/large/9ae304aajw1f4mgbgak6zg20gv0a1n78.gif
