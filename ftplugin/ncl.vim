@@ -1,7 +1,13 @@
-autocmd Bufread,BufNewfile *.ncl set dictionary=$HOME/.vim/bundle/vim-ncl/dict/ncl.dic
-autocmd Bufread,BufNewfile *.ncl set tags+=$HOME/.vim/bundle/vim-ncl/tags/ncl_func_help_inx.tags
-autocmd Bufread,BufNewfile *.ncl set tags+=$HOME/.vim/bundle/vim-ncl/tags/ncl_res_help_inx.tags
-let g:neosnippet#snippets_directory = "~/.vim/bundle/vim-ncl/snippet"
+"=============================================================================
+" FILE: ncl.vim
+" AUTHOR:  Li Dong <dongli.init at gmail.com>
+" License: MIT license
+"=============================================================================
+
+let root = expand('<sfile>:p:h:h')
+execute 'set complete+=k'.root.'/dict/*'
+let g:neosnippet#enable_snipmate_compatibility=1
+let g:neosnippet#snippets_directory=root.'/snippets'
 
 set tabstop=2
 set softtabstop=2

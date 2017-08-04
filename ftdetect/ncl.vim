@@ -1,1 +1,1 @@
-autocmd BufRead,BufNewFile *.ncl set filetype=ncl
+autocmd BufNewFile,BufRead *.ncl set filetype=ncl
